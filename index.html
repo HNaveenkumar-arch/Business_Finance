@@ -1,0 +1,1308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stackly Navbar</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="common.css">
+</head>
+
+<body>
+
+    <header class="header" id="header">
+        <nav class="navbar">
+            <!-- Logo Section -->
+            <a href="#" class="logo">
+                <img src="./asset/Stackly-logo-Blue.webp" alt="logo">
+            </a>
+
+            <!-- Navigation Links & Actions wrapper -->
+            <div class="nav-menu" id="navMenu">
+                <ul class="nav-links">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="personal.html">Personal</a></li>
+                    <li><a href="#">Business</a></li>
+                    <li><a href="#">Wealth</a></li>
+                    <li><a href="#">Loans&Cards</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Help</a></li>
+                </ul>
+
+                <!-- Actions (Search & Login) -->
+                <div class="nav-actions">
+                    <div class="search-container">
+                        <div class="search-box">
+                            <input type="text" id="searchInput" placeholder="Search">
+                            <i class="fa-solid fa-magnifying-glass" id="searchIcon"></i>
+                        </div>
+                        <!-- Error Message -->
+                        <span class="search-error" id="searchError">Please enter a keyword to search</span>
+                    </div>
+                    <a href="#" class="login-btn">Login</a>
+                </div>
+            </div>
+
+            <!-- Mobile Menu Toggle -->
+            <div class="mobile-toggle" id="mobileToggle">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section Start -->
+    <section class="hero-section">
+        <div class="hero-container">
+
+            <!-- Left Column: Content -->
+            <div class="hero-content">
+                <h1 class="hero-title">Banking for a <br><span class="text-purple">Better Tomorrow</span></h1>
+                <p class="hero-description">
+                    Experience secure, smart, and seamless banking solutions designed for your needs.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#" class="btn-primary">Open an account</a>
+                    <a href="#" class="btn-secondary">Explore Services</a>
+                </div>
+
+                <div class="trust-badges">
+                    <div class="badge">
+                        <div class="icon-wrapper"><i class="fa-solid fa-lock"></i></div>
+                        <span>100% Secure<br>Transactions</span>
+                    </div>
+                    <div class="badge">
+                        <div class="icon-wrapper"><i class="fa-solid fa-headset"></i></div>
+                        <span>24/7 Customer<br>Support</span>
+                    </div>
+                    <div class="badge">
+                        <div class="icon-wrapper"><i class="fa-solid fa-users"></i></div>
+                        <span>Trusted by<br>Millions</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Column: Visuals & Floating Cards -->
+            <div class="hero-visuals">
+                <!-- Replace 'illustration.png' with your actual image path -->
+                <img src="./asset/img1 (2).webp" alt="Banking Illustration" class="main-illustration">
+
+                <!-- Floating Card 1: Balance -->
+                <div class="floating-card card-balance">
+                    <p class="card-subtitle">Total Balance</p>
+                    <h3 class="card-amount">$24,850.50</h3>
+                    <p class="card-status">+12.5% this month</p>
+                </div>
+
+                <!-- Floating Card 2: Transfer -->
+                <div class="floating-card card-transfer">
+                    <h4 class="transfer-title">Quick Transfer</h4>
+                    <div class="divider"></div>
+                    <a href="#" class="transfer-link">Pay Bills</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- Hero Section End -->
+
+    <!-- Services Section Start -->
+    <section class="services-section">
+        <div class="services-container">
+            <h2 class="section-title">Everything you need in one place</h2>
+
+            <div class="services-grid">
+                <!-- Card 1 -->
+                <a href="#" class="service-card">
+                    <div class="icon-box">
+                        <i class="fa-solid fa-sack-dollar"></i>
+                    </div>
+                    <span class="service-text">Savings<br>Account</span>
+                </a>
+
+                <!-- Card 2 -->
+                <a href="#" class="service-card">
+                    <div class="icon-box">
+                        <i class="fa-solid fa-wallet"></i>
+                    </div>
+                    <span class="service-text">Current<br>Account</span>
+                </a>
+
+                <!-- Card 3 -->
+                <a href="#" class="service-card">
+                    <div class="icon-box">
+                        <!-- SVG Example -->
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                            <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                        </svg>
+                    </div>
+                    <span class="service-text">Personal<br>Loan</span>
+                </a>
+
+                <!-- Card 4 -->
+                <a href="#" class="service-card">
+                    <div class="icon-box">
+                        <i class="fa-solid fa-lock"></i>
+                    </div>
+                    <span class="service-text">Fixed<br>Deposit</span>
+                </a>
+
+                <!-- Card 5 -->
+                <a href="#" class="service-card">
+                    <div class="icon-box">
+                        <i class="fa-solid fa-house-chimney"></i>
+                    </div>
+                    <span class="service-text">Home<br>Loan</span>
+                </a>
+
+                <!-- Card 6 -->
+                <a href="#" class="service-card">
+                    <div class="icon-box">
+                        <i class="fa-regular fa-credit-card"></i>
+                    </div>
+                    <span class="service-text">Credit<br>Card</span>
+                </a>
+
+                <!-- Card 7 -->
+                <a href="#" class="service-card">
+                    <div class="icon-box">
+                        <i class="fa-solid fa-shield-halved"></i>
+                    </div>
+                    <span class="service-text">Insurance</span>
+                </a>
+
+                <!-- Card 8 -->
+                <a href="#" class="service-card">
+                    <div class="icon-box">
+                        <i class="fa-solid fa-chart-line"></i>
+                    </div>
+                    <span class="service-text">Investments</span>
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- Services Section End -->
+
+    <!-- Stats Section Start -->
+    <section class="stats-section">
+        <div class="stats-container">
+
+            <div class="stat-item">
+                <div class="stat-icon-wrapper"><i class="fa-solid fa-user-group"></i></div>
+                <div class="stat-text">
+                    <p>5M+</p>
+                    <p>Happy Customers</p>
+                </div>
+            </div>
+
+            <div class="stat-divider"></div>
+
+            <div class="stat-item">
+                <div class="stat-icon-wrapper"><i class="fa-solid fa-money-bill-transfer"></i></div>
+                <div class="stat-text">
+                    <h4>$12B+</h4>
+                    <p>Transactions Every Day</p>
+                </div>
+            </div>
+
+            <div class="stat-divider"></div>
+
+            <div class="stat-item">
+                <div class="stat-icon-wrapper"><i class="fa-solid fa-building-columns"></i></div>
+                <div class="stat-text">
+                    <h4>250+</h4>
+                    <p>Branches Worldwide</p>
+                </div>
+            </div>
+
+            <div class="stat-divider"></div>
+
+            <div class="stat-item">
+                <div class="stat-icon-wrapper">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                        <polyline points="9 12 11 14 15 10"></polyline>
+                    </svg>
+                </div>
+                <div class="stat-text">
+                    <h4>100%</h4>
+                    <p>Secure Banking</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- Stats Section End -->
+
+    <!-- Solutions Section Start -->
+    <section class="solutions-section">
+        <div class="solutions-container">
+
+            <!-- Left Column: Text Content -->
+            <div class="solutions-content">
+                <span class="sub-heading">OUR SERVICES</span>
+                <h2 class="main-heading">Solutions for every<br>step of your journey</h2>
+                <p class="description">From everyday banking to achieving your dreams, we're here to help you succeed.
+                </p>
+                <a href="#" class="btn-primary">Learn More</a>
+            </div>
+
+            <!-- Right Column: Cards Grid -->
+            <div class="solutions-grid">
+
+                <!-- Card 1 -->
+                <div class="solution-card">
+                    <div class="card-icon">
+                        <i class="fa-solid fa-users-gear"></i>
+                    </div>
+                    <h3 class="card-title">Personal Banking</h3>
+                    <p class="card-desc">Tailored accounts and services for your daily financial needs.</p>
+                    <a href="#" class="card-link">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="solution-card">
+                    <div class="card-icon">
+                        <i class="fa-solid fa-building-columns"></i>
+                    </div>
+                    <h3 class="card-title">Business Banking</h3>
+                    <p class="card-desc">Smart solutions to help your business grow and achieve.</p>
+                    <a href="#" class="card-link">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="solution-card">
+                    <div class="card-icon">
+                        <!-- SVG Example -->
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+                        </svg>
+                    </div>
+                    <h3 class="card-title">Loans</h3>
+                    <p class="card-desc">Achieve your goals with our easy and flexible loan options.</p>
+                    <a href="#" class="card-link">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="solution-card">
+                    <div class="card-icon">
+                        <i class="fa-solid fa-chart-line"></i>
+                    </div>
+                    <h3 class="card-title">Investments</h3>
+                    <p class="card-desc">Grow your wealth with expert guidance and secure investments.</p>
+                    <a href="#" class="card-link">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="solution-card">
+                    <div class="card-icon">
+                        <i class="fa-regular fa-credit-card"></i>
+                    </div>
+                    <h3 class="card-title">Credit Cards</h3>
+                    <p class="card-desc">Enjoy exclusive rewards & benefits with our credit cards.</p>
+                    <a href="#" class="card-link">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+
+                <!-- Card 6 -->
+                <div class="solution-card">
+                    <div class="card-icon">
+                        <i class="fa-solid fa-shield-halved"></i>
+                    </div>
+                    <h3 class="card-title">Insurance</h3>
+                    <p class="card-desc">Protect what matters most with our trusted insurance plans.</p>
+                    <a href="#" class="card-link">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- Solutions Section End -->
+    <!-- Mobile App Section Start -->
+    <section class="mobile-app-section">
+        <div class="mobile-app-container">
+
+            <!-- Left Column: Phones Image -->
+            <div class="app-image-wrapper">
+                <!-- Replace 'phones.png' with your actual transparent image -->
+                <img src="./asset/img3.webp" alt="Mobile Banking App Mockup" class="app-mockup-img">
+            </div>
+
+            <!-- Right Column: Text & Store Buttons -->
+            <div class="app-content">
+                <span class="sub-heading">MOBILE BANKING</span>
+                <h2 class="main-heading">Bank anytime, anywhere<br>with our mobile app</h2>
+                <p class="description">
+                    Manage your accounts, transfer money, pay bills and track expenses - all from your smartphone.
+                </p>
+
+                <div class="app-buttons">
+                    <!-- Apple App Store Button (Using FontAwesome) -->
+                    <a href="#" class="store-btn">
+                        <div class="store-icon">
+                            <i class="fa-brands fa-apple"></i>
+                        </div>
+                        <div class="store-text">
+                            <span class="small-text">Download on the</span>
+                            <span class="big-text">App Store</span>
+                        </div>
+                    </a>
+
+                    <!-- Google Play Button (Using SVG) -->
+                    <a href="#" class="store-btn">
+                        <div class="store-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M3 3.5V20.5L18 12L3 3.5Z" fill="currentColor" stroke="currentColor"
+                                    stroke-width="2" stroke-linejoin="round" />
+                                <path d="M3 3.5L12 12M3 20.5L12 12M18 12L12 12" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <div class="store-text">
+                            <span class="small-text">GET IT ON</span>
+                            <span class="big-text">Google Play</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- Mobile App Section End -->
+
+    <!-- Testimonials Section Start -->
+    <section class="testimonials-section">
+        <div class="common-header text-center">
+            <span class="common-sub-heading">TESTIMONIALS</span>
+            <h2 class="common-main-heading">What our customers say</h2>
+        </div>
+
+        <!-- Infinite Scroll Wrapper -->
+        <div class="marquee-wrapper">
+            <div class="marquee-track">
+
+                <!-- ORIGINAL SET OF 3 CARDS -->
+                <div class="testi-card">
+                    <p class="testi-quote">"StacklyBank has made banking so easy and convenient. Their customer service
+                        is outstanding!"</p>
+                    <div class="testi-stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <div class="testi-user">
+                        <img src="./asset/s28.webp" alt="Sarah Johnson">
+                        <div class="user-details">
+                            <h4>Sarah Johnson</h4>
+                            <span>New York, USA</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testi-card">
+                    <p class="testi-quote">"I love the mobile app! It's simple, secure, and has everything I need in one
+                        place."</p>
+                    <div class="testi-stars">
+                        <!-- SVG Star Example mixed with FontAwesome -->
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="#FFC107"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M12 17.27L18.18 21L16.54 13.97L22 9.24L14.81 8.63L12 2L9.19 8.63L2 9.24L7.46 13.97L5.82 21L12 17.27Z" />
+                        </svg>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <div class="testi-user">
+                        <img src="./asset/s30.webp" alt="Neha Agarwal">
+                        <div class="user-details">
+                            <h4>Neha Agarwal</h4>
+                            <span>London, UK</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testi-card">
+                    <p class="testi-quote">"Their loan process was quick and hassel-free. Highly <br> recomended!"</p>
+                    <div class="testi-stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <div class="testi-user">
+                        <img src="./asset/s29.webp" alt="Priya Sharma">
+                        <div class="user-details">
+                            <h4>Priya Sharma</h4>
+                            <span>Mumbai, India</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- DUPLICATED SET FOR SEAMLESS INFINITE SCROLL -->
+                <div class="testi-card">
+                    <p class="testi-quote">"StacklyBank has made banking so easy and convenient. Their customer service
+                        is outstanding!"</p>
+                    <div class="testi-stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <div class="testi-user">
+                        <img src="./asset/s28.webp" alt="Sarah Johnson">
+                        <div class="user-details">
+                            <h4>Sarah Johnson</h4>
+                            <span>New York, USA</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testi-card">
+                    <p class="testi-quote">"I love the mobile app! It's simple, secure, and has everything I need in one
+                        place."</p>
+                    <div class="testi-stars">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="#FFC107"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M12 17.27L18.18 21L16.54 13.97L22 9.24L14.81 8.63L12 2L9.19 8.63L2 9.24L7.46 13.97L5.82 21L12 17.27Z" />
+                        </svg>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <div class="testi-user">
+                        <img src="./asset/s30.webp" alt="Neha Agarwal">
+                        <div class="user-details">
+                            <h4>Neha Agarwal</h4>
+                            <span>London, UK</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testi-card">
+                    <p class="testi-quote">"Their loan process was quick and hassel-free. Highly <br> recomended!"</p>
+                    <div class="testi-stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <div class="testi-user">
+                        <img src="./asset/s29.webp" alt="Priya Sharma">
+                        <div class="user-details">
+                            <h4>Priya Sharma</h4>
+                            <span>Mumbai, India</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Bottom divider line -->
+        <div class="testi-divider"></div>
+    </section>
+    <!-- Testimonials Section End -->
+
+
+    <!-- About Us Section Start -->
+    <section class="about-section">
+        <div class="about-container">
+
+            <!-- Left Column: Content -->
+            <div class="about-content">
+                <span class="sub-heading">ABOUT US</span>
+                <h2 class="main-heading">Banking with Purpose.<br><span class="text-purple">Committed to you.</span>
+                </h2>
+                <p class="description">
+                    At StacklyBank, we belive banking is more than money- it's about people, progress and purpose. For
+                    over a decade, we've been helping individuals, families and businesses achieve their financial goals
+                    with trust and transparency.
+                </p>
+
+                <!-- Button with Icon (Satisfying your hover/rotate request) -->
+                <a href="#" class="btn-primary btn-icon">
+                    Our Story
+                    <span class="btn-icon-wrapper">
+                        <!-- SVG Icon Example (Can be replaced with FontAwesome like <i class="fa-solid fa-arrow-right"></i>) -->
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                            <polyline points="12 5 19 12 12 19"></polyline>
+                        </svg>
+                    </span>
+                </a>
+            </div>
+
+            <!-- Right Column: Corporate Image -->
+            <div class="about-image-wrapper">
+                <!-- Replace 'building.jpg' with your actual image path -->
+                <img src="./asset/img4.webp" alt="StacklyBank Corporate Building" class="about-img">
+            </div>
+
+        </div>
+    </section>
+    <!-- About Us Section End -->
+
+    <!-- Wealth Solutions Section Start -->
+    <section class="wealth-section">
+        <div class="wealth-container">
+
+            <!-- Header -->
+            <div class="wealth-header">
+                <h2 class="wealth-title">Comprehensive Wealth Solutions</h2>
+                <p class="wealth-subtitle">Expertise across every aspect of your financial life.</p>
+            </div>
+
+            <!-- 6-Column Grid -->
+            <div class="wealth-grid">
+
+                <!-- Card 1 -->
+                <div class="wealth-card">
+                    <div class="wealth-icon icon-gold">
+                        <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline>
+                            <polyline points="17 6 23 6 23 12"></polyline>
+                        </svg>
+                    </div>
+                    <h3>Investment<br>Management</h3>
+                    <p>Professionally managed portfolio tailored to your goals and risk appetite.</p>
+                    <a href="#" class="wealth-link">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="wealth-card">
+                    <div class="wealth-icon icon-purple">
+                        <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M23 12a11.05 11.05 0 0 0-22 0zm-5 7a3 3 0 0 1-6 0v-7"></path>
+                        </svg>
+                    </div>
+                    <h3>Retirement<br>Planning</h3>
+                    <p>Build a secure retirement corpus and enjoy financial freedom.</p>
+                    <a href="#" class="wealth-link">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="wealth-card">
+                    <div class="wealth-icon icon-green">
+                        <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                            <polyline points="14 2 14 8 20 8"></polyline>
+                            <line x1="16" y1="13" x2="8" y2="13"></line>
+                            <line x1="16" y1="17" x2="8" y2="17"></line>
+                            <polyline points="10 9 9 9 8 9"></polyline>
+                        </svg>
+                    </div>
+                    <h3>Tax<br>Optimization</h3>
+                    <p>Smart tax strategies to keep more of what you earn.</p>
+                    <a href="#" class="wealth-link">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="wealth-card">
+                    <div class="wealth-icon icon-pink">
+                        <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="9" cy="7" r="4"></circle>
+                            <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                        </svg>
+                    </div>
+                    <h3>Estate<br>Planning</h3>
+                    <p>Preserve your legacy and provide for your loved ones.</p>
+                    <a href="#" class="wealth-link">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="wealth-card">
+                    <div class="wealth-icon icon-blue">
+                        <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                            <polyline points="9 12 11 14 15 10"></polyline>
+                        </svg>
+                    </div>
+                    <h3>Wealth<br>Protection</h3>
+                    <p>Safeguard your wealth with insurance and risk management solutions.</p>
+                    <a href="#" class="wealth-link">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+
+                <!-- Card 6 -->
+                <div class="wealth-card">
+                    <div class="wealth-icon icon-orange">
+                        <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path
+                                d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
+                            </path>
+                        </svg>
+                    </div>
+                    <h3>Philanthropy<br>Advisor</h3>
+                    <p>Make a meaningful impact with structured giving solutions.</p>
+                    <a href="#" class="wealth-link">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- Wealth Solutions Section End -->
+
+
+    <!-- Latest News Section Start -->
+    <section class="news-section">
+        <div class="news-container">
+
+            <!-- Header & Top Button -->
+            <div class="news-header">
+                <div class="common-header">
+                    <span class="common-sub-heading">LATEST NEWS</span>
+                    <h2 class="common-main-heading1">Stay updated with<br>financial insights</h2>
+                </div>
+                <a href="#" class="btn-outline">View All Articles</a>
+            </div>
+
+            <!-- 3-Column Grid -->
+            <div class="news-grid">
+
+                <!-- Card 1 -->
+                <div class="news-card">
+                    <div class="card-img-wrapper">
+                        <img src="./asset/img6.webp" alt="How to Invest Wisely in 2026">
+                    </div>
+                    <div class="card-content">
+                        <span class="news-date">May 20, 2026</span>
+                        <h3 class="news-title">How to Invest Wisely in 2026</h3>
+                        <p class="news-desc">Discover expert tips and strategies to grow your wealth this year.</p>
+                        <a href="#" class="read-more">
+                            Read More
+                            <!-- FontAwesome Icon -->
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="news-card">
+                    <div class="card-img-wrapper">
+                        <img src="./asset/img5.webp" alt="5 Tips for Better Money Management">
+                    </div>
+                    <div class="card-content">
+                        <span class="news-date">May 19, 2026</span>
+                        <h3 class="news-title">5 Tips for Better Money Management</h3>
+                        <p class="news-desc">Simple steps to help you manage your finances effectively.</p>
+                        <a href="#" class="read-more">
+                            Read More
+                            <!-- SVG Icon -->
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                <polyline points="12 5 19 12 12 19"></polyline>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="news-card">
+                    <div class="card-img-wrapper">
+                        <img src="./asset/img7.webp" alt="Understanding Home Loans">
+                    </div>
+                    <div class="card-content">
+                        <span class="news-date">May 10, 2026</span>
+                        <h3 class="news-title">Understanding Home Loans</h3>
+                        <p class="news-desc">Everything you need to know before applying for a home loan.</p>
+                        <a href="#" class="read-more">
+                            Read More
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- Latest News Section End -->
+
+
+    <!-- Newsletter Section Start -->
+    <section class="newsletter-section">
+        <div class="newsletter-container">
+
+            <!-- Left Side: Icon & Text -->
+            <div class="newsletter-content">
+                <div class="newsletter-icon">
+                    <img src="./asset/img8.webp" alt="message-icon">
+                </div>
+                <div class="newsletter-text">
+                    <h3>Subscribe to our newsletter</h3>
+                    <p>Get the latest updates, offers, and financial tips straight to your inbox.</p>
+                </div>
+            </div>
+
+            <!-- Form tag-la novalidate add pannirukken -->
+            <form class="newsletter-form" id="newsletterForm" novalidate onsubmit="event.preventDefault();">
+                <div class="input-wrapper">
+                    <input type="email" id="newsletterInput" placeholder="Enter your email address" required>
+                    <!-- Error Message span -->
+                    <span class="newsletter-error" id="newsletterError">Please enter a valid email address</span>
+                </div>
+                <button type="submit" class="btn-subscribe" id="subscribeBtn">Subscribe</button>
+            </form>
+
+        </div>
+    </section>
+    <!-- Newsletter Section End -->
+
+
+    <!-- Footer Section Start -->
+    <footer class="footer-section">
+        <div class="footer-container">
+
+            <!-- Column 1: Brand & Social -->
+            <div class="footer-brand">
+                <a href="#" class="footer-logo">
+                    <img src="./asset/Stackly-logo-Blue.webp" alt="logo" class="logo">
+
+                </a>
+                <p class="footer-desc">Your trusted partner in banking, helping you achieve a better tomorrow.</p>
+
+                <div class="social-icons">
+                    <!-- Facebook -->
+                    <a href="#" class="social-icon fb"><i class="fa-brands fa-facebook-f"></i></a>
+                    <!-- LinkedIn -->
+                    <a href="#" class="social-icon in"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <!-- X (Twitter) using SVG -->
+                    <a href="#" class="social-icon x">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                        </svg>
+                    </a>
+                    <!-- Instagram -->
+                    <a href="#" class="social-icon insta"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+
+            <!-- Column 2: Personal -->
+            <div class="footer-links">
+                <h4>Personal</h4>
+                <ul>
+                    <li><a href="#">Accounts</a></li>
+                    <li><a href="#">Cards</a></li>
+                    <li><a href="#">Loans</a></li>
+                    <li><a href="#">Investments</a></li>
+                    <li><a href="#">Insurance</a></li>
+                </ul>
+            </div>
+
+            <!-- Column 3: Business -->
+            <div class="footer-links">
+                <h4>Business</h4>
+                <ul>
+                    <li><a href="#">Business Accounts</a></li>
+                    <li><a href="#">Loans</a></li>
+                    <li><a href="#">Merchant Services</a></li>
+                    <li><a href="#">Payroll Services</a></li>
+                </ul>
+            </div>
+
+            <!-- Column 4: Support -->
+            <div class="footer-links">
+                <h4>Support</h4>
+                <ul>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">Help Center</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Security</a></li>
+                </ul>
+            </div>
+
+            <!-- Column 5: About Us -->
+            <div class="footer-links">
+                <h4>About Us</h4>
+                <ul>
+                    <li><a href="#">Our Story</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">News & Media</a></li>
+                    <li><a href="#">Locate Us</a></li>
+                </ul>
+            </div>
+
+            <!-- Column 6: Contact Info -->
+            <div class="footer-contact">
+                <h4>Contact Us</h4>
+                <ul>
+                    <li>
+                        <span class="contact-icon"><i class="fa-solid fa-phone"></i></span>
+                        <a href="tel:+917010792745">+91 7010792745</a>
+                    </li>
+                    <li>
+                        <span class="contact-icon">
+                            <!-- SVG Email Icon -->
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
+                                </path>
+                                <polyline points="22,6 12,13 2,6"></polyline>
+                            </svg>
+                        </span>
+                        <a href="mailto:info@stackly.com">info@stackly.com</a>
+                    </li>
+                    <li>
+                        <span class="contact-icon location"><i class="fa-solid fa-location-dot"></i></span>
+                        <span>Tamilnadu<br>Salem - 636008</span>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </footer>
+    <!-- Footer Section End -->
+
+
+    <!-- GSAP CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="script.js"></script>
+    <script>
+        // ==========================================
+        // Hero Section Animations using GSAP matchMedia
+        // ==========================================
+        let mm = gsap.matchMedia();
+
+// --- DESKTOP VIEW (993px and above) ---
+mm.add("(min-width: 993px)", () => {
+    const heroTl = gsap.timeline({ defaults: { ease: "power3.out" } });
+
+    // Content Animations
+    heroTl.from(".hero-title", { y: 40, opacity: 0, duration: 0.8, delay: 0.2 })
+        .from(".hero-description", { y: 20, opacity: 0, duration: 0.6 }, "-=0.4")
+        
+        // FIX: Replaced individual buttons with the wrapper container
+        .from(".hero-buttons", { y: 20, opacity: 0, duration: 0.5 }, "-=0.4")
+        
+        .from(".badge", { y: 20, opacity: 0, duration: 0.5, stagger: 0.1 }, "-=0.2");
+
+    // Visuals & Cards Animations
+    heroTl.from(".main-illustration", { x: 50, opacity: 0, duration: 1 }, "-=1")
+        .from(".card-balance", { scale: 0.8, y: 30, opacity: 0, duration: 0.6, ease: "back.out(1.5)" }, "-=0.5")
+        .from(".card-transfer", { scale: 0.8, y: 30, opacity: 0, duration: 0.6, ease: "back.out(1.5)" }, "-=0.4");
+
+    // Parallax scroll effect (Only for Desktop)
+    gsap.to(".card-balance", {
+        y: -30, ease: "none",
+        scrollTrigger: { trigger: ".hero-section", start: "top top", end: "bottom top", scrub: 1 }
+    });
+    gsap.to(".card-transfer", {
+        y: -50, ease: "none",
+        scrollTrigger: { trigger: ".hero-section", start: "top top", end: "bottom top", scrub: 1.5 }
+    });
+});
+
+// --- MOBILE VIEW (992px and below) ---
+mm.add("(max-width: 992px)", () => {
+    const heroTl = gsap.timeline({ defaults: { ease: "power3.out" } });
+
+    // Simplified mobile animations
+    heroTl.from(".hero-title", { y: 20, opacity: 0, duration: 0.6, delay: 0.2 })
+        .from(".hero-description", { y: 10, opacity: 0, duration: 0.4 }, "-=0.2")
+        
+        // FIX: Uncommented and updated to target the wrapper container
+        .from(".hero-buttons", { y: 10, opacity: 0, duration: 0.4 }, "-=0.2")
+        
+        .from(".trust-badges .badge", { opacity: 0, duration: 0.4, stagger: 0.1 }, "-=0.2")
+        .from(".main-illustration", { opacity: 0, duration: 0.6 }, "-=0.4")
+        .from(".card-balance", { y: 15, opacity: 0, duration: 0.5 }, "-=0.2")
+        .from(".card-transfer", { y: 15, opacity: 0, duration: 0.5 }, "-=0.2");
+
+    // Note: Parallax ScrollTrigger is removed here for mobile to prevent card overlapping issues when scrolling.
+});
+       
+
+
+
+
+
+// 1. Services Section Scroll Animation
+        gsap.from(".section-title", {
+            scrollTrigger: {
+                trigger: ".services-section",
+                start: "top 80%",
+            },
+            y: 20,
+            opacity: 0,
+            duration: 0.6,
+            ease: "power2.out"
+        });
+
+        // FIX: Changed .from() to .fromTo() to prevent opacity getting stuck
+        gsap.fromTo(".service-card", 
+            { 
+                y: 40, 
+                opacity: 0 
+            }, 
+            {
+                scrollTrigger: {
+                    trigger: ".services-grid",
+                    start: "top 85%",
+                },
+                y: 0,
+                opacity: 1,
+                duration: 0.6,
+                stagger: 0.15, // Smooth one-by-one appearance
+                ease: "back.out(1.2)"
+            }
+        );
+
+        // 2. Stats Section Scroll Animation
+        gsap.from(".stat-item", {
+            scrollTrigger: {
+                trigger: ".stats-section",
+                start: "top 85%",
+            },
+            y: 20,
+            opacity: 0,
+            duration: 0.6,
+            stagger: 0.15,
+            ease: "power2.out"
+        });
+
+        gsap.from(".stat-divider", {
+            scrollTrigger: {
+                trigger: ".stats-section",
+                start: "top 85%",
+            },
+            scaleY: 0,
+            opacity: 0,
+            duration: 0.6,
+            ease: "power2.out"
+        });
+
+
+       // ==========================================
+    // 3. Solutions Section Scroll Animation
+    // ==========================================
+    
+    // Left Content Animation (Keep this as you updated earlier)
+    gsap.from(".solutions-content .sub-heading, .solutions-content .main-heading, .solutions-content .description", {
+        scrollTrigger: {
+            trigger: ".solutions-section",
+            start: "top 75%",
+        },
+        y: 30,
+        opacity: 0,
+        duration: 0.7,
+        stagger: 0.15,
+        ease: "power3.out"
+    });
+
+    // Button Animation
+    gsap.from(".solutions-content .btn-primary", {
+        scrollTrigger: {
+            trigger: ".solutions-section",
+            start: "top 75%",
+        },
+        y: 20,
+        opacity: 0,
+        duration: 0.6,
+        delay: 0.4,
+        ease: "power2.out"
+    });
+
+    // FIX: Right Grid Cards Animation (Using fromTo to prevent stuck opacity)
+    gsap.fromTo(".solution-card", 
+        {
+            y: 40,
+            opacity: 0
+        },
+        {
+            scrollTrigger: {
+                trigger: ".solutions-grid",
+                start: "top 80%",
+            },
+            y: 0,
+            opacity: 1,
+            duration: 0.6,
+            stagger: 0.1, // Staggers each card one by one cleanly
+            ease: "power2.out"
+        }
+    );
+        
+
+
+        // 4. Mobile App Section Scroll Animation
+
+        // Animate Image sliding in from the left
+        gsap.from(".app-image-wrapper", {
+            scrollTrigger: {
+                trigger: ".mobile-app-section",
+                start: "top 75%",
+            },
+            x: -50,
+            opacity: 0,
+            duration: 0.8,
+            ease: "power3.out"
+        });
+
+        // Animate Text and Buttons sliding in from the right
+        gsap.from(".app-content > *", {
+            scrollTrigger: {
+                trigger: ".mobile-app-section",
+                start: "top 75%",
+            },
+            x: 50,
+            opacity: 0,
+            duration: 0.8,
+            stagger: 0.15,
+            ease: "power3.out"
+        });
+
+
+
+        // Fade in the Infinite Scroller track
+        gsap.from(".marquee-wrapper", {
+            scrollTrigger: {
+                trigger: ".testimonials-section",
+                start: "top 75%",
+            },
+            opacity: 0,
+            y: 40,
+            duration: 0.8,
+            ease: "power3.out"
+        });
+
+        // 6. About Us Section Scroll Reveal Animation
+
+        // Option A: Animate text parts individually, keeping the button safe from opacity lock
+        gsap.from(".about-content .sub-heading, .about-content .main-heading, .about-content .description", {
+            scrollTrigger: {
+                trigger: ".about-section",
+                start: "top 75%",
+            },
+            x: -40,
+            opacity: 0,
+            duration: 0.7,
+            stagger: 0.15,
+            ease: "power3.out"
+        });
+
+        // Button-ku thaniya simple fade-in (opacity 0-la stuck aagathu)
+        gsap.from(".about-content .btn-icon", {
+            scrollTrigger: {
+                trigger: ".about-section",
+                start: "top 75%",
+            },
+            y: 20,
+            opacity: 0,
+            duration: 0.6,
+            delay: 0.4,
+            ease: "power2.out"
+        });
+        // Animate Image sliding in from the right with a slight scale
+        gsap.from(".about-image-wrapper", {
+            scrollTrigger: {
+                trigger: ".about-section",
+                start: "top 75%",
+            },
+            x: 50,
+            scale: 0.95,
+            opacity: 0,
+            duration: 0.8,
+            ease: "power3.out"
+        });
+
+
+        // 7. Wealth Solutions Section Scroll Reveal Animation
+
+
+        // 6 Cards Grid Animation (Staggered pop-up)
+        // gsap.from(".wealth-card", {
+        //     scrollTrigger: {
+        //         trigger: ".wealth-grid",
+        //         start: "top 85%",
+        //     },
+        //     y: 40,
+        //     opacity: 0,
+        //     duration: 0.6,
+        //     stagger: 0.1, // Smooth sequence effect
+        //     ease: "back.out(1.2)"
+        // });
+
+
+        // 8. Latest News Section Scroll Reveal Animation
+
+
+        // // Animate the 3 Cards staggered pop-up
+        // gsap.from(".news-card", {
+        //     scrollTrigger: {
+        //         trigger: ".news-grid",
+        //         start: "top 75%",
+        //     },
+        //     y: 50,
+        //     opacity: 0,
+        //     duration: 0.7,
+        //     stagger: 0.15,
+        //     ease: "power3.out"
+        // });
+
+        // ==========================================
+        // UNIFIED COMMON HEADER ANIMATION (Runs for all sections)
+        // ==========================================
+
+        // Select all common headers on the page
+        const commonHeaders = gsap.utils.toArray('.common-header');
+
+        commonHeaders.forEach((header) => {
+            // Find the sub-heading and main-heading inside this specific header
+            const textElements = header.querySelectorAll('.common-sub-heading, .common-main-heading');
+
+            gsap.from(textElements, {
+                scrollTrigger: {
+                    trigger: header,
+                    start: "top 85%", // Triggers when the header is 85% down the viewport
+                    toggleActions: "play none none none"
+                },
+                y: 40,             // Slides up from 40px below
+                opacity: 0,        // Fades in
+                duration: 0.8,     // Smooth 0.8s duration
+                stagger: 0.2,      // Sub-heading appears first, then main-heading
+                ease: "power3.out"
+            });
+        });
+
+
+        // 9. Newsletter Section Scroll Reveal Animation
+
+        // Scale up and fade in the entire banner
+        gsap.from(".newsletter-container", {
+            scrollTrigger: {
+                trigger: ".newsletter-section",
+                start: "top 85%",
+            },
+            y: 40,
+            scale: 0.95,
+            opacity: 0,
+            duration: 0.8,
+            ease: "power3.out"
+        });
+
+        // Form mela individual elements-ku bathila moththa form-ayum oru element-a animate pannalam
+        gsap.from(".newsletter-text > *, .newsletter-form", {
+            scrollTrigger: {
+                trigger: ".newsletter-section",
+                start: "top 80%",
+            },
+            y: 20,
+            opacity: 0,
+            duration: 0.6,
+            stagger: 0.1,
+            ease: "power2.out",
+            delay: 0.2
+        });
+
+
+        // 10. Footer Section Scroll Reveal Animation
+
+        // Stagger all columns inside the footer container
+        gsap.from(".footer-container > *", {
+            scrollTrigger: {
+                trigger: ".footer-section",
+                start: "top 90%", // Triggers when footer is almost in view
+            },
+            y: 40,
+            opacity: 0,
+            duration: 0.8,
+            stagger: 0.1, // Each column fades in one by one
+            ease: "power2.out"
+        });
+
+
+        // ==========================================
+        // Newsletter Form Validation Logic
+        // ==========================================
+        const newsletterForm = document.getElementById("newsletterForm");
+        const newsletterInput = document.getElementById("newsletterInput");
+        const newsletterError = document.getElementById("newsletterError");
+
+        if (newsletterForm) {
+            newsletterForm.addEventListener("submit", (e) => {
+                e.preventDefault();
+                const emailValue = newsletterInput.value.trim();
+
+                // Corrected email validation regex
+                const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+                // Check if empty OR if it doesn't match the email pattern
+                if (emailValue === "" || !emailPattern.test(emailValue)) {
+                    newsletterError.style.display = "block";
+
+                    if (emailValue === "") {
+                        newsletterError.innerText = "Please enter your email address";
+                    } else {
+                        newsletterError.innerText = "Please enter a valid email address";
+                    }
+
+                    // GSAP shake effect for error indication
+                    gsap.fromTo(newsletterError, { x: -5 }, { x: 5, duration: 0.1, yoyo: true, repeat: 3, ease: "linear" });
+                } else {
+                    // Success case: Hide error, show alert, and clear input
+                    newsletterError.style.display = "none";
+                    window.location.href = '404page.html'// Success alert added back here
+                    newsletterInput.value = "";
+                }
+            });
+
+            // Hide error as user starts typing
+            newsletterInput.addEventListener("input", () => {
+                if (newsletterInput.value.trim() !== "") {
+                    newsletterError.style.display = "none";
+                }
+            });
+        }
+
+
+
+        AOS.init({
+
+            duration: 1000,
+
+
+            easing: 'ease-out-cubic',
+
+
+            offset: 120,
+
+
+            once: true,
+
+
+            delay: 50,
+
+
+            anchorPlacement: 'top-bottom',
+        });  
+    </script>
+</body>
+
+</html>
