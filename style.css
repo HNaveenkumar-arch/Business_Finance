@@ -1467,8 +1467,8 @@
 /* --- News Grid --- */
 .news-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1px;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
 }
 
 /* --- News Card Styles --- */
@@ -1569,8 +1569,13 @@
    MOBILE RESPONSIVENESS
 ========================================= */
 @media screen and (max-width: 992px) {
+  .header-text .main-heading {
+    font-size: 32px;
+  }
+}
+@media screen and (max-width: 1224px) {
   .news-grid {
-    grid-template-columns: repeat(2, 1fr); /* 2 columns on tablet */
+    grid-template-columns: repeat(2, 1fr);
   }
   .header-text .main-heading {
     font-size: 32px;
@@ -1588,10 +1593,6 @@
     gap: 20px;
   }
 
-  .news-grid {
-    grid-template-columns: 1fr; /* 1 column on mobile */
-    gap: 10px;
-  }
   .news-card {
     width: 285px;
   }
