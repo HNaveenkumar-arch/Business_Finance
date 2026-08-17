@@ -1,0 +1,886 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stackly Navbar</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="blog.css">
+    <link rel="stylesheet" href="common.css">
+</head>
+
+<body>
+
+    <header class="header" id="header">
+        <nav class="navbar">
+
+            <a href="index.html" class="logo">
+                <img src="./asset/Violetlogo.webp" alt="logo">
+            </a>
+
+
+            <div class="nav-menu" id="navMenu">
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="personal.html">Personal</a></li>
+                    <li><a href="business.html">Business</a></li>
+                    <li><a href="wealth.html">Wealth</a></li>
+                    <li><a href="Loan&cards.html">Loans&Cards</a></li>
+                    <li><a href="blog.html" class="active">Blog</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="help.html">Help</a></li>
+                </ul>
+
+
+                <div class="nav-actions">
+                    <div class="search-container">
+                        <div class="search-box">
+                            <input type="text" id="searchInput" placeholder="Search">
+                            <i class="fa-solid fa-magnifying-glass" id="searchIcon"></i>
+                        </div>
+
+                        <span class="search-error" id="searchError">Please enter a keyword to search</span>
+                    </div>
+                    <a href="login.html" class="login-btn">Login</a>
+                </div>
+            </div>
+
+
+            <div class="mobile-toggle" id="mobileToggle">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+
+    <section class="blog-hero-section">
+
+        <div class="blog-glow-bg"></div>
+
+        <div class="blog-hero-container">
+
+
+            <div class="blog-content-col">
+
+
+                <div class="blog-breadcrumb">
+                    <a href="index.html">Home</a>
+                    <i class="fa-solid fa-chevron-right"></i>
+                    <span>Blog</span>
+                </div>
+
+
+                <h1 class="blog-title">Blog & Insights</h1>
+                <p class="blog-desc">
+                    Smart banking tips,financial guides and the latest<br>
+                    updates to help you manage your money better.
+                </p>
+
+
+                <div class="blog-search-container">
+                    <div class="blog-search-box" id="blogSearchBox">
+                        <input type="text" id="blogSearchInput" placeholder="Search for articles..."
+                            class="blog-search-input">
+                        <button id="blogSearchBtn" class="blog-search-btn">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
+                    </div>
+
+                    <span class="search-error-msg" id="searchErrorMsg">Please enter a keyword to search.</span>
+                </div>
+
+            </div>
+
+
+            <div class="blog-image-col">
+
+                <img src="./asset/image58.webp" alt="Blog and Insights Illustration" class="blog-hero-img">
+            </div>
+
+        </div>
+    </section>
+
+
+
+    <section class="blog-main-section">
+        <div class="blog-main-container">
+
+
+            <div class="blog-category-nav">
+                <div class="category-item active">
+                    <i class="fa-solid fa-layer-group"></i> All Posts
+                </div>
+                <div class="category-item">
+                    <i class="fa-solid fa-piggy-bank"></i> Saving Tips
+                </div>
+                <div class="category-item">
+                    <i class="fa-solid fa-chart-pie"></i> Investments
+                </div>
+                <div class="category-item">
+                    <i class="fa-solid fa-hand-holding-dollar"></i> Loans
+                </div>
+                <div class="category-item">
+                    <i class="fa-regular fa-credit-card"></i> Cards
+                </div>
+                <div class="category-item">
+                    <i class="fa-solid fa-mobile-screen-button"></i> Digital Banking
+                </div>
+                <div class="category-item">
+                    <i class="fa-solid fa-shield-halved"></i> Security
+                </div>
+                <div class="category-item">
+                    <i class="fa-solid fa-mug-hot"></i> Lifestyle
+                </div>
+            </div>
+
+            <div class="blog-content-wrapper">
+
+
+                <div class="blog-left-col">
+
+
+                    <div class="section-header">
+
+                        <h2 id="mainContentTitle">Featured Articles</h2>
+                        <a href="404page.html" class="view-all-link">View All Featured</a>
+                    </div>
+
+
+                    <div class="featured-large-card article-card">
+                        <div class="img-wrapper">
+                            <img src="./asset/image45.webp" alt="Digital Banking">
+                        </div>
+                        <div class="card-content">
+                            <div class="meta-info">
+                                <span class="tag">Digital Banking</span>
+                                <span class="date">May 20,2026 . 6min read</span>
+                            </div>
+                            <h3>The Future of Digital Banking:Trends to Watch in 2026</h3>
+                            <p>Explore the key digital banking trends shaping the future and how they will enhance your
+                                banking experience.</p>
+                            <div class="author-info">
+                                <img src="./asset/image64.webp" alt="Sarah Johnson" class="author-img">
+                                <div class="author-text">
+                                    <strong>By Sarah Johnson</strong>
+                                    <span>Head of Digital Innovation</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="featured-small-grid">
+
+                        <div class="featured-small-card article-card">
+                            <div class="img-wrapper">
+                                <img src="./asset/image46.webp" alt="Emergency Fund">
+                            </div>
+                            <div class="card-content">
+                                <div class="meta-info">
+                                    <span class="tag">Saving Tips</span>
+                                    <span class="date">May 10,2026 . 4 min read</span>
+                                </div>
+                                <h3>10 Smart Ways to Build Your Emergency Fund Faster</h3>
+                                <p>Practical tips to help you save money consistently and build a strong financial
+                                    safety net.</p>
+                                <div class="author-info">
+                                    <img src="./asset/image62.webp" alt="Neha Chowdary" class="author-img">
+                                    <div class="author-text">
+                                        <strong>By Neha Chowdary</strong>
+                                        <span>Personal Finance Expert</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="featured-small-card article-card">
+                            <div class="img-wrapper">
+                                <img src="./asset/image47.webp" alt="Mutual Funds">
+                            </div>
+                            <div class="card-content">
+                                <div class="meta-info">
+                                    <span class="tag">Investments</span>
+                                    <span class="date">May 16,2026 . 5 min read</span>
+                                </div>
+                                <h3>Beginner's Guide to Investing in Mutual <br> Funds</h3>
+                                <p>Everything you need to know to start your investment journey the right way.</p>
+                                <div class="author-info">
+                                    <img src="./asset/image61.webp" alt="Emily Davis" class="author-img">
+                                    <div class="author-text">
+                                        <strong>By Emily Davis</strong>
+                                        <span>Investment Analyst</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="section-header mt-50">
+                        <h2>Latest Articles</h2>
+                        <a href="404page.html" class="view-all-link">View All Articles</a>
+                    </div>
+
+                    <div class="latest-articles-list">
+
+                        <div class="latest-item article-card">
+                            <div class="latest-img">
+                                <img src="./asset/image48.webp" alt="Mobile Banking">
+                            </div>
+                            <div class="latest-content">
+                                <div class="meta-info">
+                                    <span class="tag">Digital Banking</span>
+                                    <span class="date">May 15,2026 . 4 min read</span>
+                                </div>
+                                <h3>How Mobile Banking Makes Your Life Easier</h3>
+                                <p>Discover the top benefits of using mobile banking for your everyday financial needs.
+                                </p>
+                                <div class="author-info minimal">
+                                    <img src="./asset/image62.webp" alt="Jeson Lee" class="author-img">
+                                    <div class="author-text"><strong>By Jeson Lee</strong></div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="latest-item article-card">
+                            <div class="latest-img">
+                                <img src="./asset/image18.webp" alt="Credit Card">
+                            </div>
+                            <div class="latest-content">
+                                <div class="meta-info">
+                                    <span class="tag">Cards</span>
+                                    <span class="date">May 12,2026 . 5 min read</span>
+                                </div>
+                                <h3>Choosing the Right Credit Card for Your Needs</h3>
+                                <p>A simple guide to help you pick the perfect credit card and maximize your rewards.
+                                </p>
+                                <div class="author-info minimal">
+                                    <img src="./asset/image65.webp" alt="Priya Sharma" class="author-img">
+                                    <div class="author-text"><strong>By Priya Sharma</strong></div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="latest-item article-card">
+                            <div class="latest-img">
+                                <img src="./asset/image26.webp" alt="Home Loan">
+                            </div>
+                            <div class="latest-content">
+                                <div class="meta-info">
+                                    <span class="tag">Loans</span>
+                                    <span class="date">May 15,2026 . 4 min read</span>
+                                </div>
+                                <h3>Home Loan Basics:What You Need To Know</h3>
+                                <p>Understand intrest rates,eligibility and the key factors before applying for home
+                                    loan.</p>
+                                <div class="author-info minimal">
+                                    <img src="./asset/image61.webp" alt="David" class="author-img">
+                                    <div class="author-text"><strong>By David</strong></div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="latest-item article-card">
+                            <div class="latest-img">
+                                <img src="./asset/image49.webp" alt="Security">
+                            </div>
+                            <div class="latest-content">
+                                <div class="meta-info">
+                                    <span class="tag">Security</span>
+                                    <span class="date">May 15,2026 . 4 min read</span>
+                                </div>
+                                <h3>Online Banking Security:Tips to Stay Safe</h3>
+                                <p>Follow these essential tips to protect your personal and financial information
+                                    online.</p>
+                                <div class="author-info minimal">
+                                    <img src="./asset/image66.webp" alt="Risa Lay" class="author-img">
+                                    <div class="author-text"><strong>By Risa Lay</strong></div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="latest-item article-card">
+                            <div class="latest-img">
+                                <img src="./asset/image10.webp" alt="Investments">
+                            </div>
+                            <div class="latest-content">
+                                <div class="meta-info">
+                                    <span class="tag">Investments</span>
+                                    <span class="date">May 15,2026 . 4 min read</span>
+                                </div>
+                                <h3>SIP vs Lumpsum:Which Investment is Better</h3>
+                                <p>Compare the benefits of SIP and Lumpsum Investments to make an informed decision.</p>
+                                <div class="author-info minimal">
+                                    <img src="./asset/image65.webp" alt="Rohith Mehra" class="author-img">
+                                    <div class="author-text"><strong>By Rohith Mehra</strong></div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="latest-item article-card">
+                            <div class="latest-img">
+                                <img src="./asset/image50.webp" alt="Lifestyle">
+                            </div>
+                            <div class="latest-content">
+                                <div class="meta-info">
+                                    <span class="tag">Lifestyle</span>
+                                    <span class="date">May 15,2026 . 4 min read</span>
+                                </div>
+                                <h3>Financial Planning Tips for Young Families</h3>
+                                <p>Smart money management tips to secure your family's future and achieve your goals.
+                                </p>
+                                <div class="author-info minimal">
+                                    <img src="./asset/image67.webp" alt="Neha Kapoor" class="author-img">
+                                    <div class="author-text"><strong>By Neha Kapoor</strong></div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="blog-sidebar-col">
+
+
+                    <div class="sidebar-widget">
+                        <h3>Popular Topics</h3>
+                        <ul class="topic-cat-list">
+                            <li>
+                                <div class="topic-icon"><i class="fa-solid fa-piggy-bank"></i></div>
+                                <div class="topic-text"><strong>Saving Tips</strong><span>24 Articles</span></div>
+                            </li>
+                            <li>
+                                <div class="topic-icon"><i class="fa-solid fa-chart-pie"></i></div>
+                                <div class="topic-text"><strong>Investments</strong><span>14 Articles</span></div>
+                            </li>
+                            <li>
+                                <div class="topic-icon"><i class="fa-solid fa-mobile-screen-button"></i></div>
+                                <div class="topic-text"><strong>Digital Banking</strong><span>16 Articles</span></div>
+                            </li>
+                            <li>
+                                <div class="topic-icon"><i class="fa-solid fa-hand-holding-dollar"></i></div>
+                                <div class="topic-text"><strong>Loans</strong><span>22 Articles</span></div>
+                            </li>
+                            <li>
+                                <div class="topic-icon"><i class="fa-regular fa-credit-card"></i></div>
+                                <div class="topic-text"><strong>Cards</strong><span>14 Articles</span></div>
+                            </li>
+                            <li>
+                                <div class="topic-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                                <div class="topic-text"><strong>Security</strong><span>12 Articles</span></div>
+                            </li>
+                            <li>
+                                <div class="topic-icon"><i class="fa-solid fa-mug-hot"></i></div>
+                                <div class="topic-text"><strong>Lifestyle</strong><span>10 Articles</span></div>
+                            </li>
+                        </ul>
+                    </div>
+
+
+                    <div class="sidebar-widget newsletter-box">
+                        <h3>Subscribe to Our Newsletter</h3>
+                        <p>Get the latest financial tips and banking updates straight to your inbox.</p>
+
+                        <input type="text" id="newsletterEmail" placeholder="Enter your email" class="newsletter-input">
+                        <span id="newsletterError" class="newsletter-error-msg">Please enter a valid email.</span>
+
+                        <button id="newsletterBtn" class="btn-subscribe">Subscribe</button>
+                        <span class="spam-notice">No spam,unsubscribe anytime</span>
+                    </div>
+
+
+                    <div class="sidebar-widget">
+                        <h3>Popular Topics</h3>
+                        <ul class="popular-articles-list">
+                            <li>
+                                <img src="./asset/image44.webp" alt="Article">
+                                <div class="pop-text">
+                                    <strong>The Future of Digital Banking:Trends to Watch in 2026</strong>
+                                    <span>May 20,2026</span>
+                                </div>
+                            </li>
+                            <li>
+                                <img src="./asset/image45.webp" alt="Article">
+                                <div class="pop-text">
+                                    <strong>10 Smart Ways to Build Your Emergency Fund Faster</strong>
+                                    <span>May 10,2026</span>
+                                </div>
+                            </li>
+                            <li>
+                                <img src="./asset/image48.webp" alt="Article">
+                                <div class="pop-text">
+                                    <strong>How Mobile Banking Makes Your Life Easier</strong>
+                                    <span>May 15,2026</span>
+                                </div>
+                            </li>
+                            <li>
+                                <img src="./asset/image37.webp" alt="Article">
+                                <div class="pop-text">
+                                    <strong>Choosing the Right Credit Card for Your Needs</strong>
+                                    <span>May 10,2026</span>
+                                </div>
+                            </li>
+                            <li>
+                                <img src="./asset/image39.webp" alt="Article">
+                                <div class="pop-text">
+                                    <strong>Home Loan Basics:<br>What You Need To Know</strong>
+                                    <span>May 10,2026</span>
+                                </div>
+                            </li>
+                        </ul>
+                        <a href="404page.html" class="view-all-link sidebar-link">View All Popular Articles</a>
+                    </div>
+
+
+                    <div class="sidebar-cta-widget">
+                        <h2>Ready to Take Control of Your Finances?</h2>
+                        <p>Open an account today and experience smarter banking.</p>
+                        <a href="404page.html" class="btn-cta-white">Open Account</a>
+                        <img src="./asset/image14.webp" alt="Money Bag" class="cta-img">
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <section class="bottom-newsletter-section">
+        <div class="bn-container">
+            <div class="bn-banner">
+
+
+                <div class="bn-icon-box">
+
+                    <i class="fa-regular fa-envelope-open"></i>
+                </div>
+
+
+                <div class="bn-content">
+                    <h2>Never Miss an Update</h2>
+                    <p>Subscribe to get the latest articles and financial insights delivered to your inbox.</p>
+
+                    <div class="bn-form-area">
+                        <div class="bn-input-wrapper">
+                            <input type="text" id="bottomNlInput" placeholder="Enter your email address"
+                                class="bn-input">
+
+                            <span id="bottomNlError" class="bn-error-msg">Please enter a valid email address.</span>
+                        </div>
+                        <button id="bottomNlBtn" class="bn-btn">Subscribe</button>
+                    </div>
+                </div>
+
+
+                <div class="bn-image-box">
+                    <img src="./asset/image43.webp" alt="Subscribe Mailbox" class="bn-illustration">
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <footer class="footer-section">
+        <div class="footer-container">
+
+            <div class="footer-brand">
+                <a href="index.html" class="footer-logo">
+                    <img src="./asset/Violetlogo.webp" alt="logo" class="logo">
+                </a>
+                <p class="footer-desc">Your trusted partner in banking, helping you achieve a better tomorrow.</p>
+
+                <div class="social-icons">
+
+                    <a href="404page.html" class="social-icon fb"><i class="fa-brands fa-facebook-f"></i></a>
+
+                    <a href="404page.html" class="social-icon in"><i class="fa-brands fa-linkedin-in"></i></a>
+
+                    <a href="404page.html" class="social-icon x">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                        </svg>
+                    </a>
+
+                    <a href="404page.html" class="social-icon insta"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+
+
+            <div class="footer-links">
+                <h4>Personal</h4>
+                <ul>
+                    <li><a href="404page.html">Accounts</a></li>
+                    <li><a href="404page.html">Cards</a></li>
+                    <li><a href="404page.html">Loans</a></li>
+                    <li><a href="404page.html">Investments</a></li>
+                    <li><a href="404page.html">Insurance</a></li>
+                </ul>
+            </div>
+
+
+            <div class="footer-links">
+                <h4>Business</h4>
+                <ul>
+                    <li><a href="404page.html">Business Accounts</a></li>
+                    <li><a href="404page.html">Loans</a></li>
+                    <li><a href="404page.html">Merchant Services</a></li>
+                    <li><a href="404page.html">Payroll Services</a></li>
+                </ul>
+            </div>
+
+
+            <div class="footer-links">
+                <h4>Support</h4>
+                <ul>
+                    <li><a href="404page.html">FAQs</a></li>
+                    <li><a href="404page.html">Help Center</a></li>
+                    <li><a href="404page.html">Contact Us</a></li>
+                    <li><a href="404page.html">Security</a></li>
+                </ul>
+            </div>
+
+
+            <div class="footer-links">
+                <h4>About Us</h4>
+                <ul>
+                    <li><a href="404page.html">Our Story</a></li>
+                    <li><a href="404page.html">Careers</a></li>
+                    <li><a href="404page.html">News & Media</a></li>
+                    <li><a href="404page.html">Locate Us</a></li>
+                </ul>
+            </div>
+
+
+            <div class="footer-contact">
+                <h4>Contact Us</h4>
+                <ul>
+                    <li>
+                        <span class="contact-icon"><i class="fa-solid fa-phone"></i></span>
+                        <a href="tel:+917010792745">+91 7010792745</a>
+                    </li>
+                    <li>
+                        <span class="contact-icon">
+
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
+                                </path>
+                                <polyline points="22,6 12,13 2,6"></polyline>
+                            </svg>
+                        </span>
+                        <a href="mailto:info@stackly.com">info@stackly.com</a>
+                    </li>
+                    <li>
+                        <span class="contact-icon location"><i class="fa-solid fa-location-dot"></i></span>
+                        <span>Tamilnadu<br>Salem - 636008</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+
+        <div class="footer-bottom">
+            <div class="footer-copyright">
+                <p>&copy; 2026 STACKLYBANK. All rights reserved.</p>
+            </div>
+            <div class="footer-legal">
+                <a href="404page.html">Privacy Policy</a>
+                <a href="404page.html">Terms & Conditions</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+    <script src="script.js"></script>
+    <script>
+
+
+
+
+
+        gsap.fromTo(".blog-breadcrumb, .blog-title, .blog-desc, .blog-search-container",
+            { y: 30, opacity: 0 },
+            {
+                scrollTrigger: {
+                    trigger: ".blog-hero-section",
+                    start: "top 85%",
+                    toggleActions: "play none none none"
+                },
+                y: 0,
+                opacity: 1,
+                duration: 0.7,
+                stagger: 0.15,
+                ease: "power3.out",
+                delay: 0.1
+            }
+        );
+
+
+        gsap.fromTo(".blog-hero-img",
+            {
+                x: 50,
+                opacity: 0,
+            },
+            {
+                scrollTrigger: {
+                    trigger: ".blog-hero-section",
+                    start: "top 85%",
+                    toggleActions: "play none none none"
+                },
+                x: 0,
+                opacity: 1,
+                duration: 1.2,
+                ease: "power2.out",
+                delay: 0.4
+            }
+        );
+
+
+
+
+
+        const searchBtn = document.getElementById('blogSearchBtn');
+        const searchInput = document.getElementById('blogSearchInput');
+        const searchBox = document.getElementById('blogSearchBox');
+        const errorMsg = document.getElementById('searchErrorMsg');
+
+        if (searchBtn && searchInput && errorMsg) {
+            searchBtn.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                const query = searchInput.value.trim();
+
+                if (query === "") {
+
+                    errorMsg.style.display = "block";
+                    searchBox.classList.add('error-state');
+                } else {
+
+                    errorMsg.style.display = "none";
+                    searchBox.classList.remove('error-state');
+
+                    window.location.href = '404page.html'
+                }
+            });
+
+
+            searchInput.addEventListener('input', function () {
+                if (searchInput.value.trim() !== "") {
+                    errorMsg.style.display = "none";
+                    searchBox.classList.remove('error-state');
+                }
+            });
+        }
+
+
+
+
+
+
+
+
+        gsap.fromTo(".blog-category-nav",
+            { y: 20, opacity: 0 },
+            {
+                scrollTrigger: { trigger: ".blog-main-section", start: "top 90%" },
+                y: 0, opacity: 1, duration: 0.6
+            }
+        );
+
+
+        gsap.fromTo(".featured-large-card, .featured-small-card",
+            { y: 40, opacity: 0 },
+            {
+                scrollTrigger: { trigger: ".blog-left-col", start: "top 85%" },
+                y: 0, opacity: 1, duration: 0.6, stagger: 0.15, ease: "power2.out"
+            }
+        );
+
+
+        gsap.utils.toArray(".latest-item").forEach(item => {
+            gsap.fromTo(item,
+                { x: -30, opacity: 0 },
+                {
+                    scrollTrigger: { trigger: item, start: "top 90%" },
+                    x: 0, opacity: 1, duration: 0.5, ease: "power2.out"
+                }
+            );
+        });
+
+
+        gsap.utils.toArray(".sidebar-widget, .sidebar-cta-widget").forEach(widget => {
+            gsap.fromTo(widget,
+                { y: 30, opacity: 0 },
+                {
+                    scrollTrigger: { trigger: widget, start: "top 90%" },
+                    y: 0, opacity: 1, duration: 0.6, ease: "power2.out"
+                }
+            );
+        });
+
+
+
+
+        const categoryItems = document.querySelectorAll('.category-item');
+        const mainTitle = document.getElementById('mainContentTitle');
+
+        categoryItems.forEach(item => {
+            item.addEventListener('click', function () {
+
+                categoryItems.forEach(cat => cat.classList.remove('active'));
+
+
+                this.classList.add('active');
+
+
+                const categoryName = this.textContent.trim();
+
+
+                if (categoryName === "All Posts") {
+                    mainTitle.textContent = "Featured Articles";
+                } else {
+                    mainTitle.textContent = categoryName + " Articles";
+                }
+            });
+        });
+
+
+
+
+        const nlBtn = document.getElementById('newsletterBtn');
+        const nlInput = document.getElementById('newsletterEmail');
+        const nlError = document.getElementById('newsletterError');
+
+
+        function isValidEmail(email) {
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            return emailRegex.test(email);
+        }
+
+        if (nlBtn && nlInput && nlError) {
+            nlBtn.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                const emailValue = nlInput.value.trim();
+
+                if (emailValue === "") {
+
+                    nlError.textContent = "Please enter an email address.";
+                    nlError.style.display = "block";
+                    nlInput.classList.add('error');
+                } else if (!isValidEmail(emailValue)) {
+
+                    nlError.textContent = "Please enter a valid email (e.g., name@gmail.com).";
+                    nlError.style.display = "block";
+                    nlInput.classList.add('error');
+                } else {
+
+                    nlError.style.display = "none";
+                    nlInput.classList.remove('error');
+                    window.location.href = '404page.html'
+                    nlInput.value = ""; 
+                }
+            });
+
+
+            nlInput.addEventListener('input', function () {
+                nlError.style.display = "none";
+                nlInput.classList.remove('error');
+            });
+        }
+
+
+
+
+
+
+        gsap.fromTo(".bn-banner",
+            { y: 50, opacity: 0, scale: 0.98 },
+            {
+                scrollTrigger: {
+                    trigger: ".bottom-newsletter-section",
+                    start: "top 90%",
+                    toggleActions: "play none none none"
+                },
+                y: 0,
+                opacity: 1,
+                scale: 1,
+                duration: 0.8,
+                ease: "power2.out"
+            }
+        );
+
+
+
+
+
+        const bottomNlBtn = document.getElementById('bottomNlBtn');
+        const bottomNlInput = document.getElementById('bottomNlInput');
+        const bottomNlError = document.getElementById('bottomNlError');
+
+
+        function validateEmail(email) {
+            const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            return re.test(email);
+        }
+
+        if (bottomNlBtn && bottomNlInput && bottomNlError) {
+            bottomNlBtn.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                const emailVal = bottomNlInput.value.trim();
+
+                if (emailVal === "") {
+
+                    bottomNlError.textContent = "Email address cannot be empty.";
+                    bottomNlError.style.display = "block";
+                    bottomNlInput.classList.add('error');
+                } else if (!validateEmail(emailVal)) {
+
+                    bottomNlError.textContent = "Please enter a valid email address.";
+                    bottomNlError.style.display = "block";
+                    bottomNlInput.classList.add('error');
+                } else {
+
+                    bottomNlError.style.display = "none";
+                    bottomNlInput.classList.remove('error');
+
+
+                    window.location.href = '404page.html'
+
+
+                    bottomNlInput.value = "";
+                }
+            });
+
+
+            bottomNlInput.addEventListener('input', function () {
+                bottomNlError.style.display = "none";
+                bottomNlInput.classList.remove('error');
+            });
+        }
+    </script>
+</body>
+
+</html>

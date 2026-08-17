@@ -1,0 +1,995 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up | STACKLY Bank</title>
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', sans-serif;
+        }
+
+        body {
+            background-color: #FFFFFF;
+            color: #111827;
+            overflow-x: hidden;
+        }
+
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 5%;
+            border-bottom: 1px solid #E5E7EB;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            text-decoration: none;
+        }
+
+        .logo img {
+            width: 150px;
+        }
+
+        .logo-icon {
+            width: 30px;
+            height: 30px;
+            color: #7A3FF3;
+        }
+
+        .logo-text {
+            font-size: 22px;
+            font-weight: 900;
+            color: #6D28D9;
+            letter-spacing: 1px;
+        }
+
+        .nav-right {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .nav-link {
+            font-size: 14px;
+            font-weight: 600;
+            color: #000;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .nav-link:hover {
+            color: #6D28D9;
+        }
+
+        .btn-login {
+            border: 1px solid #D1D5DB;
+            padding: 8px 24px;
+            border-radius: 8px;
+            text-decoration: none;
+            color: #000;
+            font-weight: 600;
+            font-size: 14px;
+            transition: 0.3s;
+        }
+
+        .btn-login:hover {
+            background-color: #F3F4F6;
+        }
+
+
+        .main-container {
+            display: flex;
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 40px 5%;
+            gap: 35px;
+        }
+
+
+        .left-panel {
+            width: 45%;
+        }
+
+        .left-title {
+            font-size: 40px;
+            font-weight: 800;
+            line-height: 1.2;
+            margin-bottom: 35px;
+        }
+
+        .left-title span {
+            color: #6D28D9;
+        }
+
+        .left-subtitle {
+            font-size: 16px;
+            color: #111827;
+            font-weight: 500;
+            margin-bottom: 25px;
+            max-width: 350px;
+        }
+
+        .feature-list {
+            display: flex;
+            flex-direction: column;
+            gap: 50px;
+            margin-bottom: 50px;
+        }
+
+        .feature-item {
+            display: flex;
+            gap: 15px;
+            align-items: flex-start;
+        }
+
+        .feat-icon {
+            width: 45px;
+            height: 45px;
+            background-color: #EEF2FF;
+            color: #6D28D9;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 18px;
+            flex-shrink: 0;
+            transition: all 0.5s ease;
+        }
+
+        .feature-item:hover .feat-icon {
+            transform: rotate(360deg);
+            background-color: #6D28D9;
+            color: #FFF;
+            box-shadow: 0 10px 20px rgba(109, 40, 217, 0.4);
+        }
+
+        .feat-text h4 {
+            font-size: 15px;
+            font-weight: 700;
+            margin-bottom: 3px;
+        }
+
+        .feat-text p {
+            font-size: 13px;
+            color: #4B5563;
+            line-height: 1.4;
+        }
+
+        .app-mockup {
+            width: 100%;
+            height: 40%;
+            max-width: 400px;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+        }
+
+
+        .right-panel {
+            width: 55%;
+        }
+
+        .form-card {
+            border: 1px solid #E5E7EB;
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 15px 50px rgba(0, 0, 0, 0.03);
+        }
+
+        .form-header h2 {
+            font-size: 28px;
+            font-weight: 800;
+            margin-bottom: 5px;
+        }
+
+        .form-header p {
+            font-size: 14px;
+            color: #4B5563;
+            margin-bottom: 30px;
+        }
+
+        .form-header a {
+            color: #6D28D9;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+
+        .role-wrapper {
+            margin-bottom: 25px;
+        }
+
+        .role-select-box {
+            position: relative;
+            display: flex;
+            align-items: center;
+            border: 1px solid #D1D5DB;
+            border-radius: 8px;
+            padding: 12px 15px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .role-select-box:hover {
+            border-color: #6D28D9;
+            box-shadow: 0 5px 15px rgba(109, 40, 217, 0.1);
+        }
+
+        .role-select-box.error {
+            border-color: #EF4444;
+            background-color: #FEF2F2;
+        }
+
+        .role-select-box i.left-icon {
+            color: #6B7280;
+            font-size: 18px;
+            margin-right: 15px;
+        }
+
+        .role-select-box select {
+            flex: 1;
+            border: none;
+            outline: none;
+            font-size: 15px;
+            font-weight: 500;
+            color: #111827;
+            background: transparent;
+            cursor: pointer;
+            appearance: none;
+            -webkit-appearance: none;
+        }
+
+        .role-select-box i.right-icon {
+            color: #F97316;
+            font-size: 14px;
+            position: absolute;
+            right: 15px;
+            pointer-events: none;
+        }
+
+        .section-title {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 15px;
+            font-weight: 700;
+            margin: 25px 0 15px;
+            color: #000;
+        }
+
+        .section-title i {
+            background-color: #EEF2FF;
+            color: #6D28D9;
+            padding: 6px;
+            border-radius: 5px;
+            font-size: 12px;
+        }
+
+
+        .input-row {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 15px;
+        }
+
+        .input-group {
+            flex: 1;
+            position: relative;
+        }
+
+        .input-group label {
+            display: block;
+            font-size: 13px;
+            font-weight: 600;
+            margin-bottom: 6px;
+            color: #111827;
+        }
+
+        .input-box {
+            width: 100%;
+            border: 1px solid #D1D5DB;
+            padding: 12px 15px;
+            border-radius: 8px;
+            font-size: 14px;
+            outline: none;
+            transition: 0.3s;
+        }
+
+        .input-box:focus {
+            border-color: #6D28D9;
+            box-shadow: 0 0 0 3px rgba(109, 40, 217, 0.1);
+        }
+
+        .input-box::placeholder {
+            color: #9CA3AF;
+        }
+
+
+        .input-box.error {
+            border-color: #EF4444;
+            background-color: #FEF2F2;
+        }
+
+        .error-msg {
+            color: #EF4444;
+            font-size: 12px;
+            font-weight: 500;
+            margin-top: 5px;
+            display: none;
+        }
+
+
+        .mobile-wrapper {
+            display: flex;
+            border: 1px solid #D1D5DB;
+            border-radius: 8px;
+            overflow: hidden;
+            transition: 0.3s;
+        }
+
+        .mobile-wrapper:focus-within {
+            border-color: #6D28D9;
+            box-shadow: 0 0 0 3px rgba(109, 40, 217, 0.1);
+        }
+
+        .mobile-wrapper.error {
+            border-color: #EF4444;
+            background-color: #FEF2F2;
+        }
+
+        .country-code {
+            background-color: #F9FAFB;
+            padding: 0 15px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            border-right: 1px solid #D1D5DB;
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+        .country-code img {
+            width: 20px;
+        }
+
+        .mobile-wrapper input {
+            border: none;
+            flex: 1;
+            padding: 12px 15px;
+            outline: none;
+            background: transparent;
+        }
+
+
+        select.input-box {
+            appearance: none;
+            -webkit-appearance: none;
+            background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+            background-repeat: no-repeat;
+            background-position: right 15px center;
+            background-size: 15px;
+        }
+
+
+        .pwd-wrapper {
+            position: relative;
+        }
+
+        .pwd-wrapper i {
+            position: absolute;
+            right: 15px;
+            top: 38px;
+            color: #9CA3AF;
+            cursor: pointer;
+        }
+
+
+        .checkbox-group {
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+            margin: 25px 0;
+        }
+
+        .checkbox-group input {
+            margin-top: 3px;
+            cursor: pointer;
+        }
+
+        .checkbox-group label {
+            font-size: 12px;
+            color: #4B5563;
+        }
+
+        .checkbox-group a {
+            color: #6D28D9;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+
+        .btn-submit {
+            width: 100%;
+            background-color: #6D28D9;
+            color: #FFF;
+            padding: 14px;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: 700;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .btn-submit:hover {
+            background-color: #5B21B6;
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(109, 40, 217, 0.2);
+        }
+
+
+        .divider {
+            display: flex;
+            align-items: center;
+            text-align: center;
+            margin: 25px 0;
+            color: #6B7280;
+            font-size: 12px;
+        }
+
+        .divider::before,
+        .divider::after {
+            content: '';
+            flex: 1;
+            border-bottom: 1px solid #E5E7EB;
+        }
+
+        .divider:not(:empty)::before {
+            margin-right: .25em;
+        }
+
+        .divider:not(:empty)::after {
+            margin-left: .25em;
+        }
+
+
+        .social-btns {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 30px;
+        }
+
+        .btn-social {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 8px;
+            padding: 12px;
+            border: 1px solid #D1D5DB;
+            border-radius: 8px;
+            background: #FFF;
+            font-size: 13px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .btn-social:hover {
+            background-color: #F9FAFB;
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        }
+
+
+        .security-banner {
+            background-color: #EEF2FF;
+            border-radius: 8px;
+            padding: 15px 20px;
+            display: flex;
+            gap: 15px;
+            align-items: center;
+        }
+
+        .sec-icon {
+            color: #6D28D9;
+            font-size: 24px;
+        }
+
+        .sec-text h4 {
+            font-size: 12px;
+            color: #6D28D9;
+            font-weight: 700;
+            margin-bottom: 3px;
+        }
+
+        .sec-text p {
+            font-size: 10px;
+            color: #111827;
+            line-height: 1.4;
+        }
+
+
+
+        @media screen and (max-width: 992px) {
+            .main-container {
+                flex-direction: column-reverse;
+
+                gap: 50px;
+            }
+
+            .left-panel,
+            .right-panel {
+                width: 100%;
+            }
+
+            .left-panel {
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .feature-list {
+                text-align: left;
+                max-width: 500px;
+                width: 100%;
+            }
+
+            .form-card {
+                padding: 30px 20px;
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+            .input-row {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            .social-btns {
+                flex-direction: column;
+            }
+
+            .logo-text {
+                font-size: 18px;
+            }
+
+
+            .navbar {
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 15px;
+                padding: 15px 5%;
+            }
+
+            .nav-right {
+                width: 100%;
+                justify-content: center;
+                gap: 20px;
+            }
+
+            .nav-link {
+                display: flex;
+                font-size: 13px;
+            }
+
+
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <header class="navbar">
+        <a href="#" class="logo">
+            <img src="./asset/Violetlogo.webp" alt="logo">
+        </a>
+        <div class="nav-right">
+            <a href="#" class="nav-link"><i class="fa-solid fa-globe"></i> Help</a>
+            <a href="#" class="nav-link"><i class="fa-solid fa-language"></i> EN <i class="fa-solid fa-chevron-down"
+                    style="font-size:10px;"></i></a>
+            <a href="login.html" class="btn-login">Login</a>
+        </div>
+    </header>
+
+
+    <main class="main-container">
+
+
+        <div class="left-panel gsap-left">
+            <h1 class="left-title">Create Your<br><span>STACKLY</span> Bank Account</h1>
+            <p class="left-subtitle">Join millions of customers enjoying secure, simple and smart banking.</p>
+
+            <div class="feature-list">
+                <div class="feature-item">
+                    <div class="feat-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                    <div class="feat-text">
+                        <h4>Secure & Protected</h4>
+                        <p>Bank-grade security to keep your data and money safe.</p>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <div class="feat-icon"><i class="fa-solid fa-bolt"></i></div>
+                    <div class="feat-text">
+                        <h4>Quick & Easy</h4>
+                        <p>Open your account in just a few minutes with a simple process.</p>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <div class="feat-icon"><i class="fa-regular fa-clock"></i></div>
+                    <div class="feat-text">
+                        <h4>24/7 Access</h4>
+                        <p>Manage your finances anytime, anywhere with our mobile app.</p>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <div class="feat-icon"><i class="fa-solid fa-gift"></i></div>
+                    <div class="feat-text">
+                        <h4>Exclusive Benefits</h4>
+                        <p>Get access to special offers, rewards and lower fees.</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <img src="./asset/image1.webp" alt="App Mockup" class="app-mockup">
+        </div>
+
+
+        <div class="right-panel gsap-right">
+            <div class="form-card">
+                <div class="form-header">
+                    <h2>Sign Up</h2>
+                    <p>Already have an account? <a href="#">Login</a></p>
+                </div>
+
+                <form id="signupForm" novalidate>
+
+
+                    <div class="role-wrapper">
+                        <div class="role-select-box" id="roleWrap">
+                            <i class="fa-regular fa-user left-icon"></i>
+                            <select id="userRole">
+                                <option value="" disabled selected>Select Your Role</option>
+                                <option value="finance"> Finance Manager</option>
+                                <option value="business"> Business Owner</option>
+                            </select>
+                            <i class="fa-solid fa-chevron-down right-icon"></i>
+                        </div>
+                        <span class="error-msg" id="err-role">Please select a role to continue.</span>
+                    </div>
+
+
+                    <h3 class="section-title"><i class="fa-regular fa-user"></i> Personal Information</h3>
+
+                    <div class="input-row">
+                        <div class="input-group" style="margin-bottom: 15px;">
+                            <label>First Name</label>
+                            <input type="text" class="input-box" id="fName" placeholder="Enter first name">
+                            <span class="error-msg">Numbers/Symbols are not allowed</span>
+                        </div>
+                        <div class="input-group" style="margin-bottom: 15px;">
+                            <label>Last Name</label>
+                            <input type="text" class="input-box" id="lName" placeholder="Enter last name">
+                            <span class="error-msg">Numbers/Symbols are not allowed</span>
+                        </div>
+                    </div>
+
+                    <div class="input-row">
+                        <div class="input-group" style="margin-bottom: 15px;">
+                            <label>Date of Birth</label>
+                            <input type="text" class="input-box" id="dob" placeholder="DD/MM/YYYY" maxlength="10">
+                            <span class="error-msg">Please enter valid DOB (DD/MM/YYYY)</span>
+                        </div>
+                        <div class="input-group" style="margin-bottom: 15px;">
+                            <label>Gender</label>
+                            <select class="input-box" id="gender">
+                                <option value="" disabled selected>Select Gender</option>
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>
+                            </select>
+                            <span class="error-msg">Please select gender</span>
+                        </div>
+                    </div>
+
+                    <div class="input-group" style="margin-bottom: 15px;">
+                        <label>Email Address</label>
+                        <input type="email" class="input-box" id="email" placeholder="Enter your email address">
+                        <span class="error-msg">Please enter a valid email</span>
+                    </div>
+
+                    <div class="input-group" style="margin-bottom: 15px;">
+                        <label>Mobile Number</label>
+                        <div class="mobile-wrapper" id="mobileWrap">
+                            <div class="country-code">
+                                <img src="./asset/image3.webp" alt="IN"> +91
+                            </div>
+                            <input type="text" id="phone" placeholder="Enter mobile number" maxlength="10">
+                        </div>
+                        <span class="error-msg" id="err-phone">Letters are not allowed / Required</span>
+                    </div>
+
+
+                    <h3 class="section-title"><i class="fa-solid fa-lock"></i> Create Login Credentials</h3>
+
+                    <div class="input-group" style="margin-bottom: 15px;">
+                        <label>User Name</label>
+                        <input type="text" class="input-box" id="username" placeholder="Choose a username">
+                        <span class="error-msg">Username is required</span>
+                    </div>
+
+                    <div class="input-group pwd-wrapper" style="margin-bottom: 15px;">
+                        <label>Password</label>
+                        <input type="password" class="input-box" id="pwd" placeholder="Choose a strong password">
+                        <i class="fa-solid fa-eye" onclick="togglePwd('pwd', this)"></i>
+                        <span class="error-msg">Password is required</span>
+                    </div>
+
+                    <div class="input-group pwd-wrapper" style="margin-bottom: 15px;">
+                        <label>Confirm Password</label>
+                        <input type="password" class="input-box" id="cPwd" placeholder="Confirm your password">
+                        <i class="fa-solid fa-eye" onclick="togglePwd('cPwd', this)"></i>
+                        <span class="error-msg">Passwords do not match</span>
+                    </div>
+
+
+                    <h3 class="section-title"><i class="fa-solid fa-location-dot"></i> Additional Information</h3>
+
+                    <div class="input-group" style="margin-bottom: 15px;">
+                        <label>Country</label>
+                        <select class="input-box" id="country">
+                            <option value="" disabled selected>Select your country</option>
+                            <option value="IN">India</option>
+                            <option value="US">USA</option>
+                        </select>
+                        <span class="error-msg">Please select country</span>
+                    </div>
+
+                    <div class="input-group" style="margin-bottom: 15px;">
+                        <label>Address</label>
+                        <input type="text" class="input-box" id="address" placeholder="Enter your full address">
+                        <span class="error-msg">Address is required</span>
+                    </div>
+
+                    <div class="input-row">
+                        <div class="input-group" style="margin-bottom: 15px;">
+                            <label>City</label>
+                            <input type="text" class="input-box" id="city" placeholder="Enter city">
+                            <span class="error-msg">City is required</span>
+                        </div>
+                        <div class="input-group" style="margin-bottom: 15px;">
+                            <label>State/Province</label>
+                            <input type="text" class="input-box" id="state" placeholder="Enter state/province">
+                            <span class="error-msg">State is required</span>
+                        </div>
+                    </div>
+
+                    <div class="input-group" style="margin-bottom: 15px;">
+                        <label>ZIP/Postal Code</label>
+                        <input type="text" class="input-box" id="zip" placeholder="Enter ZIP or postal code">
+                        <span class="error-msg">ZIP code is required</span>
+                    </div>
+
+
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="terms">
+                        <label for="terms">I agree to the <a href="#">Terms & Conditions</a> and <a href="#">Privacy
+                                Policy</a></label>
+                    </div>
+                    <span class="error-msg" id="err-terms" style="margin-top:-20px; margin-bottom:15px;">You must agree
+                        to the terms.</span>
+
+                    <button type="submit" class="btn-submit">Create Account</button>
+
+                    <div class="divider">or sign up with</div>
+
+
+                    <div class="social-btns">
+                        <button type="button" class="btn-social"><img src="./asset/image2.webp" alt="G"> Google</button>
+                        <button type="button" class="btn-social"><i class="fa-brands fa-apple"
+                                style="font-size:16px;"></i> Apple</button>
+                        <button type="button" class="btn-social"><i class="fa-brands fa-facebook"
+                                style="color:#1877F2; font-size:16px;"></i> Facebook</button>
+                    </div>
+
+
+                    <div class="security-banner">
+                        <i class="fa-solid fa-lock sec-icon"></i>
+                        <div class="sec-text">
+                            <h4>Your security is our priority</h4>
+                            <p>We use advanced encryption and multi-layer security to protect your information.</p>
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <script>
+
+        document.addEventListener("DOMContentLoaded", () => {
+            gsap.fromTo(".gsap-left",
+                { x: -100, opacity: 0, scale: 0.95 },
+                { x: 0, opacity: 1, scale: 1, duration: 1, ease: "power3.out" }
+            );
+
+            gsap.fromTo(".gsap-right",
+                { x: 100, opacity: 0, scale: 0.95 },
+                { x: 0, opacity: 1, scale: 1, duration: 1, ease: "power3.out", delay: 0.2 }
+            );
+        });
+
+
+        function togglePwd(id, icon) {
+            let input = document.getElementById(id);
+            if (input.type === "password") {
+                input.type = "text";
+                icon.classList.remove("fa-eye");
+                icon.classList.add("fa-eye-slash");
+            } else {
+                input.type = "password";
+                icon.classList.remove("fa-eye-slash");
+                icon.classList.add("fa-eye");
+            }
+        }
+
+
+
+
+        const dobInput = document.getElementById('dob');
+        dobInput.addEventListener('input', function (e) {
+            let val = this.value.replace(/[^0-9]/g, ''); 
+            if (val.length > 2 && val.length <= 4) {
+                val = val.slice(0, 2) + '/' + val.slice(2);
+            } else if (val.length > 4) {
+                val = val.slice(0, 2) + '/' + val.slice(2, 4) + '/' + val.slice(4, 8);
+            }
+            this.value = val;
+            clearError(this);
+        });
+
+
+        const phoneInput = document.getElementById('phone');
+        phoneInput.addEventListener('input', function () {
+            this.value = this.value.replace(/[^0-9]/g, '');
+            document.getElementById('mobileWrap').classList.remove('error');
+            document.getElementById('err-phone').style.display = 'none';
+        });
+
+
+        function showError(input, message) {
+            input.classList.add('error');
+            let parent = input.closest('.input-group') || input.parentElement;
+            let errorSpan = parent.querySelector('.error-msg');
+            if (errorSpan) {
+                errorSpan.innerText = message;
+                errorSpan.style.display = 'block';
+            }
+        }
+
+        function clearError(input) {
+            input.classList.remove('error');
+            let parent = input.closest('.input-group') || input.parentElement;
+            let errorSpan = parent.querySelector('.error-msg');
+            if (errorSpan) {
+                errorSpan.style.display = 'none';
+            }
+        }
+
+
+        const form = document.getElementById('signupForm');
+        form.addEventListener('submit', function (e) {
+            e.preventDefault();
+            let isValid = true;
+
+
+            const role = document.getElementById('userRole');
+            const roleWrap = document.getElementById('roleWrap');
+            if (role.value === "") {
+                roleWrap.classList.add('error');
+                document.getElementById('err-role').style.display = 'block';
+                isValid = false;
+            } else {
+                roleWrap.classList.remove('error');
+                document.getElementById('err-role').style.display = 'none';
+            }
+
+
+            const nameRegex = /^[A-Za-z\s]+$/;
+            const fName = document.getElementById('fName');
+            const lName = document.getElementById('lName');
+
+            if (fName.value.trim() === "") { showError(fName, "First name is required"); isValid = false; }
+            else if (!nameRegex.test(fName.value)) { showError(fName, "Numbers/Symbols are not allowed"); isValid = false; }
+
+            if (lName.value.trim() === "") { showError(lName, "Last name is required"); isValid = false; }
+            else if (!nameRegex.test(lName.value)) { showError(lName, "Numbers/Symbols are not allowed"); isValid = false; }
+
+
+            const dobRegex = /^(0[1-9]|[12][0-9]|3[01])\/(0[1-9]|1[012])\/\d{4}$/;
+            if (dobInput.value.trim() === "") { showError(dobInput, "DOB is required"); isValid = false; }
+            else if (!dobRegex.test(dobInput.value)) { showError(dobInput, "Invalid format. Use DD/MM/YYYY"); isValid = false; }
+
+
+            const mobileWrap = document.getElementById('mobileWrap');
+            if (phoneInput.value.trim() === "" || phoneInput.value.length < 10) {
+                mobileWrap.classList.add('error');
+                document.getElementById('err-phone').innerText = "Valid mobile number required";
+                document.getElementById('err-phone').style.display = 'block';
+                isValid = false;
+            }
+
+
+            const email = document.getElementById('email');
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (email.value.trim() === "" || !emailRegex.test(email.value)) { showError(email, "Please enter a valid email"); isValid = false; }
+
+
+            const pwd = document.getElementById('pwd');
+            const cPwd = document.getElementById('cPwd');
+            if (pwd.value.trim() === "") { showError(pwd, "Password is required"); isValid = false; }
+            if (cPwd.value.trim() === "" || cPwd.value !== pwd.value) { showError(cPwd, "Passwords do not match"); isValid = false; }
+
+
+            const requiredFields = ['gender', 'username', 'country', 'address', 'city', 'state', 'zip'];
+            requiredFields.forEach(id => {
+                let el = document.getElementById(id);
+                if (el.value.trim() === "") { showError(el, "This field is required"); isValid = false; }
+            });
+
+
+            const terms = document.getElementById('terms');
+            if (!terms.checked) { document.getElementById('err-terms').style.display = 'block'; isValid = false; }
+
+
+            if (isValid) {
+
+
+                window.location.href = 'login.html'
+            }
+        });
+
+
+        document.querySelectorAll('input, select').forEach(input => {
+            input.addEventListener('input', () => { clearError(input); });
+            input.addEventListener('change', () => { clearError(input); });
+        });
+
+
+        document.getElementById('userRole').addEventListener('change', () => {
+            document.getElementById('roleWrap').classList.remove('error');
+            document.getElementById('err-role').style.display = 'none';
+        });
+
+        document.getElementById('terms').addEventListener('change', () => {
+            if (document.getElementById('terms').checked) document.getElementById('err-terms').style.display = 'none';
+        });
+
+    </script>
+</body>
+
+</html>

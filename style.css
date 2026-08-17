@@ -1,22 +1,21 @@
-/* Hero Section Variables & Base */
 :root {
-  --hero-bg: #f4f2fa; /* Exact light purple background from image */
+  --hero-bg: #f4f2fa;
   --primary-purple: #6a3ce0;
   --text-dark: #000000;
   --text-gray: #374151;
   --green-status: #10b981;
-  --badge-icon-bg: #e0f2fe; /* Light blue for icons */
+  --badge-icon-bg: #e0f2fe;
   --badge-icon-color: #0284c7;
 }
 
 .hero-section {
   background-color: var(--hero-bg);
   width: 100%;
-  padding: 80px 40px 70px 40px; /* Top padding adjusts for fixed header */
+  padding: 80px 40px 70px 40px;
   min-height: 50vh;
   display: flex;
   align-items: center;
-  overflow: hidden; /* For smooth animations */
+  overflow: hidden;
 }
 
 .hero-container {
@@ -28,7 +27,6 @@
   gap: 40px;
 }
 
-/* --- Left Column: Content --- */
 .hero-content {
   flex: 1;
   max-width: 550px;
@@ -54,7 +52,6 @@
   font-weight: 400;
 }
 
-/* Buttons */
 .hero-buttons {
   display: flex;
   gap: 20px;
@@ -93,7 +90,6 @@
   color: #ffffff;
 }
 
-/* Trust Badges */
 .trust-badges {
   display: flex;
   gap: 30px;
@@ -110,7 +106,7 @@
   width: 36px;
   height: 36px;
   border-radius: 8px;
-  background-color: #e8f0fe; /* Slight blue tint */
+  background-color: #e8f0fe;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -125,7 +121,6 @@
   color: var(--text-dark);
 }
 
-/* --- Right Column: Visuals & Cards --- */
 .hero-visuals {
   flex: 1;
   position: relative;
@@ -141,7 +136,6 @@
   object-fit: contain;
 }
 
-/* Floating Cards Common */
 .floating-card {
   position: absolute;
   background-color: #ffffff;
@@ -151,7 +145,6 @@
   z-index: 2;
 }
 
-/* Balance Card (Top Left of image) */
 .card-balance {
   top: 10%;
   left: -10%;
@@ -178,7 +171,6 @@
   font-weight: 500;
 }
 
-/* Transfer Card (Bottom Left of image) */
 .card-transfer {
   bottom: -6%;
   left: -80px;
@@ -207,9 +199,6 @@
   color: var(--primary-purple);
 }
 
-/* =========================================
-   100% MOBILE RESPONSIVENESS
-========================================= */
 @media screen and (max-width: 1100px) {
   .hero-title {
     font-size: 44px;
@@ -262,7 +251,6 @@
     max-width: 90%;
   }
 
-  /* Adjust Floating cards for mobile to avoid overlapping */
   .card-balance {
     top: -78px;
     left: -10px;
@@ -297,9 +285,6 @@
   }
 }
 
-/* =========================================
-   SERVICES SECTION (Matched to image)
-========================================= */
 .services-section {
   background-color: #ffffff;
   padding: 40px 40px;
@@ -308,7 +293,7 @@
 }
 
 .services-container {
-  max-width: 1300px; /* Slightly wider to fit 8 cards perfectly */
+  max-width: 1300px;
   width: 100%;
   text-align: center;
 }
@@ -329,9 +314,9 @@
 .service-card {
   text-decoration: none;
   background: #ffffff;
-  border: 2px solid #bdbec257; /* Subtle gray border exactly like image */
-  border-radius: 12px; /* Smooth rounded corners */
-  padding: 32px 10px; /* Taller card look like the image */
+  border: 2px solid #bdbec257;
+  border-radius: 12px;
+  padding: 32px 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -342,7 +327,6 @@
   width: 130px;
 }
 
-/* Hover Effects: Box Shadow & Icon Rotate */
 .service-card:hover {
   box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08);
   transform: translateY(-5px);
@@ -352,13 +336,13 @@
 .icon-box {
   width: 52px;
   height: 52px;
-  background-color: #f0f5ff; /* Exact very light blue bg from image */
-  border-radius: 12px; /* Slightly rounded inner box */
+  background-color: #f0f5ff;
+  border-radius: 12px;
   display: flex;
   align-items: center;
   justify-content: center;
   margin-bottom: 16px;
-  color: #2563eb; /* Bright blue icon */
+  color: #2563eb;
   font-size: 24px;
 }
 
@@ -375,15 +359,12 @@
 .service-text {
   font-size: 13px;
   font-weight: 700;
-  color: #111827; /* Near black */
+  color: #111827;
   line-height: 1.4;
 }
 
-/* =========================================
-   STATS SECTION (Matched to Deep Navy Image)
-========================================= */
 .stats-section {
-  background-color: #0f1a62; /* Exact deep navy blue from image */
+  background-color: #0f1a62;
   padding: 60px 40px;
   display: flex;
   justify-content: center;
@@ -406,8 +387,8 @@
 }
 
 .stat-icon-wrapper {
-  color: #ffffff; /* White/Light blue icons */
-  font-size: 42px; /* Larger icons matching image */
+  color: #ffffff;
+  font-size: 42px;
 }
 
 .stat-text {
@@ -418,33 +399,26 @@
 
 .stat-text h4 {
   color: #ffffff;
-  /* font-size: 22px; */
+
   font-weight: 700;
   margin-bottom: 2px;
 }
 
 .stat-text p {
   color: #f3f4f6;
-  /* font-size: 15px; */
-  /* font-weight: 500; */
+
   white-space: nowrap;
 }
 
 .stat-divider {
   height: 50px;
   width: 1px;
-  background-color: rgba(255, 255, 255, 0.2); /* Subtle divider line */
+  background-color: rgba(255, 255, 255, 0.2);
 }
 
-/* =========================================
-   MOBILE RESPONSIVENESS (100% Handled)
-========================================= */
 @media screen and (max-width: 1200px) {
   .services-grid {
-    grid-template-columns: repeat(
-      4,
-      1fr
-    ); /* 4 Columns for Tablets/Small Laptops */
+    grid-template-columns: repeat(4, 1fr);
     gap: 20px;
   }
   .stats-container {
@@ -462,12 +436,12 @@
   }
 
   .stat-item {
-    flex: 1 1 40%; /* 2 Stats per row */
+    flex: 1 1 40%;
     justify-content: flex-start;
   }
 
   .stat-divider {
-    display: none; /* Hide vertical dividers on stacked views */
+    display: none;
   }
 }
 
@@ -480,20 +454,17 @@
   }
 
   .services-grid {
-    grid-template-columns: repeat(2, 1fr); /* 2 Columns for Mobile */
+    grid-template-columns: repeat(2, 1fr);
     gap: 16px;
   }
 
   .stat-item {
-    flex: 1 1 100%; /* 1 Stat per row on Mobile */
-    justify-content: flex-start; /* Align left for readability */
+    flex: 1 1 100%;
+    justify-content: flex-start;
     padding-left: 20px;
   }
 }
 
-/* =========================================
-   SOLUTIONS SECTION
-========================================= */
 .solutions-section {
   background-color: #ffffff;
   padding: 40px 50px;
@@ -505,20 +476,19 @@
   max-width: 1300px;
   width: 100%;
   display: flex;
-  align-items: flex-start; /* Keeps the left content at the top */
+  align-items: flex-start;
   justify-content: space-between;
   gap: 60px;
 }
 
-/* --- Left Column: Content --- */
 .solutions-content {
-  flex: 0 0 32%; /* Takes up about 32% of the width */
+  flex: 0 0 32%;
   position: sticky;
-  top: 120px; /* Optional: Makes it sticky while scrolling the cards */
+  top: 120px;
 }
 
 .sub-heading {
-  color: #6a3ce0; /* Primary Purple */
+  color: #6a3ce0;
   font-size: 16px;
   font-weight: 700;
   letter-spacing: 1px;
@@ -537,12 +507,11 @@
 
 .description {
   font-size: 18px;
-  color: #111827; /* Dark gray */
+  color: #111827;
   line-height: 1.6;
   margin-bottom: 35px;
 }
 
-/* --- Right Column: Grid --- */
 .solutions-grid {
   flex: 1;
   display: grid;
@@ -562,7 +531,6 @@
   cursor: pointer;
 }
 
-/* Hover Effects */
 .solution-card:hover {
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.08);
   transform: translateY(-8px);
@@ -572,12 +540,12 @@
 .card-icon {
   width: 50px;
   height: 50px;
-  background-color: #f0f5ff; /* Light blue bg matching image */
+  background-color: #f0f5ff;
   border-radius: 12px;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #2563eb; /* Bright blue icon */
+  color: #2563eb;
   font-size: 24px;
   margin-bottom: 20px;
 }
@@ -587,7 +555,6 @@
   transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
-/* Icon Rotation on Hover */
 .solution-card:hover .card-icon i,
 .solution-card:hover .card-icon svg {
   transform: rotate(20deg) scale(1.15);
@@ -602,15 +569,15 @@
 
 .card-desc {
   font-size: 13px;
-  color: #4b5563; /* Gray text */
+  color: #4b5563;
   line-height: 1.5;
   margin-bottom: 25px;
-  flex-grow: 1; /* Pushes the link to the bottom */
+  flex-grow: 1;
 }
 
 .card-link {
   text-decoration: none;
-  color: #7a3ff3; /* Purple text */
+  color: #7a3ff3;
   font-weight: 700;
   font-size: 15px;
   display: flex;
@@ -619,26 +586,22 @@
   transition: gap 0.3s ease;
 }
 
-/* Arrow move effect on hover */
 .solution-card:hover .card-link {
   gap: 12px;
 }
 
-/* =========================================
-   MOBILE RESPONSIVENESS
-========================================= */
 @media screen and (max-width: 1200px) {
   .main-heading {
     font-size: 36px;
   }
   .solutions-grid {
     grid-template-columns: repeat(2, 1fr);
-  } /* 2 columns on small laptops */
+  }
 }
 
 @media screen and (max-width: 992px) {
   .solutions-container {
-    flex-direction: column; /* Stacks text on top, grid on bottom */
+    flex-direction: column;
     gap: 40px;
   }
 
@@ -667,20 +630,17 @@
 
 @media screen and (max-width: 576px) {
   .solutions-grid {
-    grid-template-columns: 1fr; /* 1 column on mobile */
+    grid-template-columns: 1fr;
     width: 100%;
   }
 }
 
-/* =========================================
-   MOBILE APP SECTION
-========================================= */
 .mobile-app-section {
-  background-color: #f4f5fa; /* Exact light lavender/blue background from image */
+  background-color: #f4f5fa;
   padding: 40px 40px;
   display: flex;
   justify-content: center;
-  overflow: hidden; /* For clean GSAP entry */
+  overflow: hidden;
 }
 
 .mobile-app-container {
@@ -692,7 +652,6 @@
   gap: 10px;
 }
 
-/* --- Left Column: Image --- */
 .app-image-wrapper {
   flex: 1;
   display: flex;
@@ -702,21 +661,20 @@
 
 .app-mockup-img {
   width: 100%;
-  max-width: 500px; /* Adjust based on your image size */
+  max-width: 500px;
   height: auto;
   object-fit: contain;
-  /* Optional shadow if your image doesn't have one */
+
   filter: drop-shadow(0 20px 30px rgba(0, 0, 0, 0.15));
 }
 
-/* --- Right Column: Content --- */
 .app-content {
   flex: 1;
   max-width: 550px;
 }
 
 .app-content .sub-heading {
-  color: #7a3ff3; /* Purple */
+  color: #7a3ff3;
   font-size: 16px;
   font-weight: 700;
   letter-spacing: 1px;
@@ -735,13 +693,12 @@
 
 .app-content .description {
   font-size: 18px;
-  color: #111827; /* Dark gray matching image */
+  color: #111827;
   line-height: 1.6;
   margin-bottom: 40px;
   font-weight: 400;
 }
 
-/* --- App Store Buttons --- */
 .app-buttons {
   display: flex;
   gap: 20px;
@@ -756,11 +713,10 @@
   align-items: center;
   gap: 12px;
   padding: 10px 24px;
-  border-radius: 8px; /* Rounded corners like image */
+  border-radius: 8px;
   transition: all 0.3s ease;
 }
 
-/* Hover Effects: Box Shadow & Lift */
 .store-btn:hover {
   box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25);
   transform: translateY(-4px);
@@ -779,7 +735,6 @@
   transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
-/* Hover Effect: Icon Rotation */
 .store-btn:hover .store-icon i,
 .store-btn:hover .store-icon svg {
   transform: rotate(20deg) scale(1.15);
@@ -804,9 +759,6 @@
   line-height: 1.1;
 }
 
-/* =========================================
-   MOBILE RESPONSIVENESS
-========================================= */
 @media screen and (max-width: 1100px) {
   .app-content .main-heading {
     font-size: 40px;
@@ -822,7 +774,7 @@
   }
 
   .mobile-app-container {
-    flex-direction: column-reverse; /* Puts image below text on mobile */
+    flex-direction: column-reverse;
     text-align: center;
     gap: 60px;
   }
@@ -848,7 +800,7 @@
   }
 
   .app-buttons {
-    flex-direction: column; /* Stacks buttons on very small screens */
+    flex-direction: column;
     width: 100%;
     max-width: 250px;
   }
@@ -859,12 +811,9 @@
   }
 }
 
-/* =========================================
-   TESTIMONIALS SECTION (Infinite Move)
-========================================= */
 .testimonials-section {
   background-color: #ffffff;
-  padding: 25px 0 2px 0; /* No side padding to allow edge-to-edge scrolling */
+  padding: 25px 0 2px 0;
   overflow: hidden;
   position: relative;
 }
@@ -876,7 +825,7 @@
 }
 
 .testi-subheading {
-  color: #7a3ff3; /* Exact Purple */
+  color: #7a3ff3;
   font-size: 14px;
   font-weight: 700;
   letter-spacing: 1px;
@@ -892,13 +841,12 @@
   line-height: 1.2;
 }
 
-/* --- Infinite Scroll Marquee Setup --- */
 .marquee-wrapper {
   width: 100%;
   overflow: hidden;
-  padding: 20px 0; /* Padding for hover shadows */
+  padding: 20px 0;
   position: relative;
-  /* Soft fade on left and right edges for a premium look */
+
   -webkit-mask-image: linear-gradient(
     90deg,
     transparent,
@@ -917,13 +865,12 @@
 
 .marquee-track {
   display: flex;
-  gap: 30px; /* Gap between cards */
+  gap: 30px;
   width: max-content;
-  /* Continuous infinite animation (adjust 25s for speed) */
+
   animation: marqueeScroll 25s linear infinite;
 }
 
-/* Pause animation on hover so user can read */
 .marquee-wrapper:hover .marquee-track {
   animation-play-state: paused;
 }
@@ -932,19 +879,18 @@
   0% {
     transform: translateX(0);
   }
-  /* Moves left by exactly half the track width (the 3 original cards + gap) */
+
   100% {
     transform: translateX(calc(-50% - 15px));
   }
 }
 
-/* --- Card Styles --- */
 .testi-card {
   background-color: #ffffff;
-  border: 2px solid #dadcdfbd; /* Subtle gray border */
+  border: 2px solid #dadcdfbd;
   border-radius: 16px;
   padding: 15px 15px;
-  width: 277px; /* Fixed width to match proportions154 */
+  width: 277px;
   height: 200px;
   display: flex;
   flex-direction: column;
@@ -953,7 +899,6 @@
   transition: all 0.3s ease;
 }
 
-/* Hover Effects: Box Shadow & Slight Lift */
 .testi-card:hover {
   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
   transform: translateY(-5px);
@@ -962,7 +907,7 @@
 
 .testi-quote {
   font-size: 13px;
-  color: #111827; /* Dark Gray text */
+  color: #111827;
   line-height: 1.6;
   margin-bottom: 15px;
   font-weight: 500;
@@ -971,14 +916,13 @@
 .testi-stars {
   display: flex;
   gap: 6px;
-  color: #ffc107; /* Yellow/Gold */
+  color: #ffc107;
   font-size: 16px;
   margin-bottom: 15px;
   justify-content: center;
   align-items: center;
 }
 
-/* Icon Rotation Effect on Card Hover */
 .testi-stars i,
 .testi-stars svg {
   transition: transform 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
@@ -1019,7 +963,6 @@
   color: #6b7280;
 }
 
-/* Bottom Divider Line */
 .testi-divider {
   max-width: 1200px;
   width: 90%;
@@ -1028,9 +971,6 @@
   margin: 10px auto 0 auto;
 }
 
-/* =========================================
-   MOBILE RESPONSIVENESS
-========================================= */
 @media screen and (max-width: 992px) {
   .testi-mainheading {
     font-size: 34px;
@@ -1047,12 +987,11 @@
   }
   .testi-card {
     width: 280px;
-  } /* Smaller cards for mobile */
+  }
   .marquee-track {
     gap: 20px;
   }
 
-  /* Recalculate loop distance for mobile gap */
   @keyframes marqueeScroll {
     0% {
       transform: translateX(0);
@@ -1063,15 +1002,12 @@
   }
 }
 
-/* =========================================
-   ABOUT US SECTION
-========================================= */
 .about-section {
   background-color: #ffffff;
   padding: 30px 40px;
   display: flex;
   justify-content: center;
-  overflow: hidden; /* For smooth GSAP entry */
+  overflow: hidden;
 }
 
 .about-container {
@@ -1083,14 +1019,13 @@
   gap: 5px;
 }
 
-/* --- Left Column: Text --- */
 .about-content {
   flex: 1;
   max-width: 520px;
 }
 
 .about-content .sub-heading {
-  color: #7a3ff3; /* Exact Purple */
+  color: #7a3ff3;
   font-size: 16px;
   font-weight: 800;
   letter-spacing: 1px;
@@ -1108,18 +1043,17 @@
 }
 
 .about-content .text-purple {
-  color: #7a3ff3; /* Purple text for 'Committed to you' */
+  color: #7a3ff3;
 }
 
 .about-content .description {
   font-size: 18px;
-  color: #111827; /* Dark gray */
+  color: #111827;
   line-height: 1.6;
   margin-bottom: 35px;
   font-weight: 500;
 }
 
-/* --- Button with Icon & Hover Effects --- */
 .btn-icon {
   display: inline-flex;
   align-items: center;
@@ -1127,7 +1061,7 @@
   background-color: #6a3ce0;
   color: #ffffff;
   padding: 15px 12px;
-  border-radius: 10px; /* Rounded pill shape */
+  border-radius: 10px;
   font-weight: 600;
   font-size: 15px;
   text-decoration: none;
@@ -1147,22 +1081,19 @@
   transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
-/* 1. Box Shadow on Hover */
-/* 2. Icon Rotation on Hover */
 .btn-icon:hover {
   background-color: #632bd6;
-  box-shadow: 0 10px 25px rgba(122, 63, 243, 0.35); /* Purple glowing shadow */
+  box-shadow: 0 10px 25px rgba(122, 63, 243, 0.35);
   transform: translateY(-3px);
 }
 
 .btn-icon:hover .btn-icon-wrapper i,
 .btn-icon:hover .btn-icon-wrapper svg {
-  transform: rotate(-45deg) scale(1.1); /* Arrow points diagonally up */
+  transform: rotate(-45deg) scale(1.1);
 }
 
-/* --- Right Column: Image --- */
 .about-image-wrapper {
-  flex: 1.2; /* Takes slightly more space than text */
+  flex: 1.2;
   display: flex;
   justify-content: flex-end;
 }
@@ -1171,14 +1102,11 @@
   width: 100%;
   max-width: 650px;
   height: 350px;
-  border-radius: 16px; /* Smooth rounded corners like the image */
+  border-radius: 16px;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
   object-fit: cover;
 }
 
-/* =========================================
-   MOBILE RESPONSIVENESS
-========================================= */
 @media screen and (max-width: 1100px) {
   .about-content .main-heading {
     font-size: 36px;
@@ -1221,9 +1149,6 @@
   }
 }
 
-/* =========================================
-   WEALTH SOLUTIONS SECTION
-========================================= */
 .wealth-section {
   background-color: #ffffff;
   padding: 25px 50px;
@@ -1232,14 +1157,13 @@
 }
 
 .wealth-container {
-  max-width: 1400px; /* Wider container to fit all 6 cards nicely */
+  max-width: 1400px;
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-/* --- Header --- */
 .wealth-header {
   text-align: center;
   margin-bottom: 50px;
@@ -1254,19 +1178,17 @@
 
 .wealth-subtitle {
   font-size: 16px;
-  color: #111827; /* Dark Gray */
+  color: #111827;
   font-weight: 500;
 }
 
-/* --- Grid (6 Columns) --- */
 .wealth-grid {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-  gap: 1px; /* Gap between cards */
+  gap: 1px;
   width: 100%;
 }
 
-/* --- Individual Cards --- */
 .wealth-card {
   background-color: #ffffff;
   border: 2px solid #dadcdfbd;
@@ -1281,14 +1203,12 @@
   height: 255px;
 }
 
-/* Hover Effects (Shadow & Lift) */
 .wealth-card:hover {
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.08);
   transform: translateY(-8px);
   border-color: transparent;
 }
 
-/* --- Icons Setup --- */
 .wealth-icon {
   margin-bottom: 25px;
   display: flex;
@@ -1297,12 +1217,10 @@
   transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
-/* Icon Rotation on Card Hover */
 .wealth-card:hover .wealth-icon {
   transform: rotate(20deg) scale(1.15);
 }
 
-/* Icon Colors matching the image exactly */
 .icon-gold {
   color: #d97706;
 }
@@ -1322,7 +1240,6 @@
   color: #f97316;
 }
 
-/* --- Card Typography --- */
 .wealth-card h3 {
   font-size: 15px;
   font-weight: 700;
@@ -1336,30 +1253,25 @@
   color: #4b5563;
   line-height: 1.5;
   margin-bottom: 25px;
-  flex-grow: 1; /* Pushes the 'Learn More' link to the bottom edge */
+  flex-grow: 1;
 }
 
-/* --- Learn More Link --- */
 .wealth-link {
   text-decoration: none;
-  color: #7a3ff3; /* Stackly Purple */
+  color: #7a3ff3;
   font-size: 14px;
   font-weight: 700;
   display: flex;
   align-items: center;
   gap: 8px;
   transition: gap 0.3s ease;
-  margin-top: auto; /* Aligns to bottom */
+  margin-top: auto;
 }
 
 .wealth-card:hover .wealth-link {
-  gap: 12px; /* Arrow pushes right on hover */
+  gap: 12px;
 }
 
-/* =========================================
-   MOBILE RESPONSIVENESS
-========================================= */
-/* Small Laptops/Tablets (Landscape) - Break into 3 columns */
 @media screen and (max-width: 1200px) {
   .wealth-grid {
     grid-template-columns: repeat(3, 1fr);
@@ -1367,7 +1279,6 @@
   }
 }
 
-/* Tablets (Portrait) - Break into 2 columns */
 @media screen and (max-width: 768px) {
   .wealth-section {
     padding: 80px 20px;
@@ -1380,7 +1291,6 @@
   }
 }
 
-/* Mobile Phones - Single Column */
 @media screen and (max-width: 576px) {
   .wealth-title {
     font-size: 28px;
@@ -1398,9 +1308,6 @@
   }
 }
 
-/* =========================================
-   LATEST NEWS SECTION
-========================================= */
 .news-section {
   background-color: #ffffff;
   padding: 25px 40px;
@@ -1415,16 +1322,15 @@
   flex-direction: column;
 }
 
-/* --- Header Section --- */
 .news-header {
   display: flex;
   justify-content: space-between;
-  align-items: flex-end; /* Aligns button to the bottom of the text */
+  align-items: flex-end;
   margin-bottom: -20px;
 }
 
 .header-text .sub-heading {
-  color: #7a3ff3; /* Stackly Purple */
+  color: #7a3ff3;
   font-size: 14px;
   font-weight: 700;
   letter-spacing: 1px;
@@ -1440,12 +1346,11 @@
   line-height: 1.2;
 }
 
-/* Outline Button */
 .btn-outline {
   text-decoration: none;
   color: #7a3ff3;
-  border: 1px solid #d8c4ff; /* Light purple border matching image */
-  /* padding: 12px 28px; */
+  border: 1px solid #d8c4ff;
+
   border-radius: 8px;
   font-weight: 600;
   font-size: 15px;
@@ -1464,35 +1369,31 @@
   transform: translateY(-2px);
 }
 
-/* --- News Grid --- */
 .news-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 20px;
 }
 
-/* --- News Card Styles --- */
 .news-card {
   background-color: #ffffff;
   border: 1px solid #e5e7eb;
   border-radius: 16px;
   display: flex;
   flex-direction: column;
-  overflow: hidden; /* Keeps image inside border radius */
+  overflow: hidden;
   transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   cursor: pointer;
   width: 360px;
   height: 322px;
 }
 
-/* Card Hover Effect: Lift up & Box Shadow */
 .news-card:hover {
   transform: translateY(-10px);
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
   border-color: transparent;
 }
 
-/* Card Image */
 .card-img-wrapper {
   width: 100%;
   height: 220px;
@@ -1506,22 +1407,20 @@
   transition: transform 0.5s ease;
 }
 
-/* Slight image zoom on card hover */
 .news-card:hover .card-img-wrapper img {
   transform: scale(1.05);
 }
 
-/* Card Content */
 .card-content {
   padding: 30px 25px;
   display: flex;
   flex-direction: column;
-  flex-grow: 1; /* Pushes the read more link to the bottom */
+  flex-grow: 1;
 }
 
 .news-date {
   font-size: 13px;
-  color: #6b7280; /* Gray date text */
+  color: #6b7280;
   font-weight: 500;
   margin-bottom: 12px;
 }
@@ -1542,7 +1441,6 @@
   flex-grow: 1;
 }
 
-/* Read More Link */
 .read-more {
   text-decoration: none;
   color: #7a3ff3;
@@ -1559,18 +1457,17 @@
   transition: transform 0.4s ease;
 }
 
-/* Hover Effect: Arrow Icon Rotation */
 .news-card:hover .read-more i,
 .news-card:hover .read-more svg {
-  transform: rotate(-45deg); /* Points diagonally up like a modern link */
+  transform: rotate(-45deg);
 }
 
-/* =========================================
-   MOBILE RESPONSIVENESS
-========================================= */
 @media screen and (max-width: 992px) {
   .header-text .main-heading {
     font-size: 32px;
+  }
+  .news-grid {
+    grid-template-columns: repeat(1, 1fr) !important;
   }
 }
 @media screen and (max-width: 1224px) {
@@ -1598,9 +1495,6 @@
   }
 }
 
-/* =========================================
-   NEWSLETTER SECTION
-========================================= */
 .newsletter-section {
   background-color: #ffffff;
   padding: 15px 40px;
@@ -1611,7 +1505,7 @@
 .newsletter-container {
   max-width: 1200px;
   width: 100%;
-  background-color: #0f1a62; /* Exact Dark Navy Blue from image */
+  background-color: #0f1a62;
   border-radius: 16px;
   padding: 40px 50px;
   display: flex;
@@ -1621,12 +1515,10 @@
   transition: box-shadow 0.4s ease;
 }
 
-/* Hover Effect: Glowing Shadow for the whole banner */
 .newsletter-container:hover {
   box-shadow: 0 20px 40px rgba(17, 24, 59, 0.25);
 }
 
-/* --- Left Side Content --- */
 .newsletter-content {
   display: flex;
   align-items: center;
@@ -1635,8 +1527,8 @@
 }
 
 .newsletter-icon {
-  color: #4f80ff; /* Light blue tint for the icon like the image */
-  background-color: rgba(255, 255, 255, 0.05); /* Slight box behind icon */
+  color: #4f80ff;
+  background-color: rgba(255, 255, 255, 0.05);
   padding: 15px;
   border-radius: 12px;
   display: flex;
@@ -1647,7 +1539,6 @@
   height: 90px;
 }
 
-/* Hover Effect: Icon Rotate & Scale */
 .newsletter-container:hover .newsletter-icon {
   transform: rotate(-15deg) scale(1.1);
 }
@@ -1661,14 +1552,13 @@
 }
 
 .newsletter-text p {
-  color: #d1d5db; /* Light gray */
+  color: #d1d5db;
   font-size: 15px;
   line-height: 1.5;
   font-weight: 400;
   margin: 0;
 }
 
-/* --- Right Side Form --- */
 .newsletter-form {
   display: flex;
   align-items: center;
@@ -1684,18 +1574,18 @@
 }
 
 .newsletter-error {
-  color: #ef4444; /* Error red */
+  color: #ef4444;
   font-size: 12px;
   position: absolute;
   bottom: -22px;
   left: 5px;
-  display: none; /* Hidden by default */
+  display: none;
   font-weight: 500;
 }
 
 .newsletter-form input {
   background-color: transparent;
-  border: 1px solid rgba(255, 255, 255, 0.3); /* Transparent white border */
+  border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 8px;
   padding: 14px 20px;
   color: #ffffff;
@@ -1706,15 +1596,15 @@
 }
 
 .newsletter-form input::placeholder {
-  color: #9ca3af; /* Placeholder gray */
+  color: #9ca3af;
 }
 
 .newsletter-form input:focus {
-  border-color: #8b5cf6; /* Purple border on focus */
+  border-color: #8b5cf6;
 }
 
 .btn-subscribe {
-  background-color: #8b5cf6; /* Exact Purple from image */
+  background-color: #8b5cf6;
   color: #ffffff;
   border: none;
   border-radius: 8px;
@@ -1725,16 +1615,12 @@
   transition: all 0.3s ease;
 }
 
-/* Hover Effect: Button Lift & Shadow */
 .btn-subscribe:hover {
   background-color: #7a3ff3;
   transform: translateY(-2px);
   box-shadow: 0 8px 20px rgba(139, 92, 246, 0.4);
 }
 
-/* =========================================
-   MOBILE RESPONSIVENESS
-========================================= */
 @media screen and (max-width: 1100px) {
   .newsletter-form input {
     width: 250px;
@@ -1778,11 +1664,7 @@
   }
 }
 
-.logo {
-  width: 150px;
-}
-
 .hero-buttons .btn-primary,
 .hero-buttons .btn-secondary {
-  display: inline-block; /* Ithu romba mukkiyam GSAP 'y' animation-ku */
+  display: inline-block;
 }

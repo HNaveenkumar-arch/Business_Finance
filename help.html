@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stackly Navbar</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="help.css">
+    <link rel="stylesheet" href="common.css">
+</head>
+
+<body>
+
+    <header class="header" id="header">
+        <nav class="navbar">
+
+            <a href="index.html" class="logo">
+                <img src="./asset/Violetlogo.webp" alt="logo">
+            </a>
+
+
+            <div class="nav-menu" id="navMenu">
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="personal.html">Personal</a></li>
+                    <li><a href="business.html">Business</a></li>
+                    <li><a href="wealth.html">Wealth</a></li>
+                    <li><a href="Loan&cards.html">Loans&Cards</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="help.html" class="active">Help</a></li>
+                </ul>
+
+
+                <div class="nav-actions">
+                    <div class="search-container">
+                        <div class="search-box">
+                            <input type="text" id="searchInput" placeholder="Search">
+                            <i class="fa-solid fa-magnifying-glass" id="searchIcon"></i>
+                        </div>
+
+                        <span class="search-error" id="searchError">Please enter a keyword to search</span>
+                    </div>
+                    <a href="login.html" class="login-btn">Login</a>
+                </div>
+            </div>
+
+
+            <div class="mobile-toggle" id="mobileToggle">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+
+
+    <section class="help-hero-section">
+        <div class="container">
+
+            <div class="help-hero-wrapper">
+
+                <div class="help-content-col gsap-slide-right">
+
+
+                    <div class="breadcrumbs">
+                        <a href="index.html" class="home-link">Home</a>
+                        <i class="fa-solid fa-chevron-right breadcrumb-icon"></i>
+                        <span class="current-page">Help</span>
+                    </div>
+
+
+                    <h1 class="help-title">Help Center</h1>
+                    <p class="help-description">
+                        We're here to help you with anything you need. Find answers, get support, and manage your
+                        banking with ease.
+                    </p>
+
+                    <div class="search-wrapper">
+
+                        <form class="search-container1" id="searchForm">
+                            <input type="text" id="searchInput1" placeholder="Search for help topics, features...."
+                                class="help-search-input">
+                            <button type="submit" class="help-search-btn">
+                                <i class="fa-solid fa-magnifying-glass search-btn-icon"></i> Search
+                            </button>
+                        </form>
+
+                        <span class="error-message" id="errorMessage">Please type something to search.</span>
+                    </div>
+
+                    <div class="popular-searches">
+                        <span class="popular-label">Popular Searches:</span>
+                        <div class="popular-tags">
+                            <a href="404page.html" class="pop-tag">
+                                <i class="fa-solid fa-rotate-right tag-icon"></i> Reset Password
+                            </a>
+                            <a href="404page.html" class="pop-tag">
+                                <i class="fa-solid fa-money-bill-transfer tag-icon"></i> Transactions
+                            </a>
+                            <a href="404page.html" class="pop-tag">
+                                <i class="fa-solid fa-chart-line tag-icon"></i> Account Limits
+                            </a>
+                            <a href="404page.html" class="pop-tag">
+                                <i class="fa-solid fa-id-card tag-icon"></i> KYC
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <div class="help-image-col gsap-slide-left">
+
+                    <img src="./asset/image59.webp" alt="Help Center Support Illustration" class="help-hero-img">
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <section class="help-services-section">
+        <div class="container-fluid">
+
+            <h2 class="help-services-title gsap-fade-in">How can we help you today?</h2>
+
+
+            <div class="services-grid">
+
+
+                <div class="service-card gsap-stagger-card">
+                    <div class="icon-wrapper">
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+                    <h3>Accounts & Profile</h3>
+                    <p>Manage your account,profile settings and verification.</p>
+                    <a href="404page.html" class="learn-more">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+
+
+                <div class="service-card gsap-stagger-card">
+                    <div class="icon-wrapper">
+                        <i class="fa-solid fa-arrow-right-arrow-left"></i>
+                    </div>
+                    <h3>Payments & Transfers</h3>
+                    <p>Send money,add payers and manage your transactions.</p>
+                    <a href="404page.html" class="learn-more">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+
+
+                <div class="service-card gsap-stagger-card">
+                    <div class="icon-wrapper">
+                        <i class="fa-regular fa-credit-card"></i>
+                    </div>
+                    <h3>Cards</h3>
+                    <p>Manage credit/debit cards, limits,blocking and more.</p>
+                    <a href="404page.html" class="learn-more">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+
+
+                <div class="service-card gsap-stagger-card">
+                    <div class="icon-wrapper">
+                        <i class="fa-solid fa-hand-holding-dollar"></i>
+                    </div>
+                    <h3>Loans</h3>
+                    <p>Learn about loans,EMIs eligibility and applications.</p>
+                    <a href="404page.html" class="learn-more">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+
+
+                <div class="service-card gsap-stagger-card">
+                    <div class="icon-wrapper">
+                        <i class="fa-solid fa-shield-halved"></i>
+                    </div>
+                    <h3>Security & Privacy</h3>
+                    <p>Secure banking tips and how we protect your data.</p>
+                    <a href="404page.html" class="learn-more">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+
+
+                <div class="service-card gsap-stagger-card">
+                    <div class="icon-wrapper">
+                        <i class="fa-solid fa-mobile-screen-button"></i>
+                    </div>
+                    <h3>Digital Banking</h3>
+                    <p>Using our app,features and digital services.</p>
+                    <a href="404page.html" class="learn-more">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="faq-section">
+        <div class="faq-container">
+
+
+            <div class="faq-header">
+                <h2 class="faq-title">Frequently Asked Questions</h2>
+                <a href="404page.html" class="view-all-faq">View All FAQ's</a>
+            </div>
+
+
+            <div class="faq-content-wrapper">
+
+
+                <div class="faq-left-col">
+
+
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>How do I open a savings account?</span>
+                            <i class="fa-solid fa-chevron-down faq-icon"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>You can open a savings account online through our website by clicking on "Open Account"
+                                or by visiting any of our nearest branches with a valid ID and address proof.</p>
+                        </div>
+                    </div>
+
+
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>What is the minimum balance requirement?</span>
+                            <i class="fa-solid fa-chevron-down faq-icon"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>The minimum balance requirement varies based on the account type. Our standard savings
+                                account requires a minimum balance of $500 to avoid monthly maintenance fees.</p>
+                        </div>
+                    </div>
+
+
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>How can I reset my online banking password?</span>
+                            <i class="fa-solid fa-chevron-down faq-icon"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Click on the "Forgot Password" link on the login page. Follow the prompts to verify your
+                                identity via email or SMS, and you will be able to create a new password securely.</p>
+                        </div>
+                    </div>
+
+
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>Is my personal information safe with you?</span>
+                            <i class="fa-solid fa-chevron-down faq-icon"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Yes, we use industry-leading encryption and advanced security protocols to ensure that
+                                your personal and financial information is always protected and confidential.</p>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <div class="faq-right-col">
+                    <img src="./asset/image60.webp" alt="FAQ Illustration" class="faq-img">
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+
+
+    <section class="support-section">
+        <div class="support-container">
+
+
+            <div class="support-header">
+                <h2 class="support-title">Still Need Help?We're Here for You</h2>
+                <p class="support-subtitle">Chhose the best way to connect with our support team.</p>
+            </div>
+
+
+            <div class="support-grid">
+
+
+                <div class="support-card">
+                    <div class="support-icon-box">
+                        <i class="fa-solid fa-message"></i>
+                    </div>
+                    <div class="support-card-content">
+                        <h3>Live Chat</h3>
+                        <p>Chat with our support agent in real-time.</p>
+                        <a href="404page.html" class="support-link">Start Chat <i
+                                class="fa-solid fa-arrow-right"></i></a>
+                        <span class="support-badge">Available 24/7</span>
+                    </div>
+                </div>
+
+
+                <div class="support-card">
+                    <div class="support-icon-box">
+                        <i class="fa-solid fa-phone-volume"></i>
+                    </div>
+                    <div class="support-card-content">
+                        <h3>Call Us</h3>
+                        <p>Speak to our customer care executive.</p>
+                        <a href="404page.html" class="support-text-link">1800-123-4567</a>
+                        <span class="support-badge">Available 24/7</span>
+                    </div>
+                </div>
+
+
+                <div class="support-card">
+                    <div class="support-icon-box">
+                        <i class="fa-solid fa-envelope-open-text"></i>
+                    </div>
+                    <div class="support-card-content">
+                        <h3>Email Us</h3>
+                        <p>Drop us an email and we'll<br>get back to you.</p>
+                        <a href="404page.html" class="support-text-link">support@stacklybank.com</a>
+                        <span class="support-badge">Response within 24 hrs</span>
+                    </div>
+                </div>
+
+
+                <div class="support-card">
+                    <div class="support-icon-box">
+                        <i class="fa-solid fa-location-dot"></i>
+                    </div>
+                    <div class="support-card-content">
+                        <h3>Visit Branch</h3>
+                        <p>Find your nearest branch<br>and visit us.</p>
+                        <a href="404page.html" class="support-link">Find Branch <i
+                                class="fa-solid fa-arrow-right"></i></a>
+                        <span class="support-badge">All India Network</span>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="fraud-banner">
+                <div class="fraud-left">
+                    <img src="./asset/image69.webp" alt="Report Fraud" class="fraud-img">
+                    <div class="fraud-text">
+                        <h2>Report Fraud or Suspicious Activity</h2>
+                        <p>If you notice any unauthorized activity or fraud,report it to us immediately.</p>
+                    </div>
+                </div>
+                <div class="fraud-right">
+                    <a href="404page.html" class="btn-report">Report Now</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+
+
+
+    <footer class="footer-section">
+        <div class="footer-container">
+
+            <div class="footer-brand">
+                <a href="index.html" class="footer-logo">
+                    <img src="./asset/Violetlogo.webp" alt="logo" class="logo">
+                </a>
+                <p class="footer-desc">Your trusted partner in banking, helping you achieve a better tomorrow.</p>
+
+                <div class="social-icons">
+
+                    <a href="404page.html" class="social-icon fb"><i class="fa-brands fa-facebook-f"></i></a>
+
+                    <a href="404page.html" class="social-icon in"><i class="fa-brands fa-linkedin-in"></i></a>
+
+                    <a href="404page.html" class="social-icon x">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                        </svg>
+                    </a>
+
+                    <a href="404page.html" class="social-icon insta"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+
+
+            <div class="footer-links">
+                <h4>Personal</h4>
+                <ul>
+                    <li><a href="404page.html">Accounts</a></li>
+                    <li><a href="404page.html">Cards</a></li>
+                    <li><a href="404page.html">Loans</a></li>
+                    <li><a href="404page.html">Investments</a></li>
+                    <li><a href="404page.html">Insurance</a></li>
+                </ul>
+            </div>
+
+
+            <div class="footer-links">
+                <h4>Business</h4>
+                <ul>
+                    <li><a href="404page.html">Business Accounts</a></li>
+                    <li><a href="404page.html">Loans</a></li>
+                    <li><a href="404page.html">Merchant Services</a></li>
+                    <li><a href="404page.html">Payroll Services</a></li>
+                </ul>
+            </div>
+
+
+            <div class="footer-links">
+                <h4>Support</h4>
+                <ul>
+                    <li><a href="404page.html">FAQs</a></li>
+                    <li><a href="404page.html">Help Center</a></li>
+                    <li><a href="404page.html">Contact Us</a></li>
+                    <li><a href="404page.html">Security</a></li>
+                </ul>
+            </div>
+
+
+            <div class="footer-links">
+                <h4>About Us</h4>
+                <ul>
+                    <li><a href="404page.html">Our Story</a></li>
+                    <li><a href="404page.html">Careers</a></li>
+                    <li><a href="404page.html">News & Media</a></li>
+                    <li><a href="404page.html">Locate Us</a></li>
+                </ul>
+            </div>
+
+
+            <div class="footer-contact">
+                <h4>Contact Us</h4>
+                <ul>
+                    <li>
+                        <span class="contact-icon"><i class="fa-solid fa-phone"></i></span>
+                        <a href="tel:+917010792745">+91 7010792745</a>
+                    </li>
+                    <li>
+                        <span class="contact-icon">
+
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
+                                </path>
+                                <polyline points="22,6 12,13 2,6"></polyline>
+                            </svg>
+                        </span>
+                        <a href="mailto:info@stackly.com">info@stackly.com</a>
+                    </li>
+                    <li>
+                        <span class="contact-icon location"><i class="fa-solid fa-location-dot"></i></span>
+                        <span>Tamilnadu<br>Salem - 636008</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+
+        <div class="footer-bottom">
+            <div class="footer-copyright">
+                <p>&copy; 2026 STACKLYBANK. All rights reserved.</p>
+            </div>
+            <div class="footer-legal">
+                <a href="404page.html">Privacy Policy</a>
+                <a href="404page.html">Terms & Conditions</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+    <script src="script.js"></script>
+    <script>
+
+        gsap.from(".gsap-slide-right", {
+            scrollTrigger: {
+                trigger: ".help-hero-section",
+                start: "top 85%"
+            },
+            x: -80,
+            opacity: 0,
+            duration: 1.2,
+            ease: "power3.out"
+        });
+
+
+        gsap.from(".gsap-slide-left", {
+            scrollTrigger: {
+                trigger: ".help-hero-section",
+                start: "top 85%"
+            },
+            x: 80,
+            opacity: 0,
+            duration: 1.2,
+            ease: "power3.out",
+            delay: 0.2
+        });
+
+
+
+
+        const searchForm = document.getElementById('searchForm');
+        const searchInput = document.getElementById('searchInput1');
+        const errorMessage = document.getElementById('errorMessage');
+
+
+        searchForm.addEventListener('submit', function (event) {
+            event.preventDefault();
+
+            const typedText = searchInput.value.trim();
+
+            if (typedText === "") {
+
+                errorMessage.classList.add('show');
+                searchForm.classList.add('error-border');
+            } else {
+
+                errorMessage.classList.remove('show');
+                searchForm.classList.remove('error-border');
+
+                window.location.href = '404page   .html'
+            }
+        });
+
+
+        searchInput.addEventListener('input', function () {
+            if (searchInput.value.trim() !== "") {
+                errorMessage.classList.remove('show');
+                searchForm.classList.remove('error-border');
+            }
+        });
+
+
+
+
+
+        gsap.fromTo(".gsap-fade-in",
+            {
+                y: -30,
+                opacity: 0
+            },
+            {
+                scrollTrigger: {
+                    trigger: ".help-services-section",
+                    start: "top 85%",
+                    toggleActions: "play none none none"
+                },
+                y: 0,
+                opacity: 1,
+                duration: 0.8,
+                ease: "power3.out"
+            }
+        );
+
+
+        gsap.fromTo(".gsap-stagger-card",
+            {
+                y: 50,
+                opacity: 0
+            },
+            {
+                scrollTrigger: {
+                    trigger: ".services-grid",
+                    start: "top 85%",
+                    toggleActions: "play none none none"
+                },
+                y: 0,
+                opacity: 1,
+                duration: 0.8,
+                stagger: 0.15,
+                ease: "back.out(1.2)"
+            }
+        );
+
+
+
+
+
+
+
+        gsap.fromTo(".faq-header",
+            { y: -30, opacity: 0 },
+            {
+                scrollTrigger: {
+                    trigger: ".faq-section",
+                    start: "top 85%",
+                    toggleActions: "play none none none"
+                },
+                y: 0,
+                opacity: 1,
+                duration: 0.6,
+                ease: "power3.out"
+            }
+        );
+
+
+        gsap.fromTo(".faq-item",
+            { x: -50, opacity: 0 },
+            {
+                scrollTrigger: {
+                    trigger: ".faq-left-col",
+                    start: "top 85%",
+                    toggleActions: "play none none none"
+                },
+                x: 0,
+                opacity: 1,
+                duration: 0.6,
+                stagger: 0.15,
+                ease: "power2.out"
+            }
+        );
+
+
+        gsap.fromTo(".faq-img",
+            { x: 50, opacity: 0, scale: 0.9 },
+            {
+                scrollTrigger: {
+                    trigger: ".faq-right-col",
+                    start: "top 80%",
+                    toggleActions: "play none none none"
+                },
+                x: 0,
+                opacity: 1,
+                scale: 1,
+                duration: 0.8,
+                ease: "back.out(1.2)"
+            }
+        );
+
+
+
+
+        const faqItems = document.querySelectorAll('.faq-item');
+
+        faqItems.forEach(item => {
+            const questionBtn = item.querySelector('.faq-question');
+            const answerDiv = item.querySelector('.faq-answer');
+
+            questionBtn.addEventListener('click', () => {
+
+                faqItems.forEach(otherItem => {
+                    if (otherItem !== item && otherItem.classList.contains('active')) {
+                        otherItem.classList.remove('active');
+                        otherItem.querySelector('.faq-answer').style.maxHeight = null;
+                    }
+                });
+
+
+                item.classList.toggle('active');
+
+                if (item.classList.contains('active')) {
+
+                    answerDiv.style.maxHeight = answerDiv.scrollHeight + "px";
+                } else {
+
+                    answerDiv.style.maxHeight = null;
+                }
+            });
+        });
+
+
+
+
+
+
+
+
+        gsap.fromTo(".support-header",
+            { y: -30, opacity: 0 },
+            {
+                scrollTrigger: {
+                    trigger: ".support-section",
+                    start: "top 85%",
+                    toggleActions: "play none none none"
+                },
+                y: 0,
+                opacity: 1,
+                duration: 0.6,
+                ease: "power3.out"
+            }
+        );
+
+
+        gsap.fromTo(".support-card",
+            { y: 40, opacity: 0 },
+            {
+                scrollTrigger: {
+                    trigger: ".support-grid",
+                    start: "top 85%",
+                    toggleActions: "play none none none"
+                },
+                y: 0,
+                opacity: 1,
+                duration: 0.6,
+                stagger: 0.15,
+                ease: "power2.out"
+            }
+        );
+
+
+        gsap.fromTo(".fraud-banner",
+            { y: 40, opacity: 0, scale: 0.98 },
+            {
+                scrollTrigger: {
+                    trigger: ".fraud-banner",
+                    start: "top 90%",
+                    toggleActions: "play none none none"
+                },
+                y: 0,
+                opacity: 1,
+                scale: 1,
+                duration: 0.7,
+                ease: "back.out(1.2)"
+            }
+        );
+    </script>
+</body>
+
+</html>

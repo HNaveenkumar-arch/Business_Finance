@@ -1,0 +1,975 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stackly Navbar</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="wealth.css">
+    <link rel="stylesheet" href="common.css">
+</head>
+
+<body>
+
+    <header class="header" id="header">
+        <nav class="navbar">
+
+            <a href="index.html" class="logo">
+                <img src="./asset/Violetlogo.webp" alt="logo">
+            </a>
+
+
+            <div class="nav-menu" id="navMenu">
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="personal.html">Personal</a></li>
+                    <li><a href="business.html">Business</a></li>
+                    <li><a href="wealth.html" class="active">Wealth</a></li>
+                    <li><a href="Loan&cards.html">Loans&Cards</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="help.html">Help</a></li>
+                </ul>
+
+
+                <div class="nav-actions">
+                    <div class="search-container">
+                        <div class="search-box">
+                            <input type="text" id="searchInput" placeholder="Search">
+                            <i class="fa-solid fa-magnifying-glass" id="searchIcon"></i>
+                        </div>
+
+                        <span class="search-error" id="searchError">Please enter a keyword to search</span>
+                    </div>
+                    <a href="login.html" class="login-btn">Login</a>
+                </div>
+            </div>
+
+
+            <div class="mobile-toggle" id="mobileToggle">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+
+    <section class="wealth-hero-section">
+        <div class="wealth-hero-container">
+
+
+            <div class="wealth-content-col">
+
+
+                <div class="wealth-breadcrumb">
+                    <a href="index.html">Home</a>
+                    <i class="fa-solid fa-chevron-right"></i>
+                    <span>Wealth</span>
+                </div>
+
+                <span class="wealth-tag">WEALTH MANAGEMENT</span>
+
+
+                <h1 class="wealth-title">Your Wealth.<br>Our <span class="text-purple">Priority.</span></h1>
+                <p class="wealth-desc">
+                    Personalized strategies.Expert guidance.<br>
+                    Powerful solutions to help you grow,protect<br>
+                    and pass on your wealth.
+                </p>
+
+
+                <div class="wealth-buttons">
+                    <a href="404page.html" class="btn-wealth-primary">
+                        Talk to a Wealth Advisor
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                    <a href="404page.html" class="btn-wealth-outline">Explore Solutions</a>
+                </div>
+
+
+                <div class="wealth-badges-row">
+
+                    <div class="w-badge-item">
+                        <div class="w-badge-icon">
+                            <i class="fa-solid fa-clipboard-user"></i>
+                        </div>
+                        <span>Persnolized<br>Wealth Plans</span>
+                    </div>
+
+
+                    <div class="w-badge-item">
+                        <div class="w-badge-icon">
+                            <i class="fa-solid fa-user-tie"></i>
+                        </div>
+                        <span>Dedicated<br>Relationship Manager</span>
+                    </div>
+
+
+                    <div class="w-badge-item">
+                        <div class="w-badge-icon">
+
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                            </svg>
+                        </div>
+                        <span>Transparent<br>Fees</span>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="wealth-image-col">
+
+                <img src="./asset/image32.webp" alt="Wealth Management" class="wealth-hero-img">
+
+
+                <div class="wealth-floating-card">
+
+
+                    <div class="w-card-stats">
+                        <p class="w-card-title">Your Wealth Snapshot</p>
+                        <div class="w-card-value-row">
+                            <h3>₹ 2,54,75,000</h3>
+                            <span class="w-growth-badge"><i class="fa-solid fa-arrow-up"></i> 12.6%</span>
+                        </div>
+                        <p class="w-card-subtitle">Total Portfolio Value</p>
+                        <a href="404page.html" class="w-btn-view">View Portfolio</a>
+                    </div>
+
+
+                    <div class="w-card-chart-area">
+                        <div class="w-donut-chart">
+                            <div class="w-donut-hole"></div>
+                        </div>
+                        <ul class="w-chart-legend">
+                            <li><span class="dot dot-blue"></span> Equities <span>65%</span></li>
+                            <li><span class="dot dot-orange"></span> Debt <span>20%</span></li>
+                            <li><span class="dot dot-green"></span> Real Assets <span>10%</span></li>
+                            <li><span class="dot dot-grey"></span> Cash <span>5%</span></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+
+    <section class="wealth-solutions-section">
+        <div class="ws-container">
+
+
+            <div class="ws-header">
+                <h2 class="ws-title">Comprehensive Wealth Solutions</h2>
+                <p class="ws-subtitle">Expertise across every aspect of your financial life.</p>
+            </div>
+
+
+            <div class="ws-grid">
+
+
+                <div class="ws-card">
+                    <div class="ws-icon icon-gold">
+
+                        <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline>
+                            <polyline points="17 6 23 6 23 12"></polyline>
+                        </svg>
+                    </div>
+                    <h3 class="ws-card-title">Investment<br>Management</h3>
+                    <p class="ws-card-desc">Professionally managed portfolio tailored to your goals and risk appetite.
+                    </p>
+                    <a href="404page.html" class="ws-link">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+
+
+                <div class="ws-card">
+                    <div class="ws-icon icon-purple">
+                        <i class="fa-solid fa-umbrella"></i>
+                    </div>
+                    <h3 class="ws-card-title">Retirement<br>Planning</h3>
+                    <p class="ws-card-desc">Build a secure retirement corpus and enjoy financial freedom.</p>
+                    <a href="404page.html" class="ws-link">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+
+
+                <div class="ws-card">
+                    <div class="ws-icon icon-green">
+                        <i class="fa-regular fa-file-lines"></i>
+                    </div>
+                    <h3 class="ws-card-title">Tax<br>Optimization</h3>
+                    <p class="ws-card-desc">Smart tax strategies to keep more of what you earn.</p>
+                    <a href="404page.html" class="ws-link">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+
+
+                <div class="ws-card">
+                    <div class="ws-icon icon-pink">
+                        <i class="fa-solid fa-user-group"></i>
+                    </div>
+                    <h3 class="ws-card-title">Estate<br>Planning</h3>
+                    <p class="ws-card-desc">Preserve your legacy and provide for your loved ones.</p>
+                    <a href="404page.html" class="ws-link">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+
+
+                <div class="ws-card">
+                    <div class="ws-icon icon-blue">
+
+                        <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                            <polyline points="9 12 11 14 15 10"></polyline>
+                        </svg>
+                    </div>
+                    <h3 class="ws-card-title">Wealth<br>Protection</h3>
+
+                    <p class="ws-card-desc">Safegaurd your wealth with insurance and risk management solutions.</p>
+                    <a href="404page.html" class="ws-link">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+
+
+                <div class="ws-card">
+                    <div class="ws-icon icon-orange">
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                    <h3 class="ws-card-title">Philanthropy<br>Advisor</h3>
+                    <p class="ws-card-desc">Make a meaningful impact with structured giving solutions.</p>
+                    <a href="404page.html" class="ws-link">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+
+
+
+    <section class="invest-performance-section">
+
+
+        <div class="invest-container">
+
+
+            <div class="invest-header">
+                <h2 class="invest-title">Invest in What Matters</h2>
+                <p class="invest-subtitle">Diverse opportunities. Expertly curated.</p>
+            </div>
+
+
+            <div class="invest-grid">
+
+
+                <div class="invest-card">
+                    <div class="invest-img-box">
+                        <img src="./asset/image25.webp" alt="Equities" class="invest-img">
+                    </div>
+                    <div class="invest-card-content">
+                        <h3 class="invest-card-title">Equities</h3>
+                        <p class="invest-card-desc">Invest in india and global markets with research based strategies.
+                        </p>
+                        <a href="404page.html" class="invest-link">Explore <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+
+                <div class="invest-card">
+                    <div class="invest-img-box">
+                        <img src="./asset/image26.webp" alt="Fixed Income" class="invest-img">
+                    </div>
+                    <div class="invest-card-content">
+                        <h3 class="invest-card-title">Fixed Income</h3>
+
+                        <p class="invest-card-desc">Stable returns and capital preservation with bonds and debit
+                            instruments.</p>
+                        <a href="404page.html" class="invest-link">Explore <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+
+                <div class="invest-card">
+                    <div class="invest-img-box">
+                        <img src="./asset/image27.webp" alt="Real Estate" class="invest-img">
+                    </div>
+                    <div class="invest-card-content">
+                        <h3 class="invest-card-title">Real Estate</h3>
+                        <p class="invest-card-desc">Access to quality real estate opportunities and REITs.</p>
+                        <a href="404page.html" class="invest-link">Explore <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+
+                <div class="invest-card">
+                    <div class="invest-img-box">
+                        <img src="./asset/image28.webp" alt="Gold & Commodities" class="invest-img">
+                    </div>
+                    <div class="invest-card-content">
+                        <h3 class="invest-card-title">Gold & Commodities</h3>
+                        <p class="invest-card-desc">Diversity your portfolio with gold and other commodities.</p>
+                        <a href="404page.html" class="invest-link">Explore <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+
+                <div class="invest-card">
+                    <div class="invest-img-box">
+                        <img src="./asset/image29.webp" alt="Alternative Investments" class="invest-img">
+                    </div>
+                    <div class="invest-card-content">
+                        <h3 class="invest-card-title">Alternative Investments</h3>
+                        <p class="invest-card-desc">Venture capital,private equity and other alternative assets.</p>
+                        <a href="404page.html" class="invest-link">Explore <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+        <section class="performance-banner" id="performance-section">
+            <div class="perf-container">
+
+
+                <div class="perf-content">
+                    <div class="perf-header gsap-fade">
+                        <h2>Performance That Speaks</h2>
+                        <p>Delivering opponent value for your wealth.</p>
+                    </div>
+
+                    <div class="perf-stats-grid">
+
+                        <div class="perf-stat-item gsap-slide-up">
+                            <div class="perf-icon"><i class="fa-solid fa-chart-line"></i></div>
+                            <div class="perf-info">
+                                <h3>12.8%</h3>
+                                <span>Average Portfolio Return<br>(Last 5 Years)</span>
+                            </div>
+                        </div>
+
+
+                        <div class="perf-stat-item gsap-slide-up">
+                            <div class="perf-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                            <div class="perf-info">
+                                <h3>₹ 25,000 Cr+</h3>
+                                <span>Assets Under Management</span>
+                            </div>
+                        </div>
+
+
+                        <div class="perf-stat-item gsap-slide-up">
+                            <div class="perf-icon"><i class="fa-solid fa-user-group"></i></div>
+                            <div class="perf-info">
+                                <h3>15,000+</h3>
+                                <span>Happy Wealth Clients</span>
+                            </div>
+                        </div>
+
+
+                        <div class="perf-stat-item gsap-slide-up">
+                            <div class="perf-icon"><i class="fa-solid fa-trophy"></i></div>
+                            <div class="perf-info">
+                                <h3>25+</h3>
+                                <span>Years of Trust</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="perf-image-wrapper gsap-fade">
+
+                    <img src="./asset/image70.webp" alt="Performance Graph" class="perf-side-image">
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <section class="how-we-work-section">
+            <div class="hww-container">
+
+
+                <div class="hww-header">
+                    <h2 class="hww-title">How We Work With You</h2>
+                    <p class="hww-subtitle">A relationship built on trust,clarity and results.</p>
+                </div>
+
+
+                <div class="hww-steps-grid">
+
+
+                    <div class="hww-step-card">
+                        <div class="hww-icon-wrapper">
+                            <div class="hww-icon">
+                                <i class="fa-solid fa-chart-line"></i>
+                            </div>
+                        </div>
+                        <h4 class="hww-step-number">01</h4>
+                        <h3 class="hww-step-title">Understand You</h3>
+                        <p class="hww-step-desc">We start by understanding your goals,needs and financial situation.</p>
+                    </div>
+
+
+                    <div class="hww-step-card">
+                        <div class="hww-icon-wrapper">
+                            <div class="hww-icon">
+
+                                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2">
+                                    </path>
+                                    <rect x="8" y="2" width="8" height="4" rx="1" ry="1"></rect>
+                                </svg>
+                            </div>
+                        </div>
+                        <h4 class="hww-step-number">02</h4>
+                        <h3 class="hww-step-title">Plan your Wealth</h3>
+                        <p class="hww-step-desc">Our experts create a customized wealth plan just for you.</p>
+                    </div>
+
+
+                    <div class="hww-step-card">
+                        <div class="hww-icon-wrapper">
+                            <div class="hww-icon">
+                                <i class="fa-solid fa-user-group"></i>
+                            </div>
+                        </div>
+                        <h4 class="hww-step-number">03</h4>
+                        <h3 class="hww-step-title">Invest Strategically</h3>
+                        <p class="hww-step-desc">We implement the plan with the right mix of investments and solutions.
+                        </p>
+                    </div>
+
+
+                    <div class="hww-step-card">
+                        <div class="hww-icon-wrapper">
+                            <div class="hww-icon">
+
+                                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <polyline points="12 16 16 12 12 8"></polyline>
+                                    <line x1="8" y1="12" x2="16" y2="12"></line>
+                                </svg>
+                            </div>
+                        </div>
+                        <h4 class="hww-step-number">04</h4>
+                        <h3 class="hww-step-title">Monitor & Optimize</h3>
+                        <p class="hww-step-desc">We continously monitor your portfolio and optimize for better
+                            customers.</p>
+                    </div>
+
+
+                    <div class="hww-step-card">
+                        <div class="hww-icon-wrapper">
+                            <div class="hww-icon">
+
+                                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                                    <polyline points="9 12 11 14 15 10"></polyline>
+                                </svg>
+                            </div>
+                        </div>
+                        <h4 class="hww-step-number">05</h4>
+                        <h3 class="hww-step-title">Achieve Your Goals</h3>
+                        <p class="hww-step-desc">Stay on track and achieve your financial goals with confidence.</p>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+
+
+
+        <section class="wealth-insights-section">
+            <div class="insights-container">
+
+
+                <div class="insights-header-row">
+                    <div class="insights-header-text">
+                        <h2 class="insights-title">Latest Wealth Insights</h2>
+                        <p class="insights-subtitle">Stay informed with our expert perspectives.</p>
+                    </div>
+                    <a href="404page.html" class="view-all-link">View All Insights <i
+                            class="fa-solid fa-arrow-right"></i></a>
+                </div>
+
+
+                <div class="insights-grid">
+
+
+                    <div class="insight-card">
+                        <div class="insight-img-wrapper">
+
+                            <img src="./asset/image10.webp" alt="Stock Market" class="insight-img">
+                        </div>
+                        <div class="insight-content">
+                            <span class="insight-date">May 20,2026</span>
+                            <h3 class="insight-card-title">How to Invest Wisely in 2026</h3>
+                            <p class="insight-card-desc">Discover expert tips and strategies to grow your wealth this
+                                year.</p>
+                            <a href="404page.html" class="read-more-link">Read More <i
+                                    class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+
+
+                    <div class="insight-card">
+                        <div class="insight-img-wrapper">
+
+                            <img src="./asset/image9.webp" alt="Graph Analysis" class="insight-img">
+                        </div>
+                        <div class="insight-content">
+                            <span class="insight-date">May 19 ,2026</span>
+
+                            <h3 class="insight-card-title">5 Tips for Better Money Managment</h3>
+                            <p class="insight-card-desc">Simple steps to help you manage your finances effectievly.</p>
+                            <a href="404page.html" class="read-more-link">Read More <i
+                                    class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+
+
+                    <div class="insight-card">
+                        <div class="insight-img-wrapper">
+
+                            <img src="./asset/image8.webp" alt="Consultation" class="insight-img">
+                        </div>
+                        <div class="insight-content">
+                            <span class="insight-date">May 10,2026</span>
+                            <h3 class="insight-card-title">Understanding Home Loans</h3>
+                            <p class="insight-card-desc">Everything you need to know before applying for a home loan.
+                            </p>
+                            <a href="404page.html" class="read-more-link">Read More <i
+                                    class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <div class="wealth-cta-banner">
+
+                    <div class="w-cta-icon-box">
+
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                            <polyline points="14 2 14 8 20 8"></polyline>
+                            <polyline points="8 13 12 17 16 13"></polyline>
+                            <line x1="12" y1="9" x2="12" y2="17"></line>
+                        </svg>
+                    </div>
+
+
+                    <div class="w-cta-text">
+                        <h2>Ready to Grow and Protect Your Wealth?</h2>
+                        <p>Connect with our wealth experts and take the first step towards your financial future.</p>
+                    </div>
+
+
+                    <div class="w-cta-action">
+                        <a href="404page.html" class="btn-wealth-gold">
+                            Schedule a Consultation
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+
+
+
+        <footer class="footer-section">
+            <div class="footer-container">
+
+                <div class="footer-brand">
+                    <a href="index.html" class="footer-logo">
+                        <img src="./asset/Violetlogo.webp" alt="logo" class="logo">
+                    </a>
+                    <p class="footer-desc">Your trusted partner in banking, helping you achieve a better tomorrow.</p>
+
+                    <div class="social-icons">
+
+                        <a href="404page.html" class="social-icon fb"><i class="fa-brands fa-facebook-f"></i></a>
+
+                        <a href="404page.html" class="social-icon in"><i class="fa-brands fa-linkedin-in"></i></a>
+
+                        <a href="404page.html" class="social-icon x">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                            </svg>
+                        </a>
+
+                        <a href="404page.html" class="social-icon insta"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+
+
+                <div class="footer-links">
+                    <h4>Personal</h4>
+                    <ul>
+                        <li><a href="404page.html">Accounts</a></li>
+                        <li><a href="404page.html">Cards</a></li>
+                        <li><a href="404page.html">Loans</a></li>
+                        <li><a href="404page.html">Investments</a></li>
+                        <li><a href="404page.html">Insurance</a></li>
+                    </ul>
+                </div>
+
+
+                <div class="footer-links">
+                    <h4>Business</h4>
+                    <ul>
+                        <li><a href="404page.html">Business Accounts</a></li>
+                        <li><a href="404page.html">Loans</a></li>
+                        <li><a href="404page.html">Merchant Services</a></li>
+                        <li><a href="404page.html">Payroll Services</a></li>
+                    </ul>
+                </div>
+
+
+                <div class="footer-links">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="404page.html">FAQs</a></li>
+                        <li><a href="404page.html">Help Center</a></li>
+                        <li><a href="404page.html">Contact Us</a></li>
+                        <li><a href="404page.html">Security</a></li>
+                    </ul>
+                </div>
+
+
+                <div class="footer-links">
+                    <h4>About Us</h4>
+                    <ul>
+                        <li><a href="404page.html">Our Story</a></li>
+                        <li><a href="404page.html">Careers</a></li>
+                        <li><a href="404page.html">News & Media</a></li>
+                        <li><a href="404page.html">Locate Us</a></li>
+                    </ul>
+                </div>
+
+
+                <div class="footer-contact">
+                    <h4>Contact Us</h4>
+                    <ul>
+                        <li>
+                            <span class="contact-icon"><i class="fa-solid fa-phone"></i></span>
+                            <a href="tel:+917010792745">+91 7010792745</a>
+                        </li>
+                        <li>
+                            <span class="contact-icon">
+
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path
+                                        d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
+                                    </path>
+                                    <polyline points="22,6 12,13 2,6"></polyline>
+                                </svg>
+                            </span>
+                            <a href="mailto:info@stackly.com">info@stackly.com</a>
+                        </li>
+                        <li>
+                            <span class="contact-icon location"><i class="fa-solid fa-location-dot"></i></span>
+                            <span>Tamilnadu<br>Salem - 636008</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+
+            <div class="footer-bottom">
+                <div class="footer-copyright">
+                    <p>&copy; 2026 STACKLYBANK. All rights reserved.</p>
+                </div>
+                <div class="footer-legal">
+                    <a href="404page.html">Privacy Policy</a>
+                    <a href="404page.html">Terms & Conditions</a>
+                </div>
+            </div>
+        </footer>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+        <script src="script.js"></script>
+        <script>
+
+
+
+
+
+            gsap.fromTo(".wealth-breadcrumb, .wealth-tag, .wealth-title, .wealth-desc, .wealth-buttons, .w-badge-item",
+                { y: 30, opacity: 0 },
+                {
+                    y: 0,
+                    opacity: 1,
+                    duration: 0.7,
+                    stagger: 0.1,
+                    ease: "power3.out",
+                    delay: 0.2
+                }
+            );
+
+
+            gsap.fromTo(".wealth-hero-img",
+                {
+                    x: 50,
+                    opacity: 0,
+                    scale: 1.05
+                },
+                {
+                    x: 0,
+                    opacity: 1,
+                    scale: 1,
+                    duration: 1.2,
+                    ease: "power2.out",
+                    delay: 0.3
+                }
+            );
+
+
+            gsap.fromTo(".wealth-floating-card",
+                {
+                    y: 50,
+                    opacity: 0
+                },
+                {
+                    y: 0,
+                    opacity: 1,
+                    duration: 0.8,
+                    ease: "back.out(1.2)",
+                    delay: 0.8
+                }
+            );
+
+
+
+
+
+
+
+
+            gsap.fromTo(".ws-header > *",
+                { y: 30, opacity: 0 },
+                {
+                    scrollTrigger: {
+                        trigger: ".wealth-solutions-section",
+                        start: "top 85%",
+                        toggleActions: "play none none none"
+                    },
+                    y: 0,
+                    opacity: 1,
+                    duration: 0.6,
+                    stagger: 0.2,
+                    ease: "power3.out"
+                }
+            );
+
+
+            gsap.fromTo(".ws-card",
+                { y: 40, opacity: 0 },
+                {
+                    scrollTrigger: {
+                        trigger: ".ws-grid",
+                        start: "top 80%",
+                        toggleActions: "play none none none"
+                    },
+                    y: 0,
+                    opacity: 1,
+                    duration: 0.6,
+                    stagger: 0.1,
+                    ease: "back.out(1.2)"
+                }
+            );
+
+
+
+
+
+
+
+            gsap.fromTo(".invest-header > *",
+                { y: 30, opacity: 0 },
+                {
+                    scrollTrigger: {
+                        trigger: ".invest-performance-section",
+                        start: "top 85%",
+                        toggleActions: "play none none none"
+                    },
+                    y: 0,
+                    opacity: 1,
+                    duration: 0.6,
+                    stagger: 0.2,
+                    ease: "power3.out"
+                }
+            );
+
+
+            gsap.fromTo(".invest-card",
+                { y: 40, opacity: 0 },
+                {
+                    scrollTrigger: {
+                        trigger: ".invest-grid",
+                        start: "top 80%",
+                        toggleActions: "play none none none"
+                    },
+                    y: 0,
+                    opacity: 1,
+                    duration: 0.6,
+                    stagger: 0.1,
+                    ease: "back.out(1.2)"
+                }
+            );
+
+
+            gsap.fromTo(".perf-header > *",
+                { y: 30, opacity: 0 },
+                {
+                    scrollTrigger: {
+                        trigger: ".performance-banner",
+                        start: "top 85%",
+                        toggleActions: "play none none none"
+                    },
+                    y: 0,
+                    opacity: 1,
+                    duration: 0.6,
+                    stagger: 0.2,
+                    ease: "power3.out"
+                }
+            );
+
+
+            gsap.fromTo(".perf-stat-item",
+                { y: 40, opacity: 0 },
+                {
+                    scrollTrigger: {
+                        trigger: ".perf-stats-grid",
+                        start: "top 80%",
+                        toggleActions: "play none none none"
+                    },
+                    y: 0,
+                    opacity: 1,
+                    duration: 0.6,
+                    stagger: 0.12,
+                    ease: "back.out(1.2)"
+                }
+            );
+
+
+
+
+
+
+
+            gsap.fromTo(".hww-header > *",
+                { y: 30, opacity: 0 },
+                {
+                    scrollTrigger: {
+                        trigger: ".how-we-work-section",
+                        start: "top 85%",
+                        toggleActions: "play none none none"
+                    },
+                    y: 0,
+                    opacity: 1,
+                    duration: 0.6,
+                    stagger: 0.2,
+                    ease: "power3.out"
+                }
+            );
+
+
+            gsap.fromTo(".hww-step-card",
+                { y: 50, opacity: 0 },
+                {
+                    scrollTrigger: {
+                        trigger: ".hww-steps-grid",
+                        start: "top 80%",
+                        toggleActions: "play none none none"
+                    },
+                    y: 0,
+                    opacity: 1,
+                    duration: 0.6,
+                    stagger: 0.15,
+                    ease: "back.out(1.2)"
+                }
+            );
+
+
+
+
+
+
+
+
+            gsap.fromTo(".insights-header-row",
+                { y: 30, opacity: 0 },
+                {
+                    scrollTrigger: {
+                        trigger: ".wealth-insights-section",
+                        start: "top 85%",
+                        toggleActions: "play none none none"
+                    },
+                    y: 0,
+                    opacity: 1,
+                    duration: 0.6,
+                    ease: "power3.out"
+                }
+            );
+
+
+            gsap.fromTo(".insight-card",
+                { y: 50, opacity: 0 },
+                {
+                    scrollTrigger: {
+                        trigger: ".insights-grid",
+                        start: "top 80%",
+                        toggleActions: "play none none none"
+                    },
+                    y: 0,
+                    opacity: 1,
+                    duration: 0.6,
+                    stagger: 0.15,
+                    ease: "back.out(1.2)"
+                }
+            );
+
+
+            gsap.fromTo(".wealth-cta-banner",
+                { y: 50, opacity: 0, scale: 0.95 },
+                {
+                    scrollTrigger: {
+                        trigger: ".wealth-cta-banner",
+                        start: "top 85%",
+                        toggleActions: "play none none none"
+                    },
+                    y: 0,
+                    opacity: 1,
+                    scale: 1,
+                    duration: 0.8,
+                    ease: "power2.out"
+                }
+            );
+        </script>
+</body>
+
+</html>

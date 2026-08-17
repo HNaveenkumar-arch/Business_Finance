@@ -1,0 +1,1221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business Dashboard</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="stylesheet" href="Business-dashboard.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+
+<body>
+
+
+    <div class="sidebar-overlay" id="sidebarOverlay" onclick="toggleSidebar()"></div>
+
+
+    <nav class="sidebar" id="sidebar">
+        <div class="logo-container">
+            <a href="index.html">
+                <img src="./asset/Violetlogo.webp" alt="logo">
+                <h1>Business Owner</h1>
+            </a>
+        </div>
+
+        <div class="nav-sections">
+            <a class="nav-item active" onclick="switchTab('tab-overview', this, 'Business Overview')">
+                <i class="fas fa-chart-bar"></i> Overview
+            </a>
+            <a class="nav-item" onclick="switchTab('tab-projects', this, 'Active Projects')">
+                <i class="fas fa-project-diagram"></i> Projects
+            </a>
+            <a class="nav-item" onclick="switchTab('tab-clients', this, 'Client Management')">
+                <i class="fas fa-users"></i> Clients
+            </a>
+            <a class="nav-item" onclick="switchTab('tab-team', this, 'Team & Employees')">
+                <i class="fas fa-id-badge"></i> Team
+            </a>
+            <a class="nav-item" onclick="switchTab('tab-analytics', this, 'Business Growth')">
+                <i class="fas fa-chart-line"></i> Analytics
+            </a>
+        </div>
+
+
+        <div class="user-card-container">
+            <div class="user-card">
+                <div class="user-avatar" id="userInitial">B</div>
+                <div class="user-info">
+                    <span class="name" id="userNameDisplay">Loading...</span>
+                    <span class="email" id="userEmailDisplay">loading...</span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <main class="main-content">
+
+        <header class="topbar">
+            <div class="topbar-left">
+                <div class="menu-toggle" onclick="toggleSidebar()">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <h2 id="dynamic-page-title" class="page-title">Business Overview</h2>
+            </div>
+
+            <div class="header-actions">
+                <a href="index.html" class="btn btn-home">
+                    <i class="fas fa-home"></i> <span>Back to Home</span>
+                </a>
+                <button class="btn btn-logout" onclick="logout()">
+                    <i class="fas fa-sign-out-alt"></i> <span>Logout</span>
+                </button>
+            </div>
+        </header>
+
+
+        <div class="dashboard-body">
+
+
+            <div id="tab-overview" class="content-tab active-tab">
+
+
+                <div class="biz-kpi-grid animate-item">
+                    <div class="hover-card biz-kpi-box">
+                        <div class="kpi-top">
+                            <div class="kpi-icon" style="background: #e0e7ff; color: #4f46e5;"><i
+                                    class="fas fa-chart-line"></i></div>
+                            <span class="trend-up"><i class="fas fa-arrow-up"></i> 12%</span>
+                        </div>
+                        <p>Monthly Revenue</p>
+                        <h3>$34,250</h3>
+                    </div>
+                    <div class="hover-card biz-kpi-box">
+                        <div class="kpi-top">
+                            <div class="kpi-icon" style="background: #dcfce7; color: #16a34a;"><i
+                                    class="fas fa-project-diagram"></i></div>
+                            <span class="trend-up"><i class="fas fa-arrow-up"></i> 3</span>
+                        </div>
+                        <p>Active Projects</p>
+                        <h3>14</h3>
+                    </div>
+                    <div class="hover-card biz-kpi-box">
+                        <div class="kpi-top">
+                            <div class="kpi-icon" style="background: #fef3c7; color: #d97706;"><i
+                                    class="fas fa-users"></i></div>
+                            <span class="trend-down" style="color: #dc2626; background: #fee2e2;"><i
+                                    class="fas fa-arrow-down"></i> 1%</span>
+                        </div>
+                        <p>Client Retention</p>
+                        <h3>94%</h3>
+                    </div>
+                    <div class="hover-card biz-kpi-box">
+                        <div class="kpi-top">
+                            <div class="kpi-icon" style="background: #e0f2fe; color: #0284c7;"><i
+                                    class="fas fa-bolt"></i></div>
+                            <span class="trend-up"><i class="fas fa-arrow-up"></i> 5%</span>
+                        </div>
+                        <p>Team Efficiency</p>
+                        <h3>98%</h3>
+                    </div>
+                </div>
+
+
+                <div class="main-layout-grid">
+
+
+                    <div class="left-col">
+
+                        <div class="card animate-item">
+                            <h2>Project Status 🚀</h2>
+                            <div class="project-list">
+                                <div class="hover-row project-item">
+                                    <div class="proj-icon bg-purple-light"><i class="fas fa-laptop-code"></i></div>
+                                    <div class="proj-info">
+                                        <h4>Stackly Corporate Website</h4>
+                                        <p>Front-end Development • 85% Complete</p>
+                                    </div>
+                                    <div class="proj-status badge-success">In Progress</div>
+                                </div>
+                                <div class="hover-row project-item">
+                                    <div class="proj-icon bg-blue-light"><i class="fas fa-car"></i></div>
+                                    <div class="proj-info">
+                                        <h4>CarZone Web App</h4>
+                                        <p>React Deployment • 95% Complete</p>
+                                    </div>
+                                    <div class="proj-status badge-pending">Review</div>
+                                </div>
+                                <div class="hover-row project-item">
+                                    <div class="proj-icon bg-orange-light"><i class="fas fa-film"></i></div>
+                                    <div class="proj-info">
+                                        <h4>Cinebook Application</h4>
+                                        <p>Python Scripting • 20% Complete</p>
+                                    </div>
+                                    <div class="proj-status" style="background: #e5e7eb; color: #4b5563;">Planning</div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="card animate-item chart-section">
+                            <div class="card-header">
+                                <h2>Revenue by Service 📊</h2>
+                                <button class="icon-btn" onclick="window.location.href='404page.html'"><i
+                                        class="fas fa-expand"></i></button>
+                            </div>
+                            <div class="chart-container" style="height: 280px; display: flex; justify-content: center;">
+                                <canvas id="businessPieChart"></canvas>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="right-col">
+
+
+                        <div class="card animate-item">
+                            <h2>Urgent Tasks 📋</h2>
+                            <div class="task-list">
+                                <label class="task-item hover-slide">
+                                    <input type="checkbox" class="task-check">
+                                    <span class="task-text">Approve Q3 Marketing Budget</span>
+                                    <span class="task-tag bg-red-light">High</span>
+                                </label>
+                                <label class="task-item hover-slide">
+                                    <input type="checkbox" class="task-check">
+                                    <span class="task-text">Client meeting with TechNova</span>
+                                    <span class="task-tag bg-blue-light">Today</span>
+                                </label>
+                                <label class="task-item hover-slide">
+                                    <input type="checkbox" class="task-check">
+                                    <span class="task-text">Review Stackly UI layouts</span>
+                                    <span class="task-tag bg-purple-light">Design</span>
+                                </label>
+                            </div>
+                        </div>
+
+
+                        <div class="card animate-item feedback-card hover-card">
+                            <div class="feedback-header">
+                                <h2>Client Satisfaction</h2>
+                                <div class="rating">
+                                    <h2>4.9</h2>
+                                    <span>/5.0</span>
+                                </div>
+                            </div>
+                            <div class="stars text-orange">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                    class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <div class="review-box hover-bg">
+                                <p><em>"Excellent work on the recent web deployment. The team was highly responsive and
+                                        delivered ahead of schedule!"</em></p>
+                                <span class="reviewer">- Sarah J., TechNova</span>
+                            </div>
+                        </div>
+
+
+                        <div class="card animate-item">
+                            <h2>Quick Access ⚡</h2>
+                            <div class="quick-access-grid">
+                                <div class="qa-block hover-scale">
+                                    <div class="qa-icon" style="color: #4f46e5;"><i class="fas fa-folder-plus"></i>
+                                    </div>
+                                    <span>New Project</span>
+                                </div>
+                                <div class="qa-block hover-scale">
+                                    <div class="qa-icon" style="color: #10b981;"><i class="fas fa-user-plus"></i></div>
+                                    <span>Add Client</span>
+                                </div>
+                                <div class="qa-block hover-scale">
+                                    <div class="qa-icon" style="color: #d97706;"><i class="fas fa-file-invoice"></i>
+                                    </div>
+                                    <span>Billings</span>
+                                </div>
+                                <div class="qa-block hover-scale">
+                                    <div class="qa-icon" style="color: #ef4444;"><i class="fas fa-chart-pie"></i></div>
+                                    <span>Reports</span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <div id="tab-projects" class="content-tab">
+
+
+                <div class="proj-kpi-grid animate-item">
+                    <div class="hover-card proj-kpi-box">
+                        <div class="kpi-icon bg-purple-light"><i class="fas fa-layer-group"></i></div>
+                        <div class="kpi-text">
+                            <h3>5</h3>
+                            <p>Active Projects</p>
+                        </div>
+                    </div>
+                    <div class="hover-card proj-kpi-box">
+                        <div class="kpi-icon" style="background: #dcfce7; color: #16a34a;"><i
+                                class="fas fa-check-double"></i></div>
+                        <div class="kpi-text">
+                            <h3>12</h3>
+                            <p>Tasks Completed</p>
+                        </div>
+                    </div>
+                    <div class="hover-card proj-kpi-box">
+                        <div class="kpi-icon" style="background: #fef3c7; color: #d97706;"><i
+                                class="fas fa-hourglass-half"></i></div>
+                        <div class="kpi-text">
+                            <h3>2</h3>
+                            <p>Nearing Deadline</p>
+                        </div>
+                    </div>
+                    <div class="hover-card proj-kpi-box">
+                        <div class="kpi-icon" style="background: #fee2e2; color: #dc2626;"><i
+                                class="fas fa-exclamation-triangle"></i></div>
+                        <div class="kpi-text">
+                            <h3>1</h3>
+                            <p>Deployment Issue</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="main-layout-grid">
+
+
+                    <div class="left-col">
+
+
+                        <div class="card animate-item transparent-card">
+                            <h2 style="margin-bottom: 16px;">Project Spotlight 🌟</h2>
+                            <div class="flip-card-container">
+                                <div class="flip-card-inner">
+
+                                    <div class="flip-card-front">
+                                        <img src="./asset/image34.webp" alt="Cinebook Project">
+                                        <div class="front-overlay">
+                                            <h3>Cinebook Application</h3>
+                                            <p>Hover to see details <i class="fas fa-arrow-right"></i></p>
+                                        </div>
+                                    </div>
+
+                                    <div class="flip-card-back">
+                                        <h3>Cinebook App</h3>
+                                        <p class="back-desc" style="color: #ffffff;">Python-based local application.
+                                            Currently resolving package management and dependency installations.</p>
+                                        <div class="tech-tags">
+                                            <span class="tag"><i class="fab fa-python"></i> Python</span>
+                                            <span class="tag"><i class="fas fa-terminal"></i> Scripts</span>
+                                        </div>
+                                        <div class="progress-container">
+                                            <span>Completion</span>
+                                            <span>45%</span>
+                                        </div>
+                                        <div class="progress-bar">
+                                            <div class="progress-fill" style="width: 45%; background: #fff;"></div>
+                                        </div>
+                                        <button onclick="window.location.href='404page.html'"
+                                            class="action-btn hover-scale mt-3"
+                                            style="background: #fff; color: var(--primary-purple);"><i
+                                                class="fas fa-play"></i> Run Script</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="card animate-item">
+                            <h2>Ongoing Development 💻</h2>
+                            <div class="premium-list mt-3">
+                                <div class="hover-row project-list-item">
+                                    <div class="proj-head">
+                                        <div class="item-left">
+                                            <div class="list-icon bg-blue-light"><i class="fab fa-react"></i></div>
+                                            <div class="list-info">
+                                                <h4>CarZone Showroom</h4>
+                                                <p>React Hooks & GitHub Deployment</p>
+                                            </div>
+                                        </div>
+                                        <span class="badge badge-pending">Fixing Error</span>
+                                    </div>
+                                    <div class="progress-bar mt-2" style="height: 6px;">
+                                        <div class="progress-fill" style="width: 95%; background: #0284c7;"></div>
+                                    </div>
+                                </div>
+
+                                <div class="hover-row project-list-item">
+                                    <div class="proj-head">
+                                        <div class="item-left">
+                                            <div class="list-icon" style="background: #fce7f3; color: #db2777;"><i
+                                                    class="fab fa-html5"></i></div>
+                                            <div class="list-info">
+                                                <h4>Stackly Corporate Website</h4>
+                                                <p>Responsive Layouts & CSS Keyframes</p>
+                                            </div>
+                                        </div>
+                                        <span class="badge badge-success">On Track</span>
+                                    </div>
+                                    <div class="progress-bar mt-2" style="height: 6px;">
+                                        <div class="progress-fill" style="width: 80%; background: #db2777;"></div>
+                                    </div>
+                                </div>
+
+                                <div class="hover-row project-list-item">
+                                    <div class="proj-head">
+                                        <div class="item-left">
+                                            <div class="list-icon bg-purple-light"><i class="fas fa-brain"></i></div>
+                                            <div class="list-info">
+                                                <h4>Smart Blood Donor AI</h4>
+                                                <p>Priority Prediction System</p>
+                                            </div>
+                                        </div>
+                                        <span class="badge" style="background: #e5e7eb; color: #4b5563;">Planning</span>
+                                    </div>
+                                    <div class="progress-bar mt-2" style="height: 6px;">
+                                        <div class="progress-fill"
+                                            style="width: 15%; background: var(--primary-purple);"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="right-col">
+
+
+                        <div class="card animate-item">
+                            <h2>Team Workload 👥</h2>
+                            <div class="workload-list">
+                                <div class="workload-item hover-slide">
+                                    <div class="wl-head">
+                                        <div class="wl-user">
+                                            <div class="avatar-small" style="background:#3b82f6;">SM</div> <span
+                                                style="font-size: 13px; font-weight: 500;">Front-end Dev</span>
+                                        </div>
+                                        <span class="wl-hours">32 hrs/wk</span>
+                                    </div>
+                                    <div class="progress-bar">
+                                        <div class="progress-fill" style="width: 80%; background: #3b82f6;"></div>
+                                    </div>
+                                </div>
+                                <div class="workload-item hover-slide mt-3">
+                                    <div class="wl-head">
+                                        <div class="wl-user">
+                                            <div class="avatar-small" style="background:#f59e0b;">AK</div> <span
+                                                style="font-size: 13px; font-weight: 500;">UI/UX Design</span>
+                                        </div>
+                                        <span class="wl-hours">15 hrs/wk</span>
+                                    </div>
+                                    <div class="progress-bar">
+                                        <div class="progress-fill" style="width: 40%; background: #f59e0b;"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="card animate-item">
+                            <h2>Recent Commits & Activity ⏱️</h2>
+                            <div class="timeline mt-3">
+                                <div class="timeline-item hover-effect">
+                                    <div class="timeline-dot bg-green"></div>
+                                    <div class="timeline-content">
+                                        <h4>Task 12 Completed</h4>
+                                        <p>React Routing with Nested Routes.</p>
+                                        <span class="time-label">2 hours ago</span>
+                                    </div>
+                                </div>
+                                <div class="timeline-item hover-effect">
+                                    <div class="timeline-dot bg-orange"></div>
+                                    <div class="timeline-content">
+                                        <h4>Stackly Menu Update</h4>
+                                        <p>Iteratively updated HTML structure and navigation.</p>
+                                        <span class="time-label">Yesterday</span>
+                                    </div>
+                                </div>
+                                <div class="timeline-item hover-effect">
+                                    <div class="timeline-dot bg-purple"></div>
+                                    <div class="timeline-content">
+                                        <h4>Dependency Setup</h4>
+                                        <p>Attempted installing Python packages for Cinebook.</p>
+                                        <span class="time-label">Aug 15, 2026</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="card animate-item">
+                            <h2>Project Resources 🔗</h2>
+                            <div class="resource-grid">
+                                <div class="resource-box hover-scale">
+                                    <i class="fab fa-github" style="color: #1f2328;"></i>
+                                    <span>GitHub Repos</span>
+                                </div>
+                                <div class="resource-box hover-scale">
+                                    <i class="fab fa-figma" style="color: #f24e1e;"></i>
+                                    <span>Figma Files</span>
+                                </div>
+                                <div class="resource-box hover-scale">
+                                    <i class="fas fa-server" style="color: #0284c7;"></i>
+                                    <span>Server Logs</span>
+                                </div>
+                                <div class="resource-box hover-scale">
+                                    <i class="fas fa-folder-open" style="color: #d97706;"></i>
+                                    <span>Assets</span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+
+
+            <div id="tab-clients" class="content-tab">
+
+
+                <div class="client-kpi-grid animate-item">
+                    <div class="client-kpi-card hover-glow">
+                        <div class="kpi-icon bg-purple-light"><i class="fas fa-handshake"></i></div>
+                        <div class="kpi-info">
+                            <h3>42</h3>
+                            <p>Total Clients</p>
+                        </div>
+                        <div class="kpi-badge badge-success">+3 This Week</div>
+                    </div>
+                    <div class="client-kpi-card hover-glow">
+                        <div class="kpi-icon" style="background: #fef3c7; color: #d97706;"><i class="fas fa-crown"></i>
+                        </div>
+                        <div class="kpi-info">
+                            <h3>8</h3>
+                            <p>VIP Accounts</p>
+                        </div>
+                        <div class="kpi-badge" style="background: #e0e7ff; color: #4f46e5;">Top Tier</div>
+                    </div>
+                    <div class="client-kpi-card hover-glow">
+                        <div class="kpi-icon" style="background: #e0f2fe; color: #0284c7;"><i
+                                class="fas fa-user-plus"></i></div>
+                        <div class="kpi-info">
+                            <h3>15</h3>
+                            <p>Hot Leads</p>
+                        </div>
+                        <div class="kpi-badge badge-pending">In Discussion</div>
+                    </div>
+                </div>
+
+
+                <div class="main-layout-grid">
+
+
+                    <div class="left-col">
+
+
+                        <div class="card animate-item"
+                            style="background: transparent; border: none; box-shadow: none; padding: 0;">
+                            <h2 style="margin-bottom: 16px;">Sales Pipeline 🛤️</h2>
+                            <div class="kanban-board">
+
+                                <div class="kanban-col">
+                                    <div class="kanban-header">
+                                        <h4>New Leads (2)</h4>
+                                    </div>
+                                    <div class="kanban-card hover-up">
+                                        <span class="tag bg-red-light">Urgent</span>
+                                        <h4>Salem Medical Org</h4>
+                                        <p>Query: AI Blood Donor Prediction System.</p>
+                                        <div class="kanban-footer">
+                                            <span><i class="fas fa-envelope"></i> Email Sent</span>
+                                        </div>
+                                    </div>
+                                    <div class="kanban-card hover-up">
+                                        <span class="tag"
+                                            style="background: #e5e7eb; color: var(--text-dark);">Standard</span>
+                                        <h4>Cinebook Studios</h4>
+                                        <p>Query: Python local application setup.</p>
+                                    </div>
+                                </div>
+
+                                <div class="kanban-col">
+                                    <div class="kanban-header">
+                                        <h4>Active Clients (2)</h4>
+                                    </div>
+                                    <div class="kanban-card hover-up" style="border-left: 3px solid #10b981;">
+                                        <span class="tag bg-purple-light">Web Dev</span>
+                                        <h4>Stackly Corporate</h4>
+                                        <p>Building responsive layouts & keyframes.</p>
+                                        <div class="kanban-footer">
+                                            <span><i class="fas fa-phone"></i> Call Scheduled</span>
+                                        </div>
+                                    </div>
+                                    <div class="kanban-card hover-up" style="border-left: 3px solid #0284c7;">
+                                        <span class="tag bg-blue-light">React</span>
+                                        <h4>CarZone Auto Dealers</h4>
+                                        <p>Deploying application via GitHub.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="card animate-item">
+                            <h2>Retainer Packages 💎</h2>
+                            <div class="tier-grid mt-3">
+                                <div class="tier-card hover-scale">
+                                    <div class="tier-head" style="background: #f1f5f9; color: var(--text-dark);">
+                                        <h4>Standard</h4>
+                                        <h2>$500<span>/mo</span></h2>
+                                    </div>
+                                    <ul class="tier-list">
+                                        <li><i class="fas fa-check text-green"></i> Basic Maintenance</li>
+                                        <li><i class="fas fa-check text-green"></i> 5hrs Support</li>
+                                        <li><i class="fas fa-times text-red"></i> SEO Optimization</li>
+                                    </ul>
+                                </div>
+                                <div class="tier-card hover-scale premium-tier">
+                                    <div class="tier-head" style="background: var(--primary-purple); color: #fff;">
+                                        <span class="popular-badge">Most Popular</span>
+                                        <h4>Pro Business</h4>
+                                        <h2>$1,200<span>/mo</span></h2>
+                                    </div>
+                                    <ul class="tier-list">
+                                        <li><i class="fas fa-check text-green"></i> Advanced Dev Support</li>
+                                        <li><i class="fas fa-check text-green"></i> Priority React Fixes</li>
+                                        <li><i class="fas fa-check text-green"></i> Full SEO & Analytics</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="right-col">
+
+
+                        <div class="card animate-item">
+                            <h2>Recent Comms 💬</h2>
+                            <div class="chat-ui mt-3">
+                                <div class="chat-message received hover-slide-right">
+                                    <div class="chat-avatar" style="background: #fce7f3; color: #db2777;">S</div>
+                                    <div class="chat-bubble">
+                                        <p class="chat-name">Stackly Team</p>
+                                        <p class="chat-text">The CSS animations look amazing! Can we add one more to the
+                                            hero section?</p>
+                                        <span class="chat-time">10:45 AM</span>
+                                    </div>
+                                </div>
+                                <div class="chat-message sent hover-slide-left">
+                                    <div class="chat-bubble reply">
+                                        <p class="chat-text" style="color: #f0f2f3;">Absolutely! I'll apply the new
+                                            keyframes today and send a preview.</p>
+                                        <span class="chat-time">11:05 AM <i
+                                                class="fas fa-check-double text-blue"></i></span>
+                                    </div>
+                                </div>
+                                <div class="chat-message received hover-slide-right">
+                                    <div class="chat-avatar" style="background: #e0f2fe; color: #0284c7;">C</div>
+                                    <div class="chat-bubble">
+                                        <p class="chat-name">CarZone Support</p>
+                                        <p class="chat-text">Are the React hooks ready for the inventory filter?</p>
+                                        <span class="chat-time">Yesterday</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="card animate-item hover-card map-card">
+                            <div class="map-overlay">
+                                <h2>Region Focus 📍</h2>
+                                <p>Majority of your top-tier clients are based in <strong>Tamil Nadu (Salem,
+                                        Chennai)</strong> with expanding reach.</p>
+                                <div class="map-stats">
+                                    <div class="m-stat">
+                                        <h3>65%</h3>
+                                        <span>Local (TN)</span>
+                                    </div>
+                                    <div class="m-stat">
+                                        <h3>35%</h3>
+                                        <span>International</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div id="tab-team" class="content-tab">
+
+
+                <div class="team-kpi-grid animate-item">
+                    <div class="hover-up team-kpi-box">
+                        <div class="t-icon bg-purple-light"><i class="fas fa-users"></i></div>
+                        <div class="t-info">
+                            <h3>24</h3>
+                            <p>Total Employees</p>
+                        </div>
+                    </div>
+                    <div class="hover-up team-kpi-box">
+                        <div class="t-icon" style="background: #dcfce7; color: #16a34a;"><i
+                                class="fas fa-user-check"></i></div>
+                        <div class="t-info">
+                            <h3>21</h3>
+                            <p>Present Today</p>
+                        </div>
+                    </div>
+                    <div class="hover-up team-kpi-box">
+                        <div class="t-icon" style="background: #fee2e2; color: #dc2626;"><i
+                                class="fas fa-user-times"></i></div>
+                        <div class="t-info">
+                            <h3>3</h3>
+                            <p>On Leave</p>
+                        </div>
+                    </div>
+                    <div class="hover-up team-kpi-box">
+                        <div class="t-icon" style="background: #e0f2fe; color: #0284c7;"><i
+                                class="fas fa-briefcase"></i></div>
+                        <div class="t-info">
+                            <h3>2</h3>
+                            <p>Open Roles</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="main-layout-grid">
+
+
+                    <div class="left-col">
+
+
+                        <div class="card animate-item transparent-card">
+                            <h2 style="margin-bottom: 16px;">Core Team 👨‍💻</h2>
+                            <div class="team-roster-grid">
+
+                                <div class="profile-card hover-glow">
+                                    <div class="profile-header bg-purple-light"></div>
+                                    <div class="profile-avatar">SJ</div>
+                                    <div class="profile-body">
+                                        <h4>Suresh J.</h4>
+                                        <p class="role">Front-end Developer</p>
+                                        <div class="tech-tags mt-2">
+                                            <span class="tag">React</span>
+                                            <span class="tag">HTML/CSS</span>
+                                        </div>
+                                        <p class="email-text"><i class="fas fa-envelope"></i> suresh@bizdash.com</p>
+                                    </div>
+                                </div>
+
+                                <div class="profile-card hover-glow">
+                                    <div class="profile-header bg-blue-light"></div>
+                                    <div class="profile-avatar" style="background: #0284c7;">AK</div>
+                                    <div class="profile-body">
+                                        <h4>Anita K.</h4>
+                                        <p class="role">Python Developer</p>
+                                        <div class="tech-tags mt-2">
+                                            <span class="tag">Python</span>
+                                            <span class="tag">AI/ML</span>
+                                        </div>
+                                        <p class="email-text"><i class="fas fa-envelope"></i> anita@bizdash.com</p>
+                                    </div>
+                                </div>
+
+                                <div class="profile-card hover-glow">
+                                    <div class="profile-header bg-orange-light"></div>
+                                    <div class="profile-avatar" style="background: #d97706;">MR</div>
+                                    <div class="profile-body">
+                                        <h4>Manoj R.</h4>
+                                        <p class="role">UI/UX Designer</p>
+                                        <div class="tech-tags mt-2">
+                                            <span class="tag">Figma</span>
+                                            <span class="tag">CSS</span>
+                                        </div>
+                                        <p class="email-text"><i class="fas fa-envelope"></i> manoj@bizdash.com</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="card animate-item">
+                            <h2>Weekly Attendance 📅</h2>
+                            <p style="font-size: 13px; color: var(--text-gray); margin-bottom: 16px;">Track presence for
+                                the last 7 days.</p>
+                            <div class="attendance-list">
+                                <div class="attendance-row hover-bg">
+                                    <span class="emp-name">Suresh J.</span>
+                                    <div class="activity-blocks">
+                                        <div class="block present" title="Present"></div>
+                                        <div class="block present" title="Present"></div>
+                                        <div class="block present" title="Present"></div>
+                                        <div class="block absent" title="Absent"></div>
+                                        <div class="block present" title="Present"></div>
+                                        <div class="block weekend" title="Weekend"></div>
+                                        <div class="block weekend" title="Weekend"></div>
+                                    </div>
+                                </div>
+                                <div class="attendance-row hover-bg">
+                                    <span class="emp-name">Anita K.</span>
+                                    <div class="activity-blocks">
+                                        <div class="block present" title="Present"></div>
+                                        <div class="block present" title="Present"></div>
+                                        <div class="block present" title="Present"></div>
+                                        <div class="block present" title="Present"></div>
+                                        <div class="block present" title="Present"></div>
+                                        <div class="block weekend" title="Weekend"></div>
+                                        <div class="block weekend" title="Weekend"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card animate-item">
+                            <h2>Upcoming Events 🎈</h2>
+                            <div class="event-list mt-3">
+                                <div class="event-item hover-scale">
+                                    <div class="event-date bg-purple-light">
+                                        <span class="month">AUG</span>
+                                        <span class="day">20</span>
+                                    </div>
+                                    <div class="event-info">
+                                        <h4>Anita's Birthday</h4>
+                                        <p>Python Team</p>
+                                    </div>
+                                    <i class="fas fa-birthday-cake text-orange"></i>
+                                </div>
+                                <div class="event-item hover-scale mt-2">
+                                    <div class="event-date" style="background: #e0f2fe; color: #0284c7;">
+                                        <span class="month">SEP</span>
+                                        <span class="day">01</span>
+                                    </div>
+                                    <div class="event-info">
+                                        <h4>Company Townhall</h4>
+                                        <p>All Hands Meeting</p>
+                                    </div>
+                                    <i class="fas fa-calendar-check text-blue"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="right-col">
+
+
+                        <div class="card animate-item spotlight-card hover-scale">
+                            <div class="spotlight-content">
+                                <i class="fas fa-award trophy-icon"></i>
+                                <h3>Star of the Month</h3>
+                                <div class="spotlight-avatar">SJ</div>
+                                <h4>Suresh J.</h4>
+                                <p style="color: #ffffff;">Outstanding contribution on the <strong>CarZone React
+                                        Deployment</strong> and <strong>Stackly CSS</strong> updates.</p>
+                            </div>
+                        </div>
+
+
+                        <div class="card animate-item">
+                            <h2>Department Size 🏢</h2>
+                            <div class="dept-list mt-3">
+                                <div class="dept-item hover-slide">
+                                    <div class="dept-head">
+                                        <span>Engineering (12)</span>
+                                        <span>50%</span>
+                                    </div>
+                                    <div class="progress-bar">
+                                        <div class="progress-fill"
+                                            style="width: 50%; background: var(--primary-purple);"></div>
+                                    </div>
+                                </div>
+                                <div class="dept-item hover-slide mt-3">
+                                    <div class="dept-head">
+                                        <span>Design (6)</span>
+                                        <span>25%</span>
+                                    </div>
+                                    <div class="progress-bar">
+                                        <div class="progress-fill" style="width: 25%; background: #0ea5e9;"></div>
+                                    </div>
+                                </div>
+                                <div class="dept-item hover-slide mt-3">
+                                    <div class="dept-head">
+                                        <span>Management (6)</span>
+                                        <span>25%</span>
+                                    </div>
+                                    <div class="progress-bar">
+                                        <div class="progress-fill" style="width: 25%; background: #f59e0b;"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+                </div>
+            </div>
+
+
+            <div id="tab-analytics" class="content-tab">
+
+
+                <div class="funnel-grid animate-item">
+                    <div class="funnel-step hover-glow">
+                        <div class="f-icon" style="color: #6366f1; background: #e0e7ff;"><i class="fas fa-eye"></i>
+                        </div>
+                        <div class="f-data">
+                            <p>Impressions</p>
+                            <h3>125K</h3>
+                        </div>
+                    </div>
+                    <div class="funnel-step hover-glow">
+                        <div class="f-icon" style="color: #0ea5e9; background: #e0f2fe;"><i
+                                class="fas fa-mouse-pointer"></i></div>
+                        <div class="f-data">
+                            <p>Website Visits</p>
+                            <h3>42K</h3>
+                        </div>
+                    </div>
+                    <div class="funnel-step hover-glow">
+                        <div class="f-icon" style="color: #f59e0b; background: #fef3c7;"><i
+                                class="fas fa-user-plus"></i></div>
+                        <div class="f-data">
+                            <p>New Leads</p>
+                            <h3>8,400</h3>
+                        </div>
+                    </div>
+                    <div class="funnel-step hover-glow">
+                        <div class="f-icon" style="color: #10b981; background: #dcfce7;"><i
+                                class="fas fa-shopping-cart"></i></div>
+                        <div class="f-data">
+                            <p>Conversions</p>
+                            <h3>1,200</h3>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="main-layout-grid">
+
+
+                    <div class="left-col">
+
+
+                        <div class="card animate-item">
+                            <h2>Weekly Traffic Heatmap 🗺️</h2>
+                            <p class="desc-text">Hover over the blocks to see activity intensity.</p>
+                            <div class="heatmap-wrapper mt-3">
+                                <div class="heatmap-days">
+                                    <span>Mon</span><span>Tue</span><span>Wed</span><span>Thu</span><span>Fri</span>
+                                </div>
+                                <div class="heatmap-grid">
+
+                                    <div class="heat-cell lvl-1 hover-scale"></div>
+                                    <div class="heat-cell lvl-2 hover-scale"></div>
+                                    <div class="heat-cell lvl-4 hover-scale"></div>
+                                    <div class="heat-cell lvl-3 hover-scale"></div>
+                                    <div class="heat-cell lvl-1 hover-scale"></div>
+                                    <div class="heat-cell lvl-2 hover-scale"></div>
+
+                                    <div class="heat-cell lvl-2 hover-scale"></div>
+                                    <div class="heat-cell lvl-3 hover-scale"></div>
+                                    <div class="heat-cell lvl-5 hover-scale"></div>
+                                    <div class="heat-cell lvl-4 hover-scale"></div>
+                                    <div class="heat-cell lvl-2 hover-scale"></div>
+                                    <div class="heat-cell lvl-1 hover-scale"></div>
+
+                                    <div class="heat-cell lvl-1 hover-scale"></div>
+                                    <div class="heat-cell lvl-4 hover-scale"></div>
+                                    <div class="heat-cell lvl-5 hover-scale"></div>
+                                    <div class="heat-cell lvl-5 hover-scale"></div>
+                                    <div class="heat-cell lvl-3 hover-scale"></div>
+                                    <div class="heat-cell lvl-2 hover-scale"></div>
+
+                                    <div class="heat-cell lvl-2 hover-scale"></div>
+                                    <div class="heat-cell lvl-2 hover-scale"></div>
+                                    <div class="heat-cell lvl-3 hover-scale"></div>
+                                    <div class="heat-cell lvl-4 hover-scale"></div>
+                                    <div class="heat-cell lvl-2 hover-scale"></div>
+                                    <div class="heat-cell lvl-1 hover-scale"></div>
+
+                                    <div class="heat-cell lvl-3 hover-scale"></div>
+                                    <div class="heat-cell lvl-4 hover-scale"></div>
+                                    <div class="heat-cell lvl-5 hover-scale"></div>
+                                    <div class="heat-cell lvl-3 hover-scale"></div>
+                                    <div class="heat-cell lvl-1 hover-scale"></div>
+                                    <div class="heat-cell lvl-1 hover-scale"></div>
+                                </div>
+                            </div>
+                            <div class="heatmap-legend mt-2">
+                                <span>Less</span>
+                                <div class="heat-cell lvl-1"></div>
+                                <div class="heat-cell lvl-2"></div>
+                                <div class="heat-cell lvl-3"></div>
+                                <div class="heat-cell lvl-4"></div>
+                                <div class="heat-cell lvl-5"></div>
+                                <span>More</span>
+                            </div>
+                        </div>
+
+
+                        <div class="card animate-item transparent-card">
+                            <h2 style="margin-bottom: 16px;">Top Marketing Campaigns 🚀</h2>
+                            <div class="campaign-grid">
+                                <div class="campaign-card">
+                                    <img src="./asset/image9.webp" alt="Campaign 1">
+                                    <div class="campaign-overlay">
+                                        <span class="badge bg-purple-light mb-1">Stackly Launch</span>
+                                        <h4>Q3 Digital Ad Spend</h4>
+                                        <p>ROI: <strong class="text-green">+140%</strong></p>
+                                    </div>
+                                </div>
+                                <div class="campaign-card">
+                                    <img src="./asset/image45.webp" alt="Campaign 2">
+                                    <div class="campaign-overlay">
+                                        <span class="badge" style="background:#e0f2fe; color:#0284c7;">CarZone
+                                            Promo</span>
+                                        <h4>Social Media Blast</h4>
+                                        <p>ROI: <strong class="text-green">+85%</strong></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="card animate-item">
+                            <h2>AI Growth Insights 🤖</h2>
+                            <div class="insight-list mt-3">
+                                <div class="insight-card glow-purple hover-slide">
+                                    <i class="fas fa-lightbulb icon-purple"></i>
+                                    <div class="insight-text">
+                                        <h4>Optimize Mobile View</h4>
+                                        <p>65% of your traffic comes from mobile devices in Salem region. Consider
+                                            speeding up load times.</p>
+                                    </div>
+                                </div>
+                                <div class="insight-card glow-orange hover-slide mt-2">
+                                    <i class="fas fa-fire text-orange"></i>
+                                    <div class="insight-text">
+                                        <h4>Hot Trend Alert</h4>
+                                        <p>Searches for "AI Donor Systems" increased by 40% this week. Capitalize on
+                                            your new project.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="right-col">
+
+
+                        <div class="card animate-item score-card hover-card">
+                            <h2>Business Health Score 🏆</h2>
+                            <div class="score-display">
+                                <div class="score-circle">
+                                    <h1>92</h1>
+                                    <span>/100</span>
+                                </div>
+                            </div>
+                            <p class="text-center mt-2">Your business is operating at peak efficiency this quarter!
+                                Growth rate is stable.</p>
+                            <div class="score-stats mt-3">
+                                <div class="s-stat"><i class="fas fa-arrow-up text-green"></i> 12% Revenue</div>
+                                <div class="s-stat"><i class="fas fa-arrow-down text-red"></i> 4% Churn</div>
+                            </div>
+                        </div>
+
+
+                        <div class="card animate-item">
+                            <h2>Technology ROI 💻</h2>
+                            <p class="desc-text mb-3">Revenue performance of your core development stacks.</p>
+
+                            <div class="tech-roi-list">
+
+                                <div class="tech-row">
+                                    <div class="tech-icon" style="color: #0ea5e9; background: #e0f2fe;">
+                                        <i class="fab fa-react"></i>
+                                    </div>
+                                    <div class="tech-info">
+                                        <h4>React Framework</h4>
+                                        <p>High engagement from CarZone deployment.</p>
+                                    </div>
+                                    <div class="tech-badge bg-green-light">+45% ROI</div>
+                                </div>
+
+
+                                <div class="tech-row">
+                                    <div class="tech-icon" style="color: #d97706; background: #fef3c7;">
+                                        <i class="fab fa-python"></i>
+                                    </div>
+                                    <div class="tech-info">
+                                        <h4>Python & AI</h4>
+                                        <p>Driven by Cinebook and Donor Prediction AI.</p>
+                                    </div>
+                                    <div class="tech-badge bg-purple-light">+30% ROI</div>
+                                </div>
+
+
+                                <div class="tech-row">
+                                    <div class="tech-icon" style="color: #db2777; background: #fce7f3;">
+                                        <i class="fab fa-html5"></i>
+                                    </div>
+                                    <div class="tech-info">
+                                        <h4>HTML / CSS</h4>
+                                        <p>Stable conversions via Stackly corporate sites.</p>
+                                    </div>
+                                    <div class="tech-badge" style="background: #f3f4f6; color: var(--text-dark);">+20%
+                                        ROI</div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+
+            const storedEmail = localStorage.getItem('userEmail') || "business@company.com";
+
+
+            let extractedName = storedEmail.split('@')[0];
+            extractedName = extractedName.charAt(0).toUpperCase() + extractedName.slice(1);
+
+
+            document.getElementById("userNameDisplay").textContent = extractedName;
+            document.getElementById("userEmailDisplay").textContent = storedEmail;
+            document.getElementById("userInitial").textContent = extractedName.charAt(0).toUpperCase();
+
+
+            initBusinessPieChart();
+            animateTabContent();
+        });
+
+
+        function toggleSidebar() {
+            const sidebar = document.getElementById('sidebar');
+            const overlay = document.getElementById('sidebarOverlay');
+
+            sidebar.classList.toggle('mobile-open');
+
+            if (sidebar.classList.contains('mobile-open')) {
+                overlay.classList.add('show');
+                document.body.style.overflow = 'hidden'; 
+            } else {
+                overlay.classList.remove('show');
+                document.body.style.overflow = 'auto';
+            }
+        }
+
+
+        function switchTab(tabId, element, pageTitle) {
+
+            document.querySelectorAll('.content-tab').forEach(tab => {
+                tab.classList.remove('active-tab');
+            });
+            document.querySelectorAll('.nav-item').forEach(nav => {
+                nav.classList.remove('active');
+            });
+
+
+            document.getElementById(tabId).classList.add('active-tab');
+            element.classList.add('active');
+
+
+            document.getElementById('dynamic-page-title').innerText = pageTitle;
+
+
+            animateTabContent();
+
+
+            if (tabId === 'tab-overview') {
+                setTimeout(() => { initBusinessPieChart(); }, 100);
+            }
+
+
+            if (window.innerWidth <= 768 && document.getElementById('sidebar').classList.contains('mobile-open')) {
+                toggleSidebar();
+            }
+        }
+
+
+        function animateTabContent() {
+            gsap.fromTo(".active-tab .animate-item",
+                { y: 30, opacity: 0 },
+                { y: 0, opacity: 1, duration: 0.5, stagger: 0.1, ease: "power2.out" }
+            );
+        }
+
+
+        function logout() {
+            localStorage.removeItem('userEmail');
+            window.location.href = "login.html";
+        }
+
+
+        let businessPieChartInstance = null;
+
+        function initBusinessPieChart() {
+            const ctx = document.getElementById('businessPieChart');
+            if (!ctx) return;
+
+            if (businessPieChartInstance) {
+                businessPieChartInstance.destroy(); 
+            }
+
+            businessPieChartInstance = new Chart(ctx, {
+                type: 'doughnut',
+                data: {
+                    labels: ['Web Development', 'Consulting', 'UI/UX Design', 'Maintenance'],
+                    datasets: [{
+                        data: [45, 25, 20, 10],
+                        backgroundColor: [
+                            '#6a3ce0',
+                            '#10b981',
+                            '#0284c7',
+                            '#f59e0b'
+                        ],
+                        borderWidth: 0,
+                        hoverOffset: 6
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    cutout: '70%',
+                    plugins: {
+                        legend: {
+                            position: 'right',
+                            labels: { usePointStyle: true, padding: 20, font: { size: 12 } }
+                        }
+                    }
+                }
+            });
+        }
+    </script>
+</body>
+
+</html>

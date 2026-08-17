@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
-    
-    // 1. GSAP Initial Load Animations
+
+
     const tl = gsap.timeline();
 
     tl.from(".logo", {
@@ -9,23 +9,23 @@ document.addEventListener("DOMContentLoaded", () => {
         duration: 0.6,
         ease: "power2.out"
     })
-    .from(".nav-links li", {
-        y: -15,
-        opacity: 0,
-        duration: 0.5,
-        stagger: 0.05,
-        ease: "power2.out"
-    }, "-=0.3")
-    .from(".nav-actions", {
-        opacity: 0,
-        duration: 0.6,
-        ease: "power2.out"
-    }, "-=0.4");
+        .from(".nav-links li", {
+            y: -15,
+            opacity: 0,
+            duration: 0.5,
+            stagger: 0.05,
+            ease: "power2.out"
+        }, "-=0.3")
+        .from(".nav-actions", {
+            opacity: 0,
+            duration: 0.6,
+            ease: "power2.out"
+        }, "-=0.4");
 
 
-    // 2. Scrolling Animation Effect
+
     const header = document.getElementById("header");
-    
+
     window.addEventListener("scroll", () => {
         if (window.scrollY > 50) {
             header.classList.add("scrolled");
@@ -34,22 +34,22 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 
-    // 3. Mobile Hamburger Menu & Body Scroll Lock Logic
+
     const mobileToggle = document.getElementById("mobileToggle");
     const navMenu = document.getElementById("navMenu");
     const body = document.body;
 
     mobileToggle.addEventListener("click", () => {
         const isActive = navMenu.classList.contains("active");
-        
+
         if (!isActive) {
             navMenu.classList.add("active");
-            body.classList.add("no-scroll"); // Lock background scroll
-            mobileToggle.innerHTML = '<i class="fa-solid fa-xmark"></i>'; // Change icon to X
-            
-            // GSAP stagger effect when opening mobile menu
-            gsap.fromTo(".nav-links li", 
-                { y: 20, opacity: 0 }, 
+            body.classList.add("no-scroll"); 
+            mobileToggle.innerHTML = '<i class="fa-solid fa-xmark"></i>'; 
+
+
+            gsap.fromTo(".nav-links li",
+                { y: 20, opacity: 0 },
                 { y: 0, opacity: 1, duration: 0.4, stagger: 0.05, ease: "power2.out", delay: 0.1 }
             );
             gsap.fromTo(".nav-actions",
@@ -58,39 +58,56 @@ document.addEventListener("DOMContentLoaded", () => {
             );
         } else {
             navMenu.classList.remove("active");
-            body.classList.remove("no-scroll"); // Enable background scroll
-            mobileToggle.innerHTML = '<i class="fa-solid fa-bars"></i>'; // Change icon back to bars
+            body.classList.remove("no-scroll"); 
+            mobileToggle.innerHTML = '<i class="fa-solid fa-bars"></i>'; 
         }
     });
 
-    // 4. Search Validation Logic
+
     const searchIcon = document.getElementById("searchIcon");
     const searchInput = document.getElementById("searchInput");
     const searchError = document.getElementById("searchError");
 
-    // Check when clicking the search icon
+
     searchIcon.addEventListener("click", () => {
         if (searchInput.value.trim() === "") {
             searchError.style.display = "block";
-            
-            // Optional: GSAP shake animation for error
-            gsap.fromTo(searchError, 
-                { x: -5 }, 
+
+
+            gsap.fromTo(searchError,
+                { x: -5 },
                 { x: 5, duration: 0.1, yoyo: true, repeat: 3, ease: "linear" }
             );
         } else {
             searchError.style.display = "none";
-            window.location.href='404page.html'
-            // Process search functionality here
+            window.location.href = '404page.html'
+
             console.log("Searching for:", searchInput.value);
-            // searchInput.value = ""; // clear after search if needed
+
         }
     });
 
-    // Hide error message as soon as user starts typing
+
     searchInput.addEventListener("input", () => {
         if (searchInput.value.trim() !== "") {
             searchError.style.display = "none";
         }
     });
+});
+
+
+
+
+
+
+gsap.from(".footer-container > *", {
+    scrollTrigger: {
+        trigger: ".footer-section",
+        start: "top 90%", 
+    },
+    y: 40,
+    opacity: 0,
+    duration: 0.8,
+    stagger: 0.1, 
+    ease: "power2.out"
 });

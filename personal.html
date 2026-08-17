@@ -1,65 +1,1263 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Stackly Navbar</title>
-    <!-- Font Awesome -->
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="personal.css">
     <link rel="stylesheet" href="common.css">
 </head>
+
 <body>
 
     <header class="header" id="header">
         <nav class="navbar">
-            <!-- Logo Section -->
-            <a href="#" class="logo">
-                <img src="./asset/Stackly-logo-Blue.webp" alt="logo">
+
+            <a href="index.html" class="logo">
+                <img src="./asset/Violetlogo.webp" alt="logo">
             </a>
 
-            <!-- Navigation Links & Actions wrapper -->
+
             <div class="nav-menu" id="navMenu">
                 <ul class="nav-links">
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="#" class="active">Personal</a></li>
-                    <li><a href="#">Business</a></li>
-                    <li><a href="#">Wealth</a></li>
-                    <li><a href="#">Loans&Cards</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Help</a></li>
+                    <li><a href="personal.html" class="active">Personal</a></li>
+                    <li><a href="business.html">Business</a></li>
+                    <li><a href="wealth.html">Wealth</a></li>
+                    <li><a href="Loan&cards.html">Loans&Cards</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="help.html">Help</a></li>
                 </ul>
 
-                <!-- Actions (Search & Login) -->
+
                 <div class="nav-actions">
                     <div class="search-container">
                         <div class="search-box">
                             <input type="text" id="searchInput" placeholder="Search">
                             <i class="fa-solid fa-magnifying-glass" id="searchIcon"></i>
                         </div>
-                        <!-- Error Message -->
+
                         <span class="search-error" id="searchError">Please enter a keyword to search</span>
                     </div>
-                    <a href="#" class="login-btn">Login</a>
+                    <a href="login.html" class="login-btn">Login</a>
                 </div>
             </div>
 
-            <!-- Mobile Menu Toggle -->
+
             <div class="mobile-toggle" id="mobileToggle">
                 <i class="fa-solid fa-bars"></i>
             </div>
         </nav>
     </header>
 
-    <!-- Dummy content to test scroll effect -->
-    <section style="height: 200vh; padding: 120px 20px; background-color: #F8F9FA;">
-        <!-- <h1>Scroll down to see the navbar animation!</h1> -->
-        <!-- <p>Responsive corporate layout optimized for all screens.</p> -->
+
+    <section class="personal-hero-section">
+        <div class="personal-hero-wrapper">
+
+
+            <div class="breadcrumb-nav">
+                <a href="index.html">Home</a>
+                <i class="fa-solid fa-chevron-right"></i>
+                <span>Personal Banking</span>
+            </div>
+
+
+            <div class="personal-hero-container">
+
+
+                <div class="personal-hero-content">
+                    <span class="badge-pill">Personal Banking</span>
+                    <h1 class="personal-title">Banking that fits<br><span class="text-purple">your life.</span></h1>
+                    <p class="personal-desc">
+                        Smart accounts, easy payments, and financial tools to help you save, spend and achieve more.
+                    </p>
+
+
+                    <div class="mini-features-grid">
+                        <div class="mini-feature-item">
+                            <div class="feature-icon-box">
+                                <i class="fa-solid fa-shield-halved"></i>
+                            </div>
+                            <span>Secure & Trusted</span>
+                        </div>
+
+                        <div class="mini-feature-item">
+                            <div class="feature-icon-box">
+                                <i class="fa-solid fa-mobile-screen-button"></i>
+                            </div>
+                            <span>Easy & Convenient</span>
+                        </div>
+
+                        <div class="mini-feature-item">
+                            <div class="feature-icon-box">
+                                <i class="fa-solid fa-piggy-bank"></i>
+                            </div>
+                            <span>Save More</span>
+                        </div>
+
+                        <div class="mini-feature-item">
+                            <div class="feature-icon-box">
+                                <i class="fa-solid fa-headset"></i>
+                            </div>
+                            <span>24/7 Support</span>
+                        </div>
+                    </div>
+
+
+                    <div class="personal-hero-buttons">
+                        <a href="404page.html" class="btn-primary">Open Savings Account</a>
+                        <a href="404page.html" class="btn-outline">Explore Products</a>
+                    </div>
+                </div>
+
+
+                <div class="personal-hero-visuals">
+                    <div class="bg-circle-glow"></div>
+
+                    <img src="./asset/image12.webp" alt="Personal Banking Couple" class="couple-hero-img">
+
+
+                    <!-- <div class="floating-balance-card">
+                    <div class="balance-card-header">
+                        <span class="card-sub-label">Total Balance</span>
+                        <div class="balance-amount-row">
+                            <h3>₹ 2,48,750.50</h3>
+                            <i class="fa-regular fa-eye"></i>
+                        </div>
+                    </div>
+
+                    <div class="account-row-item">
+                        <div class="acc-info">
+                            <span class="acc-name">Savings Account</span>
+                            <p class="acc-val">₹ 1,48,750.50</p>
+                        </div>
+                        <i class="fa-regular fa-eye"></i>
+                    </div>
+
+                    <div class="account-row-item">
+                        <div class="acc-info">
+                            <span class="acc-name">Current Account</span>
+                            <p class="acc-val">₹ 1,00,000.00</p>
+                        </div>
+                        <i class="fa-regular fa-eye"></i>
+                    </div>
+
+                    <a href="404page.html" class="btn-view-accounts">View All Accounts</a>
+                </div> -->
+                </div>
+
+            </div>
+
+
+            <div class="quick-actions-bar">
+                <h3 class="quick-title">Quick Actions</h3>
+                <div class="actions-grid">
+
+                    <a href="404page.html" class="action-item">
+                        <div class="action-icon">
+                            <i class="fa-solid fa-arrow-right-arrow-left"></i>
+                        </div>
+                        <span>Fund Transfer</span>
+                    </a>
+
+                    <a href="404page.html" class="action-item">
+                        <div class="action-icon">
+                            <i class="fa-regular fa-file-lines"></i>
+                        </div>
+                        <span>Pay Bills</span>
+                    </a>
+
+                    <a href="404page.html" class="action-item">
+                        <div class="action-icon">
+                            <i class="fa-solid fa-mobile-retro"></i>
+                        </div>
+                        <span>Recharge</span>
+                    </a>
+
+                    <a href="404page.html" class="action-item">
+                        <div class="action-icon">
+                            <i class="fa-solid fa-vault"></i>
+                        </div>
+                        <span>Open FD</span>
+                    </a>
+
+                    <a href="404page.html" class="action-item">
+                        <div class="action-icon">
+                            <i class="fa-solid fa-hand-holding-dollar"></i>
+                        </div>
+                        <span>Apply Loan</span>
+                    </a>
+
+                    <a href="404page.html" class="action-item">
+                        <div class="action-icon">
+                            <i class="fa-regular fa-credit-card"></i>
+                        </div>
+                        <span>Card Services</span>
+                    </a>
+
+                    <a href="404page.html" class="action-item">
+                        <div class="action-icon">
+
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+                            </svg>
+                        </div>
+                        <span>UPI Payments</span>
+                    </a>
+
+                    <a href="404page.html" class="action-item">
+                        <div class="action-icon">
+                            <i class="fa-solid fa-ellipsis"></i>
+                        </div>
+                        <span>More</span>
+                    </a>
+
+                </div>
+            </div>
+
+        </div>
     </section>
 
-    <!-- GSAP CDN -->
+
+
+
+    <section class="why-bank-section">
+        <div class="why-bank-container">
+            <h2 class="why-main-title">Why bank with Us?</h2>
+
+            <div class="why-grid">
+
+
+                <div class="why-item">
+                    <div class="why-icon">
+                        <i class="fa-solid fa-building-columns"></i>
+                    </div>
+                    <div class="why-text">
+                        <h4>Zero Balance Account</h4>
+                        <p>Open an account with zero minimum balance.</p>
+                    </div>
+                </div>
+
+
+                <div class="why-item">
+                    <div class="why-icon">
+
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="18" y1="20" x2="18" y2="10"></line>
+                            <line x1="12" y1="20" x2="12" y2="4"></line>
+                            <line x1="6" y1="20" x2="6" y2="14"></line>
+                        </svg>
+                    </div>
+                    <div class="why-text">
+                        <h4>Zero Balance Account</h4>
+                        <p>Open an account with zero minimum balance.</p>
+                    </div>
+                </div>
+
+
+                <div class="why-item">
+                    <div class="why-icon">
+                        <i class="fa-solid fa-user-tie"></i>
+                    </div>
+                    <div class="why-text">
+                        <h4>Zero Balance Account</h4>
+                        <p>Open an account with zero minimum balance.</p>
+                    </div>
+                </div>
+
+
+                <div class="why-item">
+                    <div class="why-icon">
+                        <i class="fa-solid fa-shield-halved"></i>
+                    </div>
+                    <div class="why-text">
+                        <h4>Zero Balance Account</h4>
+                        <p>Open an account with zero minimum balance.</p>
+                    </div>
+                </div>
+
+
+                <div class="why-item">
+                    <div class="why-icon">
+
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M3 18v-6a9 9 0 0 1 18 0v6"></path>
+                            <path
+                                d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z">
+                            </path>
+                        </svg>
+                    </div>
+                    <div class="why-text">
+                        <h4>Zero Balance Account</h4>
+                        <p>Open an account with zero minimum balance.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <section class="accounts-section">
+        <div class="accounts-container">
+
+
+            <div class="accounts-header">
+                <h2 class="accounts-title">Accounts & Cards</h2>
+                <p class="accounts-subtitle">Choose the right account and card for your lifestyle.</p>
+            </div>
+
+
+            <div class="accounts-grid">
+
+
+                <div class="ac-card">
+                    <div class="ac-icon icon-purple">
+                        <i class="fa-solid fa-building-columns"></i>
+                    </div>
+                    <h3 class="ac-title">Savings Account</h3>
+                    <p class="ac-desc">Build your savings with high intrest and easy access.</p>
+                    <a href="404page.html" class="ac-link">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+
+
+                <div class="ac-card">
+                    <div class="ac-icon icon-blue">
+
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="2" y="5" width="20" height="14" rx="2" ry="2"></rect>
+                            <line x1="2" y1="10" x2="22" y2="10"></line>
+                            <line x1="7" y1="15" x2="11" y2="15"></line>
+                        </svg>
+                    </div>
+                    <h3 class="ac-title">Current Account</h3>
+                    <p class="ac-desc">Perfect for salary credit and daily transactions.</p>
+                    <a href="404page.html" class="ac-link">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+
+
+                <div class="ac-card">
+                    <div class="ac-icon icon-green">
+                        <i class="fa-solid fa-wallet"></i>
+                    </div>
+                    <h3 class="ac-title">Salary Account</h3>
+                    <p class="ac-desc">Exclusive benefits for salaried proffessionals.</p>
+                    <a href="404page.html" class="ac-link">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+
+
+                <div class="ac-card">
+                    <div class="ac-icon icon-pink">
+
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path
+                                d="M12 2l3.09 3.09L19.27 6l-.91 4.18L21 13l-2.45 2.45.54 4.18-4.09-.54L12 22l-3.09-3.09L4.73 18l.91-4.18L3 11l2.45-2.45-.54-4.18 4.09.54L12 2z">
+                            </path>
+                            <line x1="9" y1="15" x2="15" y2="9"></line>
+                        </svg>
+                    </div>
+                    <h3 class="ac-title">Fixed Deposit</h3>
+                    <p class="ac-desc">Grow your money with gauranteed returns.</p>
+                    <a href="404page.html" class="ac-link">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+
+
+                <div class="ac-card">
+                    <div class="ac-icon icon-orange">
+                        <i class="fa-regular fa-credit-card"></i>
+                    </div>
+                    <h3 class="ac-title">Debit Cards</h3>
+                    <p class="ac-desc">Shop,pay and withdraw with ease & security.</p>
+                    <a href="404page.html" class="ac-link">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+
+
+                <div class="ac-card">
+                    <div class="ac-icon icon-indigo">
+                        <i class="fa-solid fa-credit-card"></i>
+                    </div>
+                    <h3 class="ac-title">Credit Cards</h3>
+                    <p class="ac-desc">Enjoy exclusive rewards and offers on every spend.</p>
+                    <a href="404page.html" class="ac-link">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+
+            </div>
+
+
+            <div class="promo-banners-grid">
+
+
+                <div class="promo-banner bg-purple-gradient">
+
+                    <div class="promo-content-half">
+                        <h3>Get Lifetime Free<br>Credit Card</h3>
+                        <p>No joining fee. No annual fee.<br>Just benefits!</p>
+                        <a href="404page.html" class="btn-promo-solid">Apply Now</a>
+                    </div>
+
+                    <div class="promo-image-half img-box-purple">
+                        <img src="./asset/image18.webp" alt="Credit Card" class="promo-img card-img">
+                    </div>
+                </div>
+
+
+                <div class="promo-banner bg-light-gradient">
+
+                    <div class="promo-content-half">
+                        <h3 class="text-purple-dark">Personal Loan in<br>Just 2 Minutes</h3>
+                        <p class="text-dark">Quick approval, minimal<br>documentation.</p>
+                        <a href="404page.html" class="btn-promo-outline">Apply Now</a>
+                    </div>
+
+                    <div class="promo-image-half img-box-white">
+                        <img src="./asset/image14.webp" alt="Money Bags" class="promo-img loan-img">
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+
+
+    <section class="manage-money-section">
+        <div class="manage-container">
+
+
+            <div class="manage-header">
+                <h2 class="manage-title">Manage Your Money Better</h2>
+                <p class="manage-subtitle">Smart tools to help you track, plan and grow your finances.</p>
+            </div>
+
+
+            <div class="manage-grid">
+
+
+                <div class="manage-card">
+                    <div class="manage-icon icon-pie">
+
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21.21 15.89A10 10 0 1 1 8 2.83"></path>
+                            <path d="M22 12A10 10 0 0 0 12 2v10z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="manage-card-title">Expense Tracker</h3>
+                    <p class="manage-card-desc">Track your spending and stay on budget.</p>
+                    <a href="404page.html" class="manage-explore-link">Explore</a>
+                </div>
+
+
+                <div class="manage-card">
+                    <div class="manage-icon icon-calendar">
+                        <i class="fa-regular fa-calendar-days"></i>
+                    </div>
+                    <h3 class="manage-card-title">Budget Planner</h3>
+                    <p class="manage-card-desc">Plan your monthly budget effortlessly.</p>
+                    <a href="404page.html" class="manage-explore-link">Explore</a>
+                </div>
+
+
+                <div class="manage-card">
+                    <div class="manage-icon icon-target">
+
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <circle cx="12" cy="12" r="6"></circle>
+                            <circle cx="12" cy="12" r="2"></circle>
+                        </svg>
+                    </div>
+                    <h3 class="manage-card-title">Goal Calculator</h3>
+                    <p class="manage-card-desc">Plan your goals and achieve more.</p>
+                    <a href="404page.html" class="manage-explore-link">Explore</a>
+                </div>
+
+
+                <div class="manage-card">
+                    <div class="manage-icon icon-calc">
+                        <i class="fa-solid fa-calculator"></i>
+                    </div>
+                    <h3 class="manage-card-title">EMI Calculator</h3>
+                    <p class="manage-card-desc">Calculate EMI for loans in seconds.</p>
+                    <a href="404page.html" class="manage-explore-link">Explore</a>
+                </div>
+
+
+                <div class="manage-card">
+                    <div class="manage-icon icon-chart">
+                        <i class="fa-solid fa-chart-column"></i>
+                    </div>
+                    <h3 class="manage-card-title">FD Calculator</h3>
+                    <p class="manage-card-desc">Calculate returns on your fixed deposits.</p>
+                    <a href="404page.html" class="manage-explore-link">Explore</a>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+
+    <section class="testimonials-section">
+        <div class="testimonials-container">
+
+
+            <div class="testimonials-header">
+                <h2 class="testimonials-title">What Our Customers Say</h2>
+                <a href="404page.html" class="view-all-link">View All Reviews</a>
+            </div>
+
+
+            <div class="testimonials-grid">
+
+
+                <div class="testimonial-card">
+                    <p class="testimonial-quote">"StacklyBank has made banking so easy and convenient. Their customer
+                        service is outstanding!"</p>
+                    <div class="testimonial-stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <div class="testimonial-profile">
+
+                        <img src="./asset/image63.webp" alt="Sarah Johnson" class="profile-avatar">
+                        <div class="profile-info">
+                            <h4>Sarah Johnson</h4>
+                            <span>New York,USA</span>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="testimonial-card">
+                    <p class="testimonial-quote">"I love the mobile app! It's simple, secure, and has everything I need
+                        in one place."</p>
+                    <div class="testimonial-stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <div class="testimonial-profile">
+
+                        <img src="./asset/image65.webp" alt="Neha Agarwal" class="profile-avatar">
+                        <div class="profile-info">
+                            <h4>Neha Agarwal</h4>
+                            <span>London,UK</span>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="testimonial-card">
+                    <p class="testimonial-quote">" Their loan process was quick and hassel-free. Highly recomended!"</p>
+                    <div class="testimonial-stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <div class="testimonial-profile">
+
+                        <img src="./asset/image66.webp" alt="Priya Sharma" class="profile-avatar">
+                        <div class="profile-info">
+                            <h4>Priya Sharma</h4>
+                            <span>Mumbai, India</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+
+    <section class="faq-section">
+        <div class="faq-container">
+
+
+            <div class="faq-header-row">
+                <h2 class="faq-title">Frequently Asked Questions</h2>
+                <a href="404page.html" class="view-all-link">View All FAQ's</a>
+            </div>
+
+
+            <div class="faq-content-grid">
+
+
+                <div class="faq-accordion">
+
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>How do I open a savings account?</h3>
+                            <span class="faq-icon">
+
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <polyline points="6 9 12 15 18 9"></polyline>
+                                </svg>
+                            </span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>You can open a savings account online through our website by clicking "Open an Account",
+                                or by visiting any of our nearest branches with your KYC documents.</p>
+                        </div>
+                    </div>
+
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>What is the minimum balance requirement?</h3>
+                            <span class="faq-icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <polyline points="6 9 12 15 18 9"></polyline>
+                                </svg>
+                            </span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>We offer Zero Balance Accounts as well as standard accounts which require a minimum
+                                balance of ₹1000 depending on the account type you choose.</p>
+                        </div>
+                    </div>
+
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>How can I reset my online banking password?</h3>
+                            <span class="faq-icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <polyline points="6 9 12 15 18 9"></polyline>
+                                </svg>
+                            </span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Click on the "Forgot Password" link on the login page. Enter your registered email ID or
+                                mobile number to receive an OTP and reset your password securely.</p>
+                        </div>
+                    </div>
+
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>Is my personal information safe with you?</h3>
+                            <span class="faq-icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <polyline points="6 9 12 15 18 9"></polyline>
+                                </svg>
+                            </span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Yes, absolutely. We use bank-grade 256-bit encryption to secure all your data. Your
+                                privacy and security are our top priorities.</p>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <div class="faq-visual">
+
+                    <img src="./asset/image16.webp" alt="FAQ 3D Illustration" class="faq-image">
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+
+    <section class="app-download-section">
+        <div class="app-banner-container">
+
+
+            <div class="app-mockup-wrapper">
+
+                <img src="./asset/image17.webp" alt="Stackly Mobile App" class="phone-mockup-img">
+            </div>
+
+
+            <div class="app-text-content">
+                <h2>Bank Anytime,Anywhere</h2>
+                <p>Download our app for seamless banking<br>on the go.</p>
+            </div>
+
+
+            <div class="app-store-buttons">
+
+
+                <a href="404page.html" class="store-btn">
+                    <span class="store-icon">
+                        <i class="fa-brands fa-apple"></i>
+                    </span>
+                    <div class="store-text">
+                        <span class="small-text">Download on the</span>
+                        <span class="big-text">App Store</span>
+                    </div>
+                </a>
+
+
+                <a href="404page.html" class="store-btn">
+                    <span class="store-icon">
+
+                        <svg viewBox="0 0 512 512" width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+                            <path fill="#28B446"
+                                d="M30 42c-8 8-13 22-13 41v346c0 19 5 33 13 41l15 15 197-197v-34l-197-197-15 15z" />
+                            <path fill="#F0382B" d="M242 214l-48-48L30 42c-15-15-39-6-39 16v62l251 94z" />
+                            <path fill="#FFBB00" d="M327 301l-85-87v-34l85-87 83 48c24 14 24 37 0 51l-83 48z" />
+                            <path fill="#2582F0" d="M242 298l-48 48L30 470c-15 15-39 6-39-16v-62l251-94z" />
+                        </svg>
+                    </span>
+                    <div class="store-text">
+                        <span class="small-text">GET IT ON</span>
+                        <span class="big-text">Google Play</span>
+                    </div>
+                </a>
+
+            </div>
+
+
+            <div class="app-qr-wrapper">
+
+                <img src="./asset/image19.webp" alt="Scan to Download" class="qr-img">
+            </div>
+
+        </div>
+    </section>
+
+
+
+
+
+    <footer class="footer-section">
+        <div class="footer-container">
+
+            <div class="footer-brand">
+                <a href="index.html" class="footer-logo">
+                    <img src="./asset/Violetlogo.webp" alt="logo" class="logo">
+                </a>
+                <p class="footer-desc">Your trusted partner in banking, helping you achieve a better tomorrow.</p>
+
+                <div class="social-icons">
+
+                    <a href="404page.html" class="social-icon fb"><i class="fa-brands fa-facebook-f"></i></a>
+
+                    <a href="404page.html" class="social-icon in"><i class="fa-brands fa-linkedin-in"></i></a>
+
+                    <a href="404page.html" class="social-icon x">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                        </svg>
+                    </a>
+
+                    <a href="404page.html" class="social-icon insta"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+
+
+            <div class="footer-links">
+                <h4>Personal</h4>
+                <ul>
+                    <li><a href="404page.html">Accounts</a></li>
+                    <li><a href="404page.html">Cards</a></li>
+                    <li><a href="404page.html">Loans</a></li>
+                    <li><a href="404page.html">Investments</a></li>
+                    <li><a href="404page.html">Insurance</a></li>
+                </ul>
+            </div>
+
+
+            <div class="footer-links">
+                <h4>Business</h4>
+                <ul>
+                    <li><a href="404page.html">Business Accounts</a></li>
+                    <li><a href="404page.html">Loans</a></li>
+                    <li><a href="404page.html">Merchant Services</a></li>
+                    <li><a href="404page.html">Payroll Services</a></li>
+                </ul>
+            </div>
+
+
+            <div class="footer-links">
+                <h4>Support</h4>
+                <ul>
+                    <li><a href="404page.html">FAQs</a></li>
+                    <li><a href="404page.html">Help Center</a></li>
+                    <li><a href="404page.html">Contact Us</a></li>
+                    <li><a href="404page.html">Security</a></li>
+                </ul>
+            </div>
+
+
+            <div class="footer-links">
+                <h4>About Us</h4>
+                <ul>
+                    <li><a href="404page.html">Our Story</a></li>
+                    <li><a href="404page.html">Careers</a></li>
+                    <li><a href="404page.html">News & Media</a></li>
+                    <li><a href="404page.html">Locate Us</a></li>
+                </ul>
+            </div>
+
+
+            <div class="footer-contact">
+                <h4>Contact Us</h4>
+                <ul>
+                    <li>
+                        <span class="contact-icon"><i class="fa-solid fa-phone"></i></span>
+                        <a href="tel:+917010792745">+91 7010792745</a>
+                    </li>
+                    <li>
+                        <span class="contact-icon">
+
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
+                                </path>
+                                <polyline points="22,6 12,13 2,6"></polyline>
+                            </svg>
+                        </span>
+                        <a href="mailto:info@stackly.com">info@stackly.com</a>
+                    </li>
+                    <li>
+                        <span class="contact-icon location"><i class="fa-solid fa-location-dot"></i></span>
+                        <span>Tamilnadu<br>Salem - 636008</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+
+        <div class="footer-bottom">
+            <div class="footer-copyright">
+                <p>&copy; 2026 STACKLYBANK. All rights reserved.</p>
+            </div>
+            <div class="footer-legal">
+                <a href="404page.html">Privacy Policy</a>
+                <a href="404page.html">Terms & Conditions</a>
+            </div>
+        </div>
+    </footer>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
     <script src="script.js"></script>
+    <script>
+
+
+
+
+
+        gsap.fromTo(".breadcrumb-nav, .badge-pill, .personal-title, .personal-desc",
+            { y: 30, opacity: 0 },
+            {
+                y: 0,
+                opacity: 1,
+                duration: 0.7,
+                stagger: 0.12,
+                ease: "power3.out"
+            }
+        );
+
+
+        gsap.fromTo(".mini-feature-item",
+            { y: 20, opacity: 0 },
+            {
+                y: 0,
+                opacity: 1,
+                duration: 0.5,
+                stagger: 0.1,
+                delay: 0.4,
+                ease: "back.out(1.2)"
+            }
+        );
+
+
+        gsap.fromTo(".personal-hero-buttons",
+            { y: 20, opacity: 0 },
+            {
+                y: 0,
+                opacity: 1,
+                duration: 0.5,
+                delay: 0.6,
+                ease: "power2.out"
+            }
+        );
+
+
+        gsap.fromTo(".couple-hero-img",
+            { scale: 0.9, opacity: 0 },
+            {
+                scale: 1,
+                opacity: 1,
+                duration: 0.8,
+                delay: 0.3,
+                ease: "power3.out"
+            }
+        );
+
+        gsap.fromTo(".floating-balance-card",
+            { y: 40, opacity: 0, scale: 0.85 },
+            {
+                y: 0,
+                opacity: 1,
+                scale: 1,
+                duration: 0.7,
+                delay: 0.6,
+                ease: "back.out(1.5)"
+            }
+        );
+
+
+        gsap.fromTo(".quick-actions-bar",
+            { y: 40, opacity: 0 },
+            {
+                scrollTrigger: {
+                    trigger: ".quick-actions-bar",
+                    start: "top 90%",
+                },
+                y: 0,
+                opacity: 1,
+                duration: 0.7,
+                ease: "power3.out"
+            }
+        );
+
+        gsap.fromTo(".action-item",
+            { y: 15, opacity: 0 },
+            {
+                scrollTrigger: {
+                    trigger: ".quick-actions-bar",
+                    start: "top 90%",
+                },
+                y: 0,
+                opacity: 1,
+                duration: 0.4,
+                stagger: 0.08,
+                delay: 0.2,
+                ease: "power2.out"
+            }
+        );
+
+
+
+
+
+
+        gsap.fromTo(".why-main-title",
+            { y: 30, opacity: 0 },
+            {
+                scrollTrigger: {
+                    trigger: ".why-bank-section",
+                    start: "top 85%",
+                },
+                y: 0,
+                opacity: 1,
+                duration: 0.6,
+                ease: "power3.out"
+            }
+        );
+
+
+        gsap.fromTo(".why-item",
+            { y: 40, opacity: 0 },
+            {
+                scrollTrigger: {
+                    trigger: ".why-grid",
+                    start: "top 85%",
+                },
+                y: 0,
+                opacity: 1,
+                duration: 0.5,
+                stagger: 0.1, 
+                ease: "back.out(1.2)"
+            }
+        );
+
+
+
+
+
+
+
+
+
+        gsap.fromTo(".accounts-header > *",
+            { y: 30, opacity: 0 },
+            {
+                scrollTrigger: {
+                    trigger: ".accounts-section",
+                    start: "top 80%",
+                    toggleActions: "play none none none"
+                },
+                y: 0,
+                opacity: 1,
+                duration: 0.6,
+                stagger: 0.2,
+                ease: "power3.out"
+            }
+        );
+
+
+        gsap.fromTo(".ac-card",
+            { y: 40, opacity: 0 },
+            {
+                scrollTrigger: {
+                    trigger: ".accounts-grid",
+                    start: "top 75%", 
+                    toggleActions: "play none none none"
+                },
+                y: 0,
+                opacity: 1,
+                duration: 0.6,
+                stagger: 0.1, 
+                ease: "back.out(1.2)"
+            }
+        );
+
+
+        gsap.fromTo(".promo-banner",
+            { y: 40, opacity: 0, scale: 0.95 },
+            {
+                scrollTrigger: {
+                    trigger: ".promo-banners-grid",
+                    start: "top 80%",
+                    toggleActions: "play none none none"
+                },
+                y: 0,
+                opacity: 1,
+                scale: 1,
+                duration: 0.7,
+                stagger: 0.2,
+                ease: "power2.out"
+            }
+        );
+
+
+
+
+
+
+
+        gsap.fromTo(".manage-header > *",
+            { y: 30, opacity: 0 },
+            {
+                scrollTrigger: {
+                    trigger: ".manage-money-section",
+                    start: "top 80%", 
+                    toggleActions: "play none none none"
+                },
+                y: 0,
+                opacity: 1,
+                duration: 0.6,
+                stagger: 0.2,
+                ease: "power3.out"
+            }
+        );
+
+
+        gsap.fromTo(".manage-card",
+            { y: 40, opacity: 0 },
+            {
+                scrollTrigger: {
+                    trigger: ".manage-grid",
+                    start: "top 75%",
+                    toggleActions: "play none none none"
+                },
+                y: 0,
+                opacity: 1,
+                duration: 0.6,
+                stagger: 0.1, 
+                ease: "back.out(1.2)"
+            }
+        );
+
+        gsap.fromTo(".testimonials-header > *",
+            { y: 20, opacity: 0 },
+            {
+                scrollTrigger: {
+                    trigger: ".testimonials-section",
+                    start: "top 85%",
+                    toggleActions: "play none none none"
+                },
+                y: 0,
+                opacity: 1,
+                duration: 0.6,
+                stagger: 0.2,
+                ease: "power3.out"
+            }
+        );
+
+
+        gsap.fromTo(".testimonial-card",
+            { y: 40, opacity: 0 },
+            {
+                scrollTrigger: {
+                    trigger: ".testimonials-grid",
+                    start: "top 80%",
+                    toggleActions: "play none none none"
+                },
+                y: 0,
+                opacity: 1,
+                duration: 0.6,
+                stagger: 0.15, 
+                ease: "back.out(1.2)"
+            }
+        );
+
+
+
+
+
+
+        const faqItems = document.querySelectorAll('.faq-item');
+
+        faqItems.forEach(item => {
+            const question = item.querySelector('.faq-question');
+            const answer = item.querySelector('.faq-answer');
+
+            question.addEventListener('click', () => {
+
+                const isActive = item.classList.contains('active');
+
+
+                faqItems.forEach(otherItem => {
+                    otherItem.classList.remove('active');
+                    otherItem.querySelector('.faq-answer').style.maxHeight = null;
+                });
+
+
+                if (!isActive) {
+                    item.classList.add('active');
+                    answer.style.maxHeight = answer.scrollHeight + "px"; 
+                }
+            });
+        });
+
+
+
+
+
+
+        gsap.fromTo(".faq-header-row > *",
+            { y: 20, opacity: 0 },
+            {
+                scrollTrigger: {
+                    trigger: ".faq-section",
+                    start: "top 85%",
+                    toggleActions: "play none none none"
+                },
+                y: 0,
+                opacity: 1,
+                duration: 0.6,
+                stagger: 0.2,
+                ease: "power3.out"
+            }
+        );
+
+
+        gsap.fromTo(".faq-item",
+            { x: -30, opacity: 0 },
+            {
+                scrollTrigger: {
+                    trigger: ".faq-accordion",
+                    start: "top 80%",
+                    toggleActions: "play none none none"
+                },
+                x: 0,
+                opacity: 1,
+                duration: 0.5,
+                stagger: 0.15,
+                ease: "power2.out"
+            }
+        );
+
+
+        gsap.fromTo(".faq-image",
+            { x: 50, opacity: 0, scale: 0.9 },
+            {
+                scrollTrigger: {
+                    trigger: ".faq-visual",
+                    start: "top 80%",
+                    toggleActions: "play none none none"
+                },
+                x: 0,
+                opacity: 1,
+                scale: 1,
+                duration: 0.8,
+                ease: "back.out(1.2)"
+            }
+        );
+
+
+
+
+
+
+
+        gsap.fromTo(".app-banner-container",
+            { y: 40, opacity: 0, scale: 0.95 },
+            {
+                scrollTrigger: {
+                    trigger: ".app-download-section",
+                    start: "top 85%",
+                    toggleActions: "play none none none"
+                },
+                y: 0,
+                opacity: 1,
+                scale: 1,
+                duration: 0.8,
+                ease: "power3.out"
+            }
+        );
+
+
+        gsap.fromTo(".app-mockup-wrapper, .app-text-content > *, .store-btn, .app-qr-wrapper",
+            { y: 20, opacity: 0 },
+            {
+                scrollTrigger: {
+                    trigger: ".app-download-section",
+                    start: "top 80%",
+                    toggleActions: "play none none none"
+                },
+                y: 0,
+                opacity: 1,
+                duration: 0.6,
+                stagger: 0.1, // Items pop up one by one
+                delay: 0.3, // Wait for banner container to start animating
+                ease: "back.out(1.2)"
+            }
+        );
+    </script>
 </body>
+
 </html>

@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - Page Not Found | StacklyBank</title>
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800;900&display=swap" rel="stylesheet">
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', sans-serif;
+        }
+
+        body {
+            background-color: #FFFFFF;
+            color: #111827;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            overflow-x: hidden;
+        }
+
+
+        .error-header {
+            padding: 40px 5%;
+            width: 100%;
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            text-decoration: none;
+        }
+
+        .logo-container img {
+            width: 180px;
+        }
+
+
+        .logo-icon {
+            width: 35px;
+            height: 35px;
+            color: #7A3FF3;
+        }
+
+        .logo-text {
+            font-size: 24px;
+            font-weight: 900;
+            color: #6D28D9;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+
+        .error-main {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 20px 5%;
+        }
+
+
+        .error-code {
+
+            font-size: clamp(80px, 15vw, 160px);
+            font-weight: 900;
+            color: #6D28D9;
+            line-height: 1;
+            margin-bottom: 20px;
+            letter-spacing: -5px;
+            text-shadow: 0 15px 35px rgba(109, 40, 217, 0.15);
+        }
+
+        .error-title {
+            font-size: clamp(24px, 4vw, 32px);
+            font-weight: 800;
+            color: #000000;
+            margin-bottom: 15px;
+        }
+
+        .error-desc {
+            font-size: 16px;
+            color: #4B5563;
+            max-width: 350px;
+            line-height: 1.5;
+            margin-bottom: 40px;
+        }
+
+
+        .error-actions {
+            display: flex;
+            gap: 15px;
+            align-items: center;
+            justify-content: center;
+        }
+
+
+        .btn-home {
+            background-color: #6D28D9;
+            color: #FFFFFF;
+            padding: 14px 32px;
+            border-radius: 8px;
+            font-size: 15px;
+            font-weight: 700;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            transition: all 0.3s ease;
+            box-shadow: 0 10px 20px rgba(109, 40, 217, 0.2);
+            border: 2px solid #6D28D9;
+        }
+
+        .btn-home:hover {
+            background-color: #5B21B6;
+            border-color: #5B21B6;
+            transform: translateY(-3px);
+            box-shadow: 0 15px 25px rgba(109, 40, 217, 0.3);
+        }
+
+
+        .btn-back {
+            background-color: #FFFFFF;
+            color: #6D28D9;
+            padding: 14px 32px;
+            border-radius: 8px;
+            font-size: 15px;
+            font-weight: 700;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            transition: all 0.3s ease;
+            border: 2px solid #6D28D9;
+            cursor: pointer;
+        }
+
+        .btn-back:hover {
+            background-color: #F5F3FF;
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(109, 40, 217, 0.1);
+        }
+
+
+        @media screen and (max-width: 576px) {
+            .error-header {
+                padding: 30px 20px;
+                display: flex;
+                justify-content: center;
+            }
+
+            .error-actions {
+                flex-direction: column;
+                width: 100%;
+                max-width: 300px;
+            }
+
+            .btn-home,
+            .btn-back {
+                width: 100%;
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <header class="error-header gsap-logo">
+        <a href="index.html" class="logo-container">
+            <img src="./asset/Violetlogo.webp" alt="logo">
+        </a>
+    </header>
+
+
+    <main class="error-main">
+        <h1 class="error-code">404</h1>
+        <h2 class="error-title gsap-content">Oops! Page not found</h2>
+        <p class="error-desc gsap-content">
+            The page you're looking for doesn't exist or has been moved.
+        </p>
+
+        <div class="error-actions gsap-content">
+
+            <button class="btn-back" onclick="goBack()">
+                <i class="fa-solid fa-arrow-left"></i> Go Back
+            </button>
+
+
+            <a href="index.html" class="btn-home">
+                Go to Home <i class="fa-solid fa-house"></i>
+            </a>
+        </div>
+    </main>
+
+
+    <script>
+
+        function goBack() {
+            window.history.back(); 
+        }
+
+
+        document.addEventListener("DOMContentLoaded", (event) => {
+
+
+            gsap.from(".gsap-logo", {
+                y: -30,
+                opacity: 0,
+                duration: 1,
+                ease: "power3.out"
+            });
+
+
+            gsap.from(".error-code", {
+                scale: 0,
+                opacity: 0,
+                duration: 1.2,
+                ease: "back.out(1.5)",
+                delay: 0.2
+            });
+
+
+            gsap.to(".error-code", {
+                y: -15,
+                duration: 2,
+                ease: "sine.inOut",
+                yoyo: true,
+                repeat: -1,
+                delay: 1.4
+            });
+
+
+            gsap.from(".gsap-content", {
+                y: 30,
+                opacity: 0,
+                duration: 0.8,
+                stagger: 0.15,
+                ease: "power2.out",
+                delay: 0.5
+            });
+
+        });
+    </script>
+</body>
+
+</html>
