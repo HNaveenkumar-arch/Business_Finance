@@ -179,8 +179,8 @@
 
         .app-mockup {
             width: 100%;
-            height: 40%;
-            max-width: 400px;
+            height: 50%;
+            max-width: 520px;
             border-radius: 20px;
             box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
         }
@@ -535,7 +535,6 @@
         @media screen and (max-width: 992px) {
             .main-container {
                 flex-direction: column-reverse;
-
                 gap: 50px;
             }
 
@@ -604,20 +603,17 @@
 
 
     <header class="navbar">
-        <a href="#" class="logo">
+        <a href="index.html" class="logo">
             <img src="./asset/Violetlogo.webp" alt="logo">
         </a>
         <div class="nav-right">
-            <a href="#" class="nav-link"><i class="fa-solid fa-globe"></i> Help</a>
-            <a href="#" class="nav-link"><i class="fa-solid fa-language"></i> EN <i class="fa-solid fa-chevron-down"
+            <a href="404page.html" class="nav-link"><i class="fa-solid fa-globe"></i> Help</a>
+            <a href="404page.html" class="nav-link"><i class="fa-solid fa-language"></i> EN <i class="fa-solid fa-chevron-down"
                     style="font-size:10px;"></i></a>
             <a href="login.html" class="btn-login">Login</a>
         </div>
     </header>
-
-
     <main class="main-container">
-
 
         <div class="left-panel gsap-left">
             <h1 class="left-title">Create Your<br><span>STACKLY</span> Bank Account</h1>
@@ -663,7 +659,7 @@
             <div class="form-card">
                 <div class="form-header">
                     <h2>Sign Up</h2>
-                    <p>Already have an account? <a href="#">Login</a></p>
+                    <p>Already have an account? <a href="login.html">Login</a></p>
                 </div>
 
                 <form id="signupForm" novalidate>
@@ -796,7 +792,7 @@
 
                     <div class="checkbox-group">
                         <input type="checkbox" id="terms">
-                        <label for="terms">I agree to the <a href="#">Terms & Conditions</a> and <a href="#">Privacy
+                        <label for="terms">I agree to the <a href="404page.html">Terms & Conditions</a> and <a href="404page.html">Privacy
                                 Policy</a></label>
                     </div>
                     <span class="error-msg" id="err-terms" style="margin-top:-20px; margin-bottom:15px;">You must agree
@@ -808,10 +804,10 @@
 
 
                     <div class="social-btns">
-                        <button type="button" class="btn-social"><img src="./asset/image2.webp" alt="G"> Google</button>
-                        <button type="button" class="btn-social"><i class="fa-brands fa-apple"
+                        <button type="button" onclick="window.location.href='404page.html'" class="btn-social"><img src="./asset/image2.webp" alt="G"> Google</button>
+                        <button type="button" onclick="window.location.href='404page.html'" class="btn-social"><i class="fa-brands fa-apple"
                                 style="font-size:16px;"></i> Apple</button>
-                        <button type="button" class="btn-social"><i class="fa-brands fa-facebook"
+                        <button type="button" onclick="window.location.href='404page.html'" class="btn-social"><i class="fa-brands fa-facebook"
                                 style="color:#1877F2; font-size:16px;"></i> Facebook</button>
                     </div>
 
